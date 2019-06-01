@@ -1,0 +1,32 @@
+---
+title: MacGraphoto Bundle
+date: 2009-11-16T18:35:04+00:00
+tweet_this_url:
+  - http://bit.ly/cqmhf2
+categories:
+  - Bundle Sale
+  - Mac
+tags:
+  - bundle
+  - Graphics
+  - Mac
+  - Photo editing
+draft: false
+---
+グラフィック関係のシェアウェアばかりを集めたバンドルが登場しました。[MacGraphoto](http://www.macgraphoto.com/f/51358) です。
+
+- [Picturesque](http://www.acqualia.com/picturesque/index.html) ($30) &#8230; 毎度おなじみになりつつありますね。画像にWeb向けの特殊効果をつけるソフトです。
+- [ImageFramer](http://www.apparentsoft.com/imageframer) ($39) &#8230; 画像に縁をつけるソフトです。額縁調とか色々選べます。
+- [GraphicConverter](http://www.lemkesoft.com/xd/public/content/index._cGlkPTE5Mw_.html) ($35) &#8230; 老舗の画像編集ソフトです。もちろんコンバートもできますよ。
+- [Funtastic Photos](http://www.ohanaware.com/funtasticphotos/) ($35) &#8230; 画像に特殊効果をつけるソフト。クリック一発の手軽さが売り。
+- [Graphic Designer Toolbox](http://graphicdesignertoolbox.com/) ($43) &#8230; アイコン作ったりロゴ書いたりテクスチャを自作したりと機能は豊富な画像クリエータ。
+- [DrawIt](http://www.bohemiancoding.com/drawit/index.html) ($39) &#8230; ベクターツール。これも最近あちこちのバンドルで見かける。
+- [HoudahGeo](http://www.houdah.com/houdahGeo/) ($30) &#8230; 画像にジオタグを埋め込むソフト。
+
+以上総額 $251 が、締めて $39.99。お買い得です。ご購入の際は、是非、[こちらのリンク](http://www.macgraphoto.com/f/51358)から買って下さい。お願いします。[リンク](http://www.macgraphoto.com/f/51358)から三人買って下さると私が買った分はキャッシュバックされるという素敵なしかけがあるんです。皆で幸せになろうよ、ね?（後藤ちっくな声でどうぞ)。
+
+<div class="tweetthis" style="text-align:left;">
+  <p>
+    <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/intent/tweet?text=MacGraphoto+Bundle+http%3A%2F%2Fbit.ly%2Fcqmhf2');" class="tt"  href="http://twitter.com/intent/tweet?text=MacGraphoto+Bundle+http%3A%2F%2Fbit.ly%2Fcqmhf2" title="Post to Twitter"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle" title="Post to Digg"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/digg/tt-digg-micro4.png" alt="Post to Digg" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle" title="Post to Digg"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2009/11/17/macgraphoto-bundle/&t=MacGraphoto+Bundle');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2009/11/17/macgraphoto-bundle/&t=MacGraphoto+Bundle" title="Post to Facebook"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/facebook/tt-facebook-micro4.png" alt="Post to Facebook" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2009/11/17/macgraphoto-bundle/&t=MacGraphoto+Bundle');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2009/11/17/macgraphoto-bundle/&t=MacGraphoto+Bundle" title="Post to Facebook"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle&summary=%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E9%96%A2%E4%BF%82%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%B0%E3%81%8B%E3%82%8A%E3%82%92%E9%9B%86%E3%82%81%E3%81%9F%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB%E3%81%8C%E7%99%BB%E5%A0%B4%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82MacGraphoto+%E3%81%A7%E3%81%99%E3%80%82%0D%0A%0D%0A%0D%0APicturesque+%28%2430%29+...+%E6%AF%8E%E5%BA%A6%E3%81%8A%E3%81%AA%E3%81%98%E3%81%BF%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%A4%E3%81%A4%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AD%E3%80%82%E7%94%BB%E5%83%8F%E3%81%ABWeb%E5%90%91%E3%81%91%E3%81%AE%E7%89%B9%E6%AE%8A%E5%8A%B9%E6%9E%9C%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B%E3%82%BD%E3%83%95%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%0D%0AImageFramer+%28%2439%29+...+%E7%94%BB%E5%83%8F%E3%81%AB%E7%B8%81%E3%82%92%E3%81%A4...&source=電脳業務日誌');" class="tt"  href="http://www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle&summary=%E3%82%B0%E3%83%A9%E3%83%95%E3%82%A3%E3%83%83%E3%82%AF%E9%96%A2%E4%BF%82%E3%81%AE%E3%82%B7%E3%82%A7%E3%82%A2%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%B0%E3%81%8B%E3%82%8A%E3%82%92%E9%9B%86%E3%82%81%E3%81%9F%E3%83%90%E3%83%B3%E3%83%89%E3%83%AB%E3%81%8C%E7%99%BB%E5%A0%B4%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82MacGraphoto+%E3%81%A7%E3%81%99%E3%80%82%0D%0A%0D%0A%0D%0APicturesque+%28%2430%29+...+%E6%AF%8E%E5%BA%A6%E3%81%8A%E3%81%AA%E3%81%98%E3%81%BF%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%A4%E3%81%A4%E3%81%82%E3%82%8A%E3%81%BE%E3%81%99%E3%81%AD%E3%80%82%E7%94%BB%E5%83%8F%E3%81%ABWeb%E5%90%91%E3%81%91%E3%81%AE%E7%89%B9%E6%AE%8A%E5%8A%B9%E6%9E%9C%E3%82%92%E3%81%A4%E3%81%91%E3%82%8B%E3%82%BD%E3%83%95%E3%83%88%E3%81%A7%E3%81%99%E3%80%82%0D%0AImageFramer+%28%2439%29+...+%E7%94%BB%E5%83%8F%E3%81%AB%E7%B8%81%E3%82%92%E3%81%A4...&source=電脳業務日誌" title="Post to LinkedIn"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png" alt="Post to LinkedIn" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle" title="Post to Reddit"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/reddit/tt-reddit-micro4.png" alt="Post to Reddit" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2009/11/17/macgraphoto-bundle/&title=MacGraphoto+Bundle" title="Post to Reddit"> </a>
+  </p>
+</div>

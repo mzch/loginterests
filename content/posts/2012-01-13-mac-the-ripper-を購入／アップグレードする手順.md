@@ -1,0 +1,62 @@
+---
+title: Mac The Ripper を購入／アップグレードする手順
+date: 2012-01-13T11:55:46+00:00
+tweet_this_url:
+  - http://bit.ly/ymhmNr
+categories:
+  - Mac
+  - Software
+tags:
+  - DVD
+  - Mac
+  - MTR
+  - Ripper
+draft: false
+---
+今いちわかりにくいので、備忘録を兼ねてまとめてみました。
+
+1. まず、[このページ](http://www.ripdifferent.com/mtr/viewtopic.php?f=24&#038;t=465)を参照して開発者のメールアドレスを取得します。(2012/1/13時点では、[Gordon Miller 氏の Gmail アドレス](mailto:emteaarr@gmail.com)になっています)
+2. Paypal から、上記で取得したメールアドレス宛てに送金します。
+   - Paypal の送信先にメールアドレスを入力します
+   - 金額は、新規にライセンスを購入する場合は、$**<span style="color:red;">40</span>**USD、アップグレードの場合は、$**<span style="color:red;">10</span>**USDです。
+3. 支払い種別は**サービス**を選択します。
+4. 支払い額を確定すると、メッセージの入力画面になりますが、<span style="color:blue;">Donation</span> とか <span style="color:blue;">Donate</span> という単語を**<span style="color=red;">含めてはいけません</span>**。**<span style="color:red;">Gift</span>**とすること、と開発者からお達しがあります。税務関係で揉めるんだとか。なので、件名には、&#8221;Support gift&#8221; などと入力すればよろしいでしょう。
+5. ただし、<span style="color:red;">最初の購入</span>から1年以内でアップグレードとなった場合に限り、送金は必要ありません。
+6. MTR 4 を起動します。
+7. ライセンス登録／購入画面が表示されるので、<span style="font-size:large; text-shadow:1px 1px 0px #000;background-color:#cfcfcf;"> I Need A License! </span> をクリックします。
+8. テンプレートが設定された Mail.app のメール作成画面が表示されるので、トランザクションID、金額、送金日を記入します。 
+```
+	Thank you For Registering The Application Please Complete And Send To The Developer.
+
+	xxxxxxxx xxxxxxxx Has Requested A License On Friday, January XX, 20XX (XX:XX).
+	Version No 4200.
+	MTR4-000-X-999-X-999
+
+	               PLEASE ENTER ALL YOUR DONATION PROOF(S) HERE -
+
+	Transacton Number: 9999999999999999X                           Amount: $40.00USD                    Date: January XX, 20XX
+	
+	If You Fail To Include You Payment Transaction Number(s) , Date(s) , Or Amount(s) ,Your Request Will Be Ignored.
+
+	If You Do Not Have A Transaction Number , Please Think About Supporting Us.
+	You May Use This E-mail To Request The Details.
+
+	Thank You.
+```
+Transaction Number: には、PayPal の支払い画面で表示されるトランザクションIDを、Amount には支払い額を、Date:には支払い日を記入します。<span style="background-color:#ffcfcf;">アップグレードの場合は、最初の購入から直近の支払いまで、過去の支払いを含めてすべて記入</span>しなくてはならないことに注意してください。
+9. 記入に漏れがないことを確認したら、後はひたすら返事が来るのを待ちます。自動処理ではありませんので、返信が来るまでに一日二日はかかるとみておいた方がよいと思います。
+
+さて、新規に購入した人の場合、メールでライセンスが届いたら、サポートフォーラムに登録しておいた方がよいでしょう。
+
+1. まず、[RipDifferent](http://www.ripdifferent.com/forum/) に登録します。登録したメールアドレスに確認メールが来ますので、メール本文中の URL をクリックして、アカウントをアクティベートします。
+1. 次に、[MTR 4 サポートフォーラム](http://www.ripdifferent.com/mtr/index.php)に登録します。この時、RipDifferent と必ず同一のユーザー名で登録します。ここをミスると認証が得られません。
+1. &#8220;Welcoming&#8221; メールが登録したメールアドレスに来ますので、このメールに返信します。その際、<span style="background-color:#ffcfcf;">件名には、フォーラムのユーザー名を記入する</span>ことと、<span style="background-color:#ffcfcf;">MTR 4 のライセンスファイルを添付する</span>ことを忘れないで下さい。ユーザー名記入漏れ、ライセンスファイル添付漏れがあると、<span style="color:red;">アカウントはアクティベートされません</span>。
+1. &#8220;Welcoming&#8221; メールに<span style="background-color:#ffcfcf;">7日以内</span>に返信しないと、やっぱり<span style="color:red;">アカウントはアクティベートされません</span>のでご注意を。
+
+アカウントの認証も自動処理ではないので (^^;)、これも一日二日みておいた方がよいでしょう。
+
+<div class="tweetthis" style="text-align:left;">
+              <p>
+                <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/intent/tweet?text=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86+http%3A%2F%2Fbit.ly%2FymhmNr');" class="tt"  href="http://twitter.com/intent/tweet?text=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86+http%3A%2F%2Fbit.ly%2FymhmNr" title="Post to Twitter"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Digg"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/digg/tt-digg-micro4.png" alt="Post to Digg" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Digg"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&t=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&t=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Facebook"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/facebook/tt-facebook-micro4.png" alt="Post to Facebook" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&t=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&t=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Facebook"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86&summary=%E4%BB%8A%E3%81%84%E3%81%A1%E3%82%8F%E3%81%8B%E3%82%8A%E3%81%AB%E3%81%8F%E3%81%84%E3%81%AE%E3%81%A7%E3%80%81%E5%82%99%E5%BF%98%E9%8C%B2%E3%82%92%E5%85%BC%E3%81%AD%E3%81%A6%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0D%0A%0D%0A%09%E3%81%BE%E3%81%9A%E3%80%81%E3%81%93%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E5%8F%82%E7%85%A7%E3%81%97%E3%81%A6%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%282012%2F1%2F13%E6%99%82%E7%82%B9%E3%81%A7%E3%81%AF%E3%80%81Gordon+Miller+%E6%B0%8F%E3%81%AE+Gmail+%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%29%0D%0A%09Paypal+%E3%81%8B%E3%82%89%E3%80%81%E4%B8%8A%E8%A8%98%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E5%AE%9B%E3%81%A6%E3%81%AB%E9%80%81%E9%87%91%E3%81%97...&source=電脳業務日誌');" class="tt"  href="http://www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86&summary=%E4%BB%8A%E3%81%84%E3%81%A1%E3%82%8F%E3%81%8B%E3%82%8A%E3%81%AB%E3%81%8F%E3%81%84%E3%81%AE%E3%81%A7%E3%80%81%E5%82%99%E5%BF%98%E9%8C%B2%E3%82%92%E5%85%BC%E3%81%AD%E3%81%A6%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E3%81%BF%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0D%0A%0D%0A%09%E3%81%BE%E3%81%9A%E3%80%81%E3%81%93%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8%E3%82%92%E5%8F%82%E7%85%A7%E3%81%97%E3%81%A6%E9%96%8B%E7%99%BA%E8%80%85%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%BE%E3%81%99%E3%80%82%282012%2F1%2F13%E6%99%82%E7%82%B9%E3%81%A7%E3%81%AF%E3%80%81Gordon+Miller+%E6%B0%8F%E3%81%AE+Gmail+%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%29%0D%0A%09Paypal+%E3%81%8B%E3%82%89%E3%80%81%E4%B8%8A%E8%A8%98%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E5%AE%9B%E3%81%A6%E3%81%AB%E9%80%81%E9%87%91%E3%81%97...&source=電脳業務日誌" title="Post to LinkedIn"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png" alt="Post to LinkedIn" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Reddit"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/reddit/tt-reddit-micro4.png" alt="Post to Reddit" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2012/01/13/mac-the-ripper-%e3%82%92%e8%b3%bc%e5%85%a5%ef%bc%8f%e3%82%a2%e3%83%83%e3%83%97%e3%82%b0%e3%83%ac%e3%83%bc%e3%83%89%e3%81%99%e3%82%8b%e6%89%8b%e9%a0%86/&title=Mac+The+Ripper+%E3%82%92%E8%B3%BC%E5%85%A5%EF%BC%8F%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86" title="Post to Reddit"> </a>
+              </p>
+            </div>

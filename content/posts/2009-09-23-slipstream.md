@@ -1,0 +1,28 @@
+---
+title: SlipStream
+date: 2009-09-23T13:14:34+00:00
+tweet_this_url:
+  - http://bit.ly/dy0WMi
+categories:
+  - Mac
+  - Software
+tags:
+  - Mac
+  - Window Switcher
+draft: false
+---
+[MacDeveper.net](http://macdeveloper.net/) で見つけました。
+
+Window スイッチャーなんですが、Exposé と違って、リスト表示された Window を切り替えるタイプ。こんなの↓です。
+
+{{% zoom-img alt="SlipStream Screen Capture" src="/wp-content/uploads/2009/09/slipstream.png" %}}
+
+選択した Window のプレビューが上半分に表示されるのが、ミソ。今は単に現在のデスクトップに選択した Window だけが表示されるのみですが、Windows 7 みたいに他の Window をフレームで表示したり、Spaces の配置を反映するようにすれば、かなり使えるソフトになるのではないかと思っています。
+
+まだα版 (βにも至っていない) で、かなり機能が足りないけど、面白そうなので、しばらく使ってみようかと。
+
+<div class="tweetthis" style="text-align:left;">
+          <p>
+            <a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/intent/tweet?text=SlipStream+http%3A%2F%2Fbit.ly%2Fdy0WMi');" class="tt"  href="http://twitter.com/intent/tweet?text=SlipStream+http%3A%2F%2Fbit.ly%2Fdy0WMi" title="Post to Twitter"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/twitter/tt-twitter-micro4.png" alt="Post to Twitter" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream" title="Post to Digg"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/digg/tt-digg-micro4.png" alt="Post to Digg" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/digg.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream');" class="tt"  href="http://digg.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream" title="Post to Digg"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2009/09/23/slipstream/&t=SlipStream');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2009/09/23/slipstream/&t=SlipStream" title="Post to Facebook"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/facebook/tt-facebook-micro4.png" alt="Post to Facebook" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/share.php?u=https://daybook.biz/2009/09/23/slipstream/&t=SlipStream');" class="tt"  href="http://www.facebook.com/share.php?u=https://daybook.biz/2009/09/23/slipstream/&t=SlipStream" title="Post to Facebook"> </a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream&summary=MacDeveper.net+%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0D%0A%0D%0A%0D%0AWindow+%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8C%E3%80%81Expos%C3%A9+%E3%81%A8%E9%81%95%E3%81%A3%E3%81%A6%E3%80%81%E3%83%AA%E3%82%B9%E3%83%88%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%9F+Window+%E3%82%92%E5%88%87%E3%82%8A%E6%9B%BF%E3%81%88%E3%82%8B%E3%82%BF%E3%82%A4%E3%83%97%E3%80%82%E3%81%93%E3%82%93%E3%81%AA%E3%81%AE%E2%86%93%E3%81%A7%E3%81%99%E3%80%82%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%9F+Window+%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%8C%E4%B8%8A%E5%8D%8A%E5%88%86%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%AE%E3%81%8C%E3%80%81%E3%83%9F%E3%82%BD%E3%80%82%E4%BB%8A%E3%81%AF%E5%8D%98%E3%81%AB%E7%8F%BE%E5%9C%A8%E3%81%AE...&source=電脳業務日誌');" class="tt"  href="http://www.linkedin.com/shareArticle?mini=true&url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream&summary=MacDeveper.net+%E3%81%A7%E8%A6%8B%E3%81%A4%E3%81%91%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82%0D%0A%0D%0A%0D%0AWindow+%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%83%A3%E3%83%BC%E3%81%AA%E3%82%93%E3%81%A7%E3%81%99%E3%81%8C%E3%80%81Expos%C3%A9+%E3%81%A8%E9%81%95%E3%81%A3%E3%81%A6%E3%80%81%E3%83%AA%E3%82%B9%E3%83%88%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%81%9F+Window+%E3%82%92%E5%88%87%E3%82%8A%E6%9B%BF%E3%81%88%E3%82%8B%E3%82%BF%E3%82%A4%E3%83%97%E3%80%82%E3%81%93%E3%82%93%E3%81%AA%E3%81%AE%E2%86%93%E3%81%A7%E3%81%99%E3%80%82%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%E9%81%B8%E6%8A%9E%E3%81%97%E3%81%9F+Window+%E3%81%AE%E3%83%97%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC%E3%81%8C%E4%B8%8A%E5%8D%8A%E5%88%86%E3%81%AB%E8%A1%A8%E7%A4%BA%E3%81%95%E3%82%8C%E3%82%8B%E3%81%AE%E3%81%8C%E3%80%81%E3%83%9F%E3%82%BD%E3%80%82%E4%BB%8A%E3%81%AF%E5%8D%98%E3%81%AB%E7%8F%BE%E5%9C%A8%E3%81%AE...&source=電脳業務日誌" title="Post to LinkedIn"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/linkedin/tt-linkedin-micro4.png" alt="Post to LinkedIn" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream" title="Post to Reddit"><img class="nothumb" src="https://daybook.biz/wp-content/plugins/tweet-this/icons/en/reddit/tt-reddit-micro4.png" alt="Post to Reddit" /></a> <a onclick="javascript:pageTracker._trackPageview('/outgoing/reddit.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream');" class="tt"  href="http://reddit.com/submit?url=https://daybook.biz/2009/09/23/slipstream/&title=SlipStream" title="Post to Reddit"> </a>
+          </p>
+        </div>
