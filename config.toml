@@ -4,6 +4,9 @@ Title = "電脳業務日誌"
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; 2008-2019 mzch"
 
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
 [params]
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and

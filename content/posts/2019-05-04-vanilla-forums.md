@@ -19,15 +19,14 @@ draft: false
 Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、[Vanilla Forums](https://github.com/vanilla/vanilla) を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
 
 まずは、nginx と php をインストール
-```
+```bash
 sudo apt install nginx
 sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip
 ```
-
 [Github](https://github.com/vanilla/vanilla/releases) からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
 
 nginx の server {} ディレクティブ内で以下のように設定。
-```
+```nginx
 root /srv/vanilla;
 
 # Add index.php to the list if you are using PHP
@@ -65,7 +64,7 @@ location @vanilla {
 ```
 
 /srv/vanilla/conf/config.php に以下の設定を追加
-```
+```php
 $Configuration['Garden']['RewriteUrls'] = true;
 ```
 

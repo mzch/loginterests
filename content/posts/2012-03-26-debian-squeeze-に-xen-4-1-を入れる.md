@@ -18,35 +18,35 @@ XenServer 6.0 の基盤になってたり、他のディストリがこぞって
 元ネタはこちら → [Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)](http://www.gossamer-threads.com/lists/xen/users/203650)
 
 まずは、source.list に１行追加。
-```
-deb-src http://ftp.jp.debian.org/debian/ sid main&lt;br />
+```list
+deb-src http://ftp.jp.debian.org/debian/ sid main
 ```
 
 squeeze や wheezy の行があれば、コメントアウトしておきます。 
 
 で、おもむろに、ビルド…する前に、パッケージをひとつ追加しておきます。ないとコンパイルがエラーになるので。
-```
+```bash
 apt-get install ipxe-qemu
 ```
 
 PXEブートに使うファームのQEMU用ROMイメージなんですが、なぜか Xen をインストールしても、build-dep しても入りません。 
 
 まずはビルド環境を整えます。
-```
+```bash
 apt-get update
 apt-get build-dep xen
 apt-get build-dep xen-utils-common
 ```
 
 Xen のソースと Debian パッチの取り寄せ、ビルドも apt-get で済むのが便利なところ。
-```
+```bash
 cd /usr/src/
 apt-get source xen -b
 apt-get source xen-utils-common -b
 ```
 
 エラーがなければパッケージができているので、dpkg でインストールすればおしまい。
-```
+```bash
 dpkg -i *xen*deb
 ```
 
