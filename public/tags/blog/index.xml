@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/blog/</link>
+    <description>Recent content in Blog on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Fri, 17 Apr 2009 18:22:11 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MarsEdit と SubEthaEdit の日本語化</title>
+      <link>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</link>
+      <pubDate>Fri, 17 Apr 2009 18:22:11 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</guid>
+      <description>日本語化のペースが落ちてます。
+いや、大物に取りかかっていたせいなんですが。^^;
+というわけで、今回は二点。
+一つ目は、ブログエディタ MarsEdit の日本語インストーラです。さくさく書けてさくさくアップロードできるので、ecto 捨てて、こっちに走ろうかと思案中。
+こちらからどうぞ。MarsEdit 2.3.1 日本語インストーラ
+もうひとつは、超有名なエディタ、SubEthaEdit の最新版 3.2.1 の日本語インストーラです。Mac界隈では、シェアウェアのエディタというと、TextMate や BBEdit が有名ですが、ドイツ生まれは伊達ではありません。なんとドキュメントのリアルタイムコラボレーション、要はインターネットを介して同時に複数の人間が同一テキストを編集することができるんです。AGILE開発に役立ちそうですね。
+こちらからどうそ。SubEthaEdit 3.2.1 日本語インストーラ
+なお、くどいようですが、実行は自己責任でお願いします。:)</description>
+    </item>
+    
+  </channel>
+</rss>

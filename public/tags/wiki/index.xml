@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wiki on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/wiki/</link>
+    <description>Recent content in Wiki on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Wed, 22 Apr 2009 18:29:53 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JIRA と Confluence</title>
+      <link>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
+      <pubDate>Wed, 22 Apr 2009 18:29:53 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
+      <description>Atlassian が、一年間のサポートつきで、同社の製品、JIRA と Confluence を期間限定で、$5 USDで販売している。
+JIRA は、エンタプライズユースのバグトラッカーシステム。
+Confluence は、エンタープライズグレードの Wiki システム。
+通常のコマーシャル価格を見ると、一番安い Teamエディションでも、$1,200 USDはするしろものです。それをチャリティ用のスターターエディション (5ユーザまで)とはいえ、$5ドルというのは太っ腹! こんなこと、日本のメーカーにはできんですなぁ。足下固まってるからできることなんでしょうね。うらやましい。
+で、一応買いました。両方とも。だってそれでも $10 USD なんだもん。お客さんのバグ報告がダイレクトにわかる、Get Satisfiction! なんかの方がダイナミックでよいところも多いのですが、大抵は、問題があるぞー! ちょっと待って&amp;#8230;うん、直った。ありがとー! じゃねー。的な応酬なんで、バグ記録という意味ではきちんとした資料にできるかというのがちょーっと不安で。でもオープンソースのはなぜか軒並み使いにくい&amp;#8230;いやー。速攻で買いました。零細なので充分です。^^;
+どちらも Java で書かれてて、普通にインストールする分には何も悩むところはありません。ま、実際は、Apache + mod_mk でリクエストをリダイレクトして&amp;#8230;とかして使うんでしょうけど、それもまあさほど悩むようなものでもない。本当、インストールガイド通り。
+ただし、なぜか SSL ではまってしまいました。OpenSSL で作った秘密鍵をどうしてもキーストアに読み込もうとしない。もうね、あちこち調べて何時間もかけて、わからずじまい。サポートに聞くという手ももちろんあるんですが、どうせ Apache 通さないといけなかったので、諦めました。
+で、mod_jk を導入して、ちょろっとリダイレクト設定すると、全く問題なくサイトが立ち上がりました。やー。既製品はこういうとこ楽やわー。後は、セットアップウィザードの指示に従って必要事項を埋めればインストール完了で、使えるようになりました。途中、意地になって、Tomcat のキーストアに OpenSSLの秘密鍵を読み込む方法を探し回ったりしなければ、確認と試運転入れても二時間ってとこでしょうか。まだこれから使い込んでいくんですが、表面をなでた感じでは、悪くないです。というか、しっかり作り込まれています。まあ、細かいことを言い出すときりがないんですが、認証のとこだけ SSL を通すことができるようになっててもよかったんじゃないかなぁと思うんですけどねぇ。ま、それは自前でシングルサインオンのプラグインを書けってことなんでしょうね。あるいはサードパーティのプラグインを買うか。でも $5 でいいのかなこれ。ってくらいきちんとしたソフトですよ。間違いなくお買い得。
+ソフト開発のマネージメントが必要な人以外意味のないソフトですが、いる人にはいるものなので、見るだけ見てみてはいかがでしょう。なお、このキャンペーンは、五日間だけで、4/25 (多分、アメリカ東海岸時間だと思う) には終了しますので、お試しはお早めに。:)</description>
+    </item>
+    
+  </channel>
+</rss>

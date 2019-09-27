@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Social Login on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/social-login/</link>
+    <description>Recent content in Social Login on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 08 Jul 2019 17:12:49 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/social-login/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Read The Docs のインストール</title>
+      <link>https://www.loginterests.com/posts/2019-07-08-readthedocs/</link>
+      <pubDate>Mon, 08 Jul 2019 17:12:49 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-07-08-readthedocs/</guid>
+      <description>ソースコード開発管理には多種多様なバージョン管理ツールが揃っているが、ドキュメントについては、同じツールを使えばいいやということか、あまり種類がない。その中でもよく使われている、Read The Docs をインストールしてみた。
+ドキュメント管理のツールなので、さぞかしドキュメントが充実しているだろう…ということはなく、やっぱり腐っているところがある。
+まず第一に、プロダクションユースの設定が公開されているソース自体に含まれていない。つまり、自分で書かないといけない。この時点でまあ論外といえば論外なのだが、開発版の設定はついてくるので、Django のドキュメントを眺めつつ、適宜修正。うちは、以下のようにした。バックエンドに PostgreSQL を使うように指定。ドメイン名は、仮に example.jp としておく。
+&amp;#34;&amp;#34;&amp;#34;Local development settings, including local_settings, if present.&amp;#34;&amp;#34;&amp;#34; from __future__ import absolute_import import os from .base import CommunityBaseSettings class CommunityProductionSettings(CommunityBaseSettings): &amp;#34;&amp;#34;&amp;#34;Settings for personal production use&amp;#34;&amp;#34;&amp;#34; SECRET_KEY = &amp;#39;(充分な長さのシークレットキー。とりあえず、ランダムな16進数で50桁もあればいいかも)&amp;#39; PRODUCTION_DOMAIN = &amp;#39;www.example.jp&amp;#39; WEBSOCKET_HOST = &amp;#39;www.example.jp&amp;#39; @property def DATABASES(self): # noqa return { &amp;#39;default&amp;#39;: { &amp;#39;ENGINE&amp;#39;: &amp;#39;django.db.backends.postgresql_psycopg2&amp;#39;, &amp;#39;NAME&amp;#39;: &amp;#39;readthedocs&amp;#39;, &amp;#39;USER&amp;#39; : &amp;#39;readthedocs&amp;#39;, &amp;#39;PASSWORD&amp;#39; : &amp;#39;パスワード&amp;#39;, &amp;#39;HOST&amp;#39; : &amp;#39;localhost&amp;#39;, &amp;#39;PORT&amp;#39; : &amp;#39;5432&amp;#39;, } } # Email DEFAULT_FROM_EMAIL = &amp;#39;no-reply@example.</description>
+    </item>
+    
+  </channel>
+</rss>

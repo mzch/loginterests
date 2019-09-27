@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mailplane on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/mailplane/</link>
+    <description>Recent content in Mailplane on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Tue, 15 Feb 2011 16:31:25 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/mailplane/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mailplane プレゼント</title>
+      <link>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</link>
+      <pubDate>Tue, 15 Feb 2011 16:31:25 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</guid>
+      <description>ということで、Macネタです。
+GMail 用クライアントとして、Sparrow が大人気のようですが、Web の操作感そのままの老舗 (?) メールソフト、MailPlane も忘れてはいけません。
+Web 版そのままの画面…って GMail のサイトを表示するソフトですから当然なんですが。(^^;)
+ブラウザと同じじゃん。と思ったあなた。まさしくその通り。このソフトはブラウザベースで、 GMail の使用感は極力 Web 版と同じにした上で、マルチアカウントに対応することが目的で作成されました。だから、ブラウザで操作するのと全く同じといいますか、キーボードショートカットも Web 版に合わせてあります。もちろんそれだけでなく、小技を利かせてあります。アドレスブック連携は地味に便利ですし、写真の添付なんかも、メディアセンターが組み込まれているおかげで、iPhoto から直接取ってこれたり、逆に、iPhoto から添付メールを送信するプラグインなんかも用意されたりしています。また、メールの新着をサウンドで知らせたり、もちろん、Growl で通知したりすることもできます。
+通知の設定はこんな感じです。
+アカウントの設定画面。もちろんマルチアカウントです。
+GMail の Webインターフェースは好きなんだけど、広告がね…というあなた。大丈夫です。最新版では、広告非表示に対応しました。Greasemonkey とか、GreaseKit と Creammonkey とか入れて広告非表示にするスクリプト入れても、すぐに GMail の仕様が変わってまたスクリプト探して…という作業から解放されます。:D
+UI 設定画面。広告を隠せたりします。
+実際に表示させてみると、ほらこの通り。
+広告が表示されなくなって、すっきり!
+私はこのソフトをかれこれ2年以上使ってますが、地道に開発が進んでおり、今日不具合があっても次のリリースで解消されるという手堅い開発スタイルが取られています。そういうソフトは使っていて安心感が違うんですよね。GMail を Web インターフェースで操作している人にはもちろん、普通のメールクライアントで読んでるという方にも是非お勧めしたい一品です。
+と、いつもならここで終わるのですが、停滞していた日本語翻訳を引き継いだ関係で、作者さんから無料クーポンを頂きましたので、このブログを読んで頂いている方、先着3名様にプレゼントしたいと思います。Mailplane の無料クーポンをご希望の方は、この記事にコメントをつけて下さい。ではっ!
+(2011/2/18 追記) クーポンプレゼントは終了しました。ありがとうございます。</description>
+    </item>
+    
+  </channel>
+</rss>

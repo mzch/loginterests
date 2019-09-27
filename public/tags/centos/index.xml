@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CentOS on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/centos/</link>
+    <description>Recent content in CentOS on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Sat, 27 Jan 2018 08:00:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CentOS 7 の firewalld</title>
+      <link>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</link>
+      <pubDate>Sat, 27 Jan 2018 08:00:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</guid>
+      <description>気分が乗ったので、CentOS 7 をインストールした。ファイアウォールの設定が結構手間だったので、備忘録代わりに記録しておく。
+まず、定番のサービスポートを開けておく。
+sudo firewall-cmd --permanent --zone=public --add-service=http sudo firewall-cmd --permanent --zone=public --add-service=https sudo firewall-cmd --permanent --zone=public --add-service=pop3 sudo firewall-cmd --permanent --zone=public --add-service=pop3s sudo firewall-cmd --permanent --zone=public --add-service=imap sudo firewall-cmd --permanent --zone=public --add-service=imaps sudo firewall-cmd --permanent --zone=public --add-service=smtp sudo firewall-cmd --permanent --zone=public --add-service=smtps sudo firewall-cmd --permanent --zone=public --add-service=smtp-submission sudo firewall-cmd --permanent --zone=public --add-service=ftp 自宅は固定アドレスで、かつ ipv6 も割り当てられているので、そこからは全ポートを受け付けてもらえるように開放する。
+sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv4&amp;#34; source address=&amp;#34;118.243.217.235&amp;#34; accept&amp;#39;sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv6&amp;#34; source address=&amp;#34;2405:6584:7840:800::/64&amp;#34; accept&amp;#39; 内部通信用のインターフェースは無条件で信頼する。</description>
+    </item>
+    
+  </channel>
+</rss>

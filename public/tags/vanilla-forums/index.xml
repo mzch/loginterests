@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vanilla Forums on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/vanilla-forums/</link>
+    <description>Recent content in Vanilla Forums on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Sat, 04 May 2019 10:36:17 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/vanilla-forums/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vanilla Forums</title>
+      <link>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</link>
+      <pubDate>Sat, 04 May 2019 10:36:17 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
+      <description>Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
+まずは、nginx と php をインストール
+sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
+nginx の server {} ディレクティブ内で以下のように設定。
+root /srv/vanilla; # Add index.php to the list if you are using PHP index index.php; # Block some folders as an extra hardening measure.</description>
+    </item>
+    
+  </channel>
+</rss>

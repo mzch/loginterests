@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PHP on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/categories/php/</link>
+    <description>Recent content in PHP on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Fri, 05 Jul 2019 05:12:38 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Apache で php-fpm を使う</title>
+      <link>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
+      <pubDate>Fri, 05 Jul 2019 05:12:38 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
+      <description>やっぱり、Apache でも http2 を有効にしたい！ということで、慣れ親しんだ、php_module からおさらばして、php-fpm で構成し直した。Debian &amp;amp; php 7.3 での例を示す。
+まず、php-fpm をインストール。まあ、php_module を削除すれば、勝手に php-fpm が入るんですが。ダウンタイムを極力避けるなら、この手順で。
+sudo apt install php-fpm 次に proxy_fcgi を有効にする。
+sudo a2enmod proxy_fcgi そうしたら、php_module を削除する。
+sudo apt purge libapache2-mod-php libapache2-mod-php7.3 prefork モジュールが読み込まれているのをやめて、event モジュールに差し替える。ついでに、http2 モジュールを有効にする。
+sudo a2dismod mpm_prefork sudo a2enmod mpm_event http2 最後に、Apache の php-fpm 設定を有効にする。
+sudo a2enconf php7.3-fpm あとは、Apache を再起動するだけ。
+sudo systemctl restart apache2 うむ。簡単だった。</description>
+    </item>
+    
+  </channel>
+</rss>

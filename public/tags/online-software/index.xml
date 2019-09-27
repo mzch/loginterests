@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>online software on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/online-software/</link>
+    <description>Recent content in online software on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Sat, 10 Apr 2010 16:19:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/online-software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>日本語に翻訳しているソフトなど</title>
+      <link>https://www.loginterests.com/posts/2010-04-11-my-translations/</link>
+      <pubDate>Sat, 10 Apr 2010 16:19:30 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2010-04-11-my-translations/</guid>
+      <description>そういえば、Mac ソフトの翻訳などしてたりするわけですが、何のソフトを訳してるのかどこにも書いたことがないので、ちょっとまとめてみたり。
+ Archiver &amp;#8211; アーカイバ。旧 Rucksack。 Changes &amp;#8211; 有名なテキスト差分抽出ツール。Coda や Espresso、BBEdit、TextWrangler へのインテグレーションをサポートしています。 Choosy &amp;#8211; ブラウザ選択ソフト。システム環境設定ペイン。 DaisyDisk &amp;#8211; ディスク使用量を視覚化。 DiffFork &amp;#8211; FileMerge より高機能かつユーザーフレンドリーな差分抽出アプリ。 DVDRemaster &amp;#8211; DVDリマスタリングソフト。 Flux &amp;#8211; Webサイトオーサリングツール。WYSIWYGなのがポイント。 FruitMenu &amp;#8211; アップルメニューやコンテクストメニューをカスタマイズ。 Fruux &amp;#8211; アドレスブック／カレンダー／ブックマーク／ノート同期ソフト。システム環境設定ペイン。 iCloud &amp;#8211; オンラインストレージ &amp;amp; オンラインデスクトップサイト。現在翻訳作業中 iLocalize &amp;#8211; Mac ソフトローカライズヘルパー。 iShowU &amp;#8211; スクリーンキャプチャソフト。 iShowU HD &amp;#8211; 高画質スクリーンキャプチャソフト。 Lyn &amp;#8211; 高機能グラフィックビューワー &amp;amp; ブラウザ。(2011/3/12 追加) Mailplane &amp;#8211; Fruid を利用した Gmail 専用クライアント。しばらくメンテされてなかったので勝手に引き継ぎ。(2011/2/14) MAMP Pro &amp;#8211; Apache + MySQL + PHP 一括運用ソフト&amp;#8230;の商用版 MindNode (Pro) &amp;#8211; マインドマップソフトウェア。 MindNode for iOS &amp;#8211; 上記ソフトの iPhone/iPod touch/iPad 版 MyBB &amp;#8211; PHPで書かれたBBSソフト。現在翻訳作業中 Notificant &amp;#8211; 予定通知ソフト。Web アプリも通知メールも日本語に。iPhone 版も予定。(2011/3/30 修正) Nukit &amp;#8211; ランチャ、辞書検索やウインドウ操作などを含む多目的ユーティリティソフトです。 Poweradmin &amp;#8211; PoewrDNS サーバー WebGUI フロントエンド。 Proxmox VE &amp;#8211; KVM &amp;amp; OpenVZ ベースのクラウドサーバ管理ソフト。 Quiet Read &amp;#8211; ブックマークソフト。 Simon &amp;#8211; リモート監視ソフト。 SnapRocket &amp;#8211; ウィンドウ操作ツール。システム環境設定ペイン。 SolusVM &amp;#8211; Xen PV, Xen HVM, OpenVZ 対応 VPS 管理コンソール。1.</description>
+    </item>
+    
+  </channel>
+</rss>

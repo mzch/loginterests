@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sync / Backup on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/categories/sync-/-backup/</link>
+    <description>Recent content in Sync / Backup on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Tue, 15 Jan 2019 09:11:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/categories/sync-/-backup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pydio Cells の隠し仕様</title>
+      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
+最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
+ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
+[2019/03/15 追記] バージョン 1.4 でこの問題が解決されていることを確認しました。</description>
+    </item>
+    
+  </channel>
+</rss>

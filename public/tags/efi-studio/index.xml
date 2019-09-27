@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EFI Studio on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/efi-studio/</link>
+    <description>Recent content in EFI Studio on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Fri, 20 Mar 2009 16:14:06 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/efi-studio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EFI Studio 1.1</title>
+      <link>https://www.loginterests.com/posts/2009-03-21-efi-studio-11/</link>
+      <pubDate>Fri, 20 Mar 2009 16:14:06 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-03-21-efi-studio-11/</guid>
+      <description>EFI Studio が、1.1 にバージョンアップされてることに気がついたので、忘れないうちにメモ。
+EFI Studio 1.1
+GeForce 9800GT、9800GTX の GFX string が追加されただけかと思ってたら、EFIパーティションのインストーラがついてた。何か、どんどん便利になっていく。大丈夫か、EFI-x ?</description>
+    </item>
+    
+    <item>
+      <title>夢の中で sleep しました</title>
+      <link>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Thu, 25 Dec 2008 14:30:20 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>やはり夢ですので、間抜けなことを気づかずにしていたようです。
+Kernel boot オプション に -f を指定しないと、オンボードの NIC を認識しなかったのですが、EFI Studioで、EFI string を作成する際に、Ethernet を追加し忘れていたようで、
+ Device: に、Display を選択。その下のドロップダウンリストで、GeForce 8600GT 256MB を選択。Add device をクリック。 Device: Ethernet を選択。Add device をクリック。  として、Boot.plist を作成したら、普通に、オンボードの NIC を認識しました。情けない。^^;
+それはともかく、10.5.6 で、sleep する方法ですが、以下の通り。
+ http://www.superhai.com/darwin.html から、EHCISleepEnabler をダウンロードする。 ダウンロードした zip ファイルを展開すると、EHCISleepEnabler.kext ができるので、/System/Library/Extensions にインストールするか、EFI boot をインストールしたバーティションの /Extensions にコピーして、update.sh を実行し直すか、boot-132 の initrd.img にコピーするか、いずれかを行って、とにかくブート時に読み込まれるようにする。 /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBEHCI.kext/Contents/Info.plist を適当なところへコピーする。 コピーした Info.plist を開き、
+&amp;lt;key&amp;gt;CFBundleVersion&amp;lt;key&amp;gt; &amp;lt;string&amp;gt;3.1.5&amp;lt;/string&amp;gt; と書かれている箇所の下に、次の行を追加する。
+&amp;lt;key&amp;gt;OSBundleCompatibleVersion\&amp;lt;key&amp;gt; &amp;lt;string&amp;gt;1.0&amp;lt;/string&amp;gt; ターミナルを開き、編集した Info.plist があるフォルダへ cd する。
+ 次のコマンドを実行。
+sudo cp Info.</description>
+    </item>
+    
+    <item>
+      <title>夢を見ました</title>
+      <link>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Thu, 18 Dec 2008 05:40:32 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>Leopard を PCにインストールするという夢を見たので、忘れないうちにメモしておいたり。オンボのサウンドがどうやっても認識しないけど、USBの音源あるし、ま、いっかってことで。
+　ちなみに、10.5.6 は、スリープから戻ってこないっす。デスクトップをスリープ運用する人は、あんましいないかもしんないけど。(10.5.5だと、ちゃんとスリープから復帰します)
+　カーネルブート時にネットワークアダプタが認識されないため、ホストUUID が設定されない問題があった。そのせいで、Time Machines が正常に開始しなかったり、Xcode がエラーを吐いたり、色々問題が。^^; おまけ 4 に解決方法を追記。(2008/12/19)
+■ 環境
+ M/B: Asus P5E WS Pro CPU: Intel Core 2 Quad (Q6600) 2.4GHz MEM: 8GB VGA: GeForce 8600GT 256MB Sound: USB音源 DVD: PIONEER DVD-RW (内蔵) PATA &amp;amp; I・Oデータ SVRP-UN8PL2 (外付) USB  ■ 必要なもの
+ ブート可能な USBデバイス Retail の Mac OS X 10.5 Leopard インストールディスク  ■ 下準備
+ boot-132 をダウンロード。generic.iso でOK。http://www.mediafire.com/?uwd9dtttjfk。夢置場から Pre Boot CD をダウンロードしても可。http://dream.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internet Cleanup on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/internet-cleanup/</link>
+    <description>Recent content in Internet Cleanup on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 23 Mar 2009 08:58:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/internet-cleanup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DVD頓死は原因が複合していたという笑劇の事実</title>
+      <link>https://www.loginterests.com/posts/2009-03-23-dvd%E9%A0%93%E6%AD%BB%E3%81%AF%E5%8E%9F%E5%9B%A0%E3%81%8C%E8%A4%87%E5%90%88%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A8%E3%81%84%E3%81%86%E7%AC%91%E5%8A%87%E3%81%AE%E4%BA%8B%E5%AE%9F%E3%81%8C/</link>
+      <pubDate>Mon, 23 Mar 2009 08:58:15 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-03-23-dvd%E9%A0%93%E6%AD%BB%E3%81%AF%E5%8E%9F%E5%9B%A0%E3%81%8C%E8%A4%87%E5%90%88%E3%81%97%E3%81%A6%E3%81%84%E3%81%9F%E3%81%A8%E3%81%84%E3%81%86%E7%AC%91%E5%8A%87%E3%81%AE%E4%BA%8B%E5%AE%9F%E3%81%8C/</guid>
+      <description>実は、Fairmount は、何の関係もなかったという落ち。お恥ずかしい。
+カーネルが落ちた後のログを子細に見てみれば、Smith Micro の Internet Cleanup 5 に含まれている、DeviceSentry が原因だとわかりました。わはは。Smith Micro には問い合わせ済みですが、手作業で DeviceSentry.kext を削除して再起動すると、全く問題なくなってしまったので、まず間違いないです。
+つまり、PATAドライバとDeviceSentry の両方が over 4GB に対応してなくて、それで Kernel Panic が起きていたという訳です。Mac mini は、PATAドライバは (当然チップが違うので) 問題なかったんですが、DeviceSentry が引っかかっていたと。こちらも DeviceSentry 削除後は、超快適です。
+よかった。よかった。あ、Metakine に問い合わせの取り消しメール送らなきゃ。^^;
+&amp;#8212;
+(2009年3月24日追記)
+Smith Micro から、5.0.4 が出てるので、それで試してくれと返事がありました。インストールしましたたが、結果は変わらず。miniでも同じ。なおも返答待ち。あ、Metakine からは原因がわかってよかったとのお返事が来ましたです。
+&amp;#8212;
+(2009年3月28日追記)
+Smith Micro からまた返事があり、Internet Cleanup 5 をアンインストールした後、再インストールし、DeviceSentry.kext を手作業で削除してどうなるか見て欲しいとのこと。もちろん、問題ありません。:) そのうち、アップデートが出るんじゃないかな。</description>
+    </item>
+    
+  </channel>
+</rss>

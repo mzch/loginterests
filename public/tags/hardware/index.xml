@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hardware on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/hardware/</link>
+    <description>Recent content in Hardware on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Thu, 18 Jun 2009 08:29:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FireWire 800</title>
+      <link>https://www.loginterests.com/posts/2009-06-18-firewire-800/</link>
+      <pubDate>Thu, 18 Jun 2009 08:29:38 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-06-18-firewire-800/</guid>
+      <description>Lacie の FireWire 800 PCI-X ボードがヤフオクに出てたので、落としてみた。Power Mac 用の増設ボードなんですけど、P5E WS PRO で普通に認識して、Leopard で問題なく使えたり。まあ、当たり前なんですけどね。^^;
+Windows で使えるかどうかはまだ試してないんですが、TIのチップなんで、標準ドライバでいけそう。まあダメだったりパフォーマンスが出なかったりしても、Unibrain のドライバを試せるかな、と。</description>
+    </item>
+    
+  </channel>
+</rss>

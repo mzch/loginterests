@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bookmarks on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/bookmarks/</link>
+    <description>Recent content in Bookmarks on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Fri, 17 Dec 2010 17:41:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Declicious から Pinboard へ</title>
+      <link>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</link>
+      <pubDate>Fri, 17 Dec 2010 17:41:18 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</guid>
+      <description>既にご存じの方も多いと思われますが、TechCrunch Japanでも報道されている通り、[Yahoo!(http://www.yahoo.com/) は、Delicious を廃止すると決定しました売却する予定だと発表しました。（12/22 更新)
+まあ Yahoo! ですし、買収した事業でまともに継続できてるものがあるのか? といった会社ですから、仕方ないのですが、ユーザーは大混乱。そりゃまあそうですよね。で、そんな人に朗報。Yahoo! の元社員が作ったシンプルながら必要な機能は揃っているという、Pinboard があります。
+昨年始まったサービスなのですが、当初は副業だったはずが、順調にユーザー数を伸ばし、今やフルタイムで取りかかっているとか。ただし無料じゃありません。登録費用が、今現在で $7.85 かかります。これ、後になればなるほど値段が上がっていくという (サービス開始時のβ版の時は、$2.84) ユニークな値付けポリシーなので、早めに登録した方がよろしいかと。:)
+と言ってもクライアントが対応してなきゃなぁと思うあなた。Windows は知らないので何とも言えませんが、Mac ならちゃんと対応したソフトがあります。
+まずは、Delibar。Delibar は、単にアカウントを追加するだけです。超オススメ。どんなものか詳しく! という方は私のショボい説明より、Macの手書き説明書さんの記事や、わかばマークのMacの備忘録さんの記事をご覧下さい。もしくは、linkerさんのレビューとか。soundscape out さんの記事もあります。
+Delicious クライアントではありませんが、Quiet Read も Pinboard に対応しています。ブックマークしたURLをメニューから簡単に Pinboard へ (もちろん、Delicious や、Instapaper、Read It Lator にも) 送信できます。わざわざブクマするほどではないけど、後で読むので URL を保存しておきたいという向けのツールです。レビューは、Macの手書き説明書さんの記事や、MacOSXの新着アプリテスト記録とトラブルシューティングさんの 7月17日付けのレビューをどうぞ。
+あとひとつ、Pukka も対応可能です。ただし、Delicious アカウントと Pinboard アカウントは同居できません。対応方法は次の通り。
+ Preferences を開いて、Accounts で、既存のアカウントを削除します。  次に、Preferences の Advanced を開きます。
+ API URL: の欄に、https://api.pinboard.in/v1 と入力します。  再び Accounts を開いて、Pinboard のユーザーアカウント情報を入力します。
+  もちろんブックマークレットもありますので、クライアントは使わないって人だって安心です。どうです? 興味が湧きました? でも実は Pinboard の魅力はこれだけではないのです。年$25 のサブスクリプションになりますが、なんとブックマークしたページを自動的に取得してサーバー上に保存することができるのです。そう、ウェブ魚拓みたいなものにもなるんですよ。頻繁に使うんだけど最近ウェブ魚拓が遅いとか重いとか不満なあなたに是非!</description>
+    </item>
+    
+  </channel>
+</rss>

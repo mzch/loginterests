@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reddit clone on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/reddit-clone/</link>
+    <description>Recent content in Reddit clone on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Thu, 27 Jun 2019 01:20:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/reddit-clone/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Prismo</title>
+      <link>https://www.loginterests.com/posts/2019-06-27-prismo/</link>
+      <pubDate>Thu, 27 Jun 2019 01:20:15 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-06-27-prismo/</guid>
+      <description>Prismo をインストールしてみたが、ドキュメントが腐っているという、オープンソースフリーソフトにありがちなものだったので、インストール手順をまとめておく。
+ ソースを git clone https://gitlab.com/prismosuite/prismoとかして ダウンロードする。 ruby 2.5.1 が必要なので、rvm なり、rbenv なりで環境を整えておく。おすすめは、rbenv。 Node.JS 10.x と yarn が必要なので、インストールしておく。 bundler をインストール。gem isntall bundler sidekiq をインストール。gem install sidekiq Gemfile を修正する。
+--- Gemfile.orig	2019-06-26 09:30:35.440184122 -0700 +++ Gemfile	2019-06-26 06:50:29.313718143 -0700 @@ -77,17 +77,19 @@ gem &amp;#39;webmention&amp;#39; gem &amp;#39;webmention-endpoint&amp;#39; gem &amp;#39;doorkeeper&amp;#39; +gem &amp;#39;listen&amp;#39;, &amp;#39;&amp;gt;= 3.0.5&amp;#39;, &amp;#39;&amp;lt; 3.2&amp;#39; +gem &amp;#39;bullet&amp;#39;  group :development, :test do gem &amp;#39;dotenv-rails&amp;#39; gem &amp;#39;byebug&amp;#39;, platforms: %i[mri mingw x64_mingw] - gem &amp;#39;bullet&amp;#39; + # gem &amp;#39;bullet&amp;#39; gem &amp;#39;rspec-rails&amp;#39;, &amp;#39;~&amp;gt; 3.</description>
+    </item>
+    
+  </channel>
+</rss>

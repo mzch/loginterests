@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud service on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/cloud-service/</link>
+    <description>Recent content in Cloud service on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Thu, 22 Oct 2009 13:43:54 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/cloud-service/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CloudApp &amp; Droplr</title>
+      <link>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
+      <pubDate>Thu, 22 Oct 2009 13:43:54 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
+      <description>どちらもまだクローズドβテスト中ですが、幸いにも招待を受けることができたので、ちょっと感想など。
+CloudApp 使い始めて間もないのですが、画像や動画、ファイルのアップロードと URL 短縮が同時に行えるサービスです (もちろん、URL の短縮だけを行うこともできます。MobileMe の iDisk + bit.ly or tr.im といった感じのサービスですね)。利用するには、クライアントアプリケーションをダウンロード・インストールする必要があります。Web から利用することはできません (参照するだけならブラウザがあれば事足りるのは当然なんですけどね)。しかも、アップロードしたファイルの管理はもとより、URLのクリック数を取得することもできません。始まったばかりでこれから様々な機能が実装されていく状態といったところです。一般公開はかなり先になるのではないでしょうか。ちなみにクライアントアプリは、Mac 専用なので、今のところ Windows から利用することはできません。
+Droplr 一方の Droplr も同様のサービスですが、こちらはアップロードしたファイルの管理や URL のクリック数を参照することができます (削除もできます)。URL短縮に使用するドメイン名を「droplr.com」「drp.ly」のいずれかから選択することができる他、自前のドメイン名があればそれを使用することもできるようになっています。こちらもクライアントアプリが Mac にしか対応していないため、Windows からは利用できません。
+総じて、Droplr の方が機能については先行していますが、両方ともまだクローズドβテスト中なのは冒頭で述べた通りで、CloudApp も遠からず機能を充実させていくことと思われます。スクリーンショットなども掲載できれば良かったのですが、開発者からそれはやめてくれと釘を刺されているので、文字だけの紹介になったことについてはご勘弁を。しばらく使い込んでからまた詳しくレポートしたいと考えています。</description>
+    </item>
+    
+  </channel>
+</rss>

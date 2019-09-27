@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/categories/software/</link>
+    <description>Recent content in Software on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Sat, 04 May 2019 10:36:17 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/categories/software/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vanilla Forums</title>
+      <link>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</link>
+      <pubDate>Sat, 04 May 2019 10:36:17 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
+      <description>Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
+まずは、nginx と php をインストール
+sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
+nginx の server {} ディレクティブ内で以下のように設定。
+root /srv/vanilla; # Add index.php to the list if you are using PHP index index.php; # Block some folders as an extra hardening measure.</description>
+    </item>
+    
+    <item>
+      <title>Newspipe のインストール</title>
+      <link>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Fri, 05 Apr 2019 10:16:03 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>Feedbin の設置には成功したものの、どうやってもフィードを更新してくれなくて、使用を断念したが、他によさげなアグリゲーターがないか、😎 Awesome lists about all kinds of interesting topics で探したところ、Newspipe が使いやすそうだったので、これをインストールしてみた。
+結果から言うと、丸二日かかって稼働に成功。やったね！😁
+まず、Python 3.7 以上が必要だが、Debian 9 (Stretch) に入っているのは、3.5。ということで、ソースからインストールする。現時点での最新版は、3.7.3。
+最初に、前提となるパッケージをインストールしておく。
+sudo apt install -y build-essential python-dev python-setuptools python-pip python-smbus libssl-dev libffi-dev zlib1g-dev libreadline-gplv2-dev libsqlite3-dev libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev uuid-dev tk-dev zlibc libpq-dev libmariadbclient-dev sudo apt install -y apache2-dev sudo pip install pipenv 次に、適当なところでアーカイブを展開し、以下を実行する。
+./configure --enable-shared --enable-optimizations make sudo make altinstall sudo ldconfig &amp;ndash;enable-shared オプションって推奨されてないんじゃないの？と思う人もいるかも知れませんが、mod_wsgi に共有ライブラリが必要なので、指定せざるを得ません。最後の ldconfig は、Python 共有ライブラリを認識させるためのおまじない。やっておかないと実行時にエラーが起きます。
+Python がインストールできたら、PostgreSQL も必要なので、インストールしておく。うちは、別インスタンスにインストール済みなので、パス。いずれにせよ、データベースを作成しておく。</description>
+    </item>
+    
+    <item>
+      <title>Feedbin のインストール</title>
+      <link>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Sun, 31 Mar 2019 15:42:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>結果的に、動作しなかったが、勿体ないので、記事は残しておく。
+ニュースサイトの閲覧に、サーバー設置型であるニュースフィーダーの Fever を使っているのだが、ディスコンになってしまって、乗り換え先を探していたところ、オープンソースで公開されている Freebin がよさげだったので、Debian GNU/Linux 9 Stretch にインストールしてみた。Feedbin に月 $5 払えば、インストールなどいらないのだが、ドキュメントに書かれていない設定が多数あって、試行錯誤に丸一日費やしたので、どこかに残しておかないと勿体なかったというのもある。😁
+まず、Stripe.com のアカウントが必要なので、サインアップする。
+ダッシュボードの「テスト API キーの取得」に、公開可能キーとシークレットキーがあるので、これをいったんコピーしておく。
+次に、サイドバーの Billing → 商品から、商品を 9 種類追加する。商品ごとの料金プランで、API ID に以下の値をひとつずつ設定する。面倒だが、Stripe.com に該当の API ID を持つ商品（料金プラン）がないとエラーになるので、頑張って設定する。
+ basic-monthly basic-yearly basic-monthly-2 basic-yearly-2 basic-monthly-3 basic-yearly-3 free timed trial  設定が終わったら、インストール作業に入る。まず、Feedbin を実行するユーザーを作成する。
+sudo useradd -m feedbin 実行には、memcahed、elasticsearch、ruby が必要なので、インストールする。ただし、システムデフォルトの ruby は、バージョンが古い (2.3) ので、rvm から必要なバージョンを導入しなくてはならない。(無論、rbenv から導入してもよい)
+sudo apt install dirmngr sudo apt install apt-transport-https sudo apt install curl sudo apt install memcached sudo apt install -t stretch-backports redis sudo gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E37D2BAF1CF37B13E2069D6956105BD0E739499BDB curl -sSL https://get.</description>
+    </item>
+    
+    <item>
+      <title>小槌をインストールしてみた</title>
+      <link>https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Sat, 16 Mar 2019 05:22:01 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>サーバーインストール型の家計簿があるのを見つけて、インストールしてみたので、手順を備忘録として残しておく。家計簿ソフトの名前は、小槌 (GitHub リポジトリ)
+まず、node.js をインストール
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs 続けて、ruby その他をインストール
+sudo apt install -y ruby ruby-dev build-essential zlib1g-dev MySQL/MariaDB のライブラリをインストール
+sudo apt install libmysqlclient-dev または、
+sudo apt install libmariadbclient-dev-compat Debian 9 stretch デフォルトの gem はバージョンが低いので、アップデートする。
+gem -v 2.5.2.1 sudo gem update --system (省略) gem -v 3.0.3 Bundler をインストール
+sudo gem install bundler GitHub から、ソースをクローン。
+sudo git clone https://github.com/everyleaf/kozuchi.git Bundle を使って、必要なモジュールをインストール</description>
+    </item>
+    
+    <item>
+      <title>Pydio Cells の隠し仕様</title>
+      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
+最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
+ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
+[2019/03/15 追記] バージョン 1.4 でこの問題が解決されていることを確認しました。</description>
+    </item>
+    
+    <item>
+      <title>Mac にも「紙芝居クリエーター」を！</title>
+      <link>https://www.loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</link>
+      <pubDate>Thu, 08 Jan 2015 05:47:30 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</guid>
+      <description>「紙芝居クリエーター」というのは、紙芝居動画、つまりよくギャルゲーなどでよく見かける、画面下部にセリフ枠があって、止め絵を次々に表示しながら文章を読ませる形式の動画を作成するアプリのことです。ニコニコでは、アイドルマスターの紙芝居動画のためのジャンルが確立しています。NovelsM@ster とか、im@s架空戦記シリーズとか。ストップモーションほど手がかからないし、比較的気軽に作り始めることができるので、案外、動画作成の入門に向いてるかも知れません。
+で、まあ、この紙芝居動画を作成するアプリですが、Mac 用にもあるんですけど……。「絵解き帳」という二鏡Pが作られたアプリです。ただ、最後に更新されたのが、2012年1月ということで、丸三年更新されてなくて、素の Yosemite ではシーンの追加ができなくなってしまっているのです。OS の仕様変更が原因です。
+最初は、これを手直しして、Yosemite でも動くようにして……と考えていたんですが、ビルド時に何十も警告が出て、それをいちいち調べながら修正していく手間と、不満点——同一のターゲットにエフェクトを多重にかけられない。そのせいでプラグインの作成がすごい手間——を鑑みて、自分で作ることにしました。
+前から、Mac 用のアプリを作るつもりだったんですが、そのうち、そのうち、とずるずる引き延ばしてきていて、良い機会でもあるわけです。錆び付いてしまっているプログラミングの勘を取り戻すためにも頃合いの規模だと思いますし。Core Image とか、AV Foundation とか、名前だけ知ってて、何をどうするのかわかんない機能もちゃんと調べて実装できるくらいにはなりたいと思ってます。SpriteKit とかも使ってみたいし。OS X/iOS も次々に機能を追加しつつ、古い機能を削除して行ってるので、ついていくのは中々大変そうですが、それこそが、こういう仕事の面白みでもあるので、頑張ってみようかなぁと。
+取りあえず、新年度までには形にしたいと思ってます。作りたい動画が止まってるので、それを作って気が済んだら、一般公開もするかも知れません。それはその時の気分次第で。:D
+しかし、Mac アプリを作ると決めたはいいものの、Apple が公開している資料くらいしかまともな資料がないというのはいかがなものか。iOS 向けの入門書はやたらと出てますが、ちょっと凝ったことをしようとすると、参考資料が絶無に等しい。
+「絵解き帳」は、プラグインを Quartz Composer で作るようになっていて、私も初めて詳しく調べてみたんですが、滅茶苦茶面白いです。すごい簡単にグラフィカルなエフェクトが作れてしまう。ところがこれもほとんど資料がない。あってもバージョンが古すぎてほとんど役に立たないときます。VJ なんかではバリバリ使われてるらしいので、現役のツールなんですが、一般には馴染みがないんですかねー。Mac 持ってる人はぜひぜひ試して欲しい。本当に面白いくらい簡単に色んな事ができますから。Yosemite ではなぜか頻繁に落ちますが。
+ところで、OpenGL なんかも避けて通れないみたいなんですけど、なんか良い入門書とかないですかね。床井研究室とか何度も読み返したりしてるんですが、シェーダープログラミングがいまいちよくわかりません。3D CG の基礎がないからかな。</description>
+    </item>
+    
+    <item>
+      <title>新年プレゼント企画?</title>
+      <link>https://www.loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</link>
+      <pubDate>Fri, 13 Jan 2012 12:33:59 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</guid>
+      <description>順番があべこべになりましたが、新年明けましておめでとうございます。本年もどうかひとつよろしくお願いします。
+シェアウェアの翻訳をしたり、βテストに参加したりする関係で作者さんからライセンスを頂いたものがありますので、新年ということもありまして、これをプレゼントいたします。高いソフトはないですよ?
+ Screens for iOS  1名様2名様   iPhone/iPad 向けの VNC クライアントです
+b.l.t.さんに贈呈いたしました     Screens for Mac  2名様   VNC クライアントです。iOS 版と連携して Mac への接続を補助する機能があります     CmdVees   1名様2名様   メニューに常駐するクリップボード管理ソフトです
+shuto_zeppelin さんに贈呈いたしました     Bellhop   1名様   世界中のホテルの宿泊プランを検索することができます    抽選するほど読者はおりませんので(笑)、例によって早い者勝ちとさせて頂きます。</description>
+    </item>
+    
+    <item>
+      <title>Mac The Ripper を購入／アップグレードする手順</title>
+      <link>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</link>
+      <pubDate>Fri, 13 Jan 2012 11:55:46 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</guid>
+      <description>今いちわかりにくいので、備忘録を兼ねてまとめてみました。
+ まず、このページを参照して開発者のメールアドレスを取得します。(2012/1/13時点では、Gordon Miller 氏の Gmail アドレスになっています) Paypal から、上記で取得したメールアドレス宛てに送金します。  Paypal の送信先にメールアドレスを入力します 金額は、新規にライセンスを購入する場合は、$40USD、アップグレードの場合は、$10USDです。  支払い種別はサービスを選択します。 支払い額を確定すると、メッセージの入力画面になりますが、Donation とか Donate という単語を含めてはいけません。Giftとすること、と開発者からお達しがあります。税務関係で揉めるんだとか。なので、件名には、&amp;#8221;Support gift&amp;#8221; などと入力すればよろしいでしょう。 ただし、最初の購入から1年以内でアップグレードとなった場合に限り、送金は必要ありません。 MTR 4 を起動します。 ライセンス登録／購入画面が表示されるので、I Need A License!  をクリックします。 テンプレートが設定された Mail.app のメール作成画面が表示されるので、トランザクションID、金額、送金日を記入します。
+	Thank you For Registering The Application Please Complete And Send To The Developer. xxxxxxxx xxxxxxxx Has Requested A License On Friday, January XX, 20XX (XX:XX). Version No 4200. MTR4-000-X-999-X-999 PLEASE ENTER ALL YOUR DONATION PROOF(S) HERE - Transacton Number: 9999999999999999X Amount: $40.</description>
+    </item>
+    
+    <item>
+      <title>iLocalize 4.0 翻訳修正</title>
+      <link>https://www.loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</link>
+      <pubDate>Fri, 27 May 2011 05:32:41 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</guid>
+      <description>Arizona Software の iLocalize は私も愛用しているのですが、最近リリースされたバージョン 4.0 に誤訳が1カ所あるのを見つけました (お恥ずかしい…)。開発元には修正版を送付済みですが、次のリリースまでに間があるので、お待ちになれない方は、添付の Localizable.strings.zip をダウンロードして展開すると出てくる Localizable.strings ファイルを
+/Applications/iLocalizes/Contents/Resources/ja.lproj/Localizable.strings に上書きコピーして下さい。
+iLocalize 4.0 日本語 Localizable.strings ファイル</description>
+    </item>
+    
+    <item>
+      <title>Proxmox VE 日本語訳修正版</title>
+      <link>https://www.loginterests.com/2010/10/09/proxmox-ve-%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A8%B3%E4%BF%AE%E6%AD%A3%E7%89%88/</link>
+      <pubDate>Sat, 09 Oct 2010 01:06:27 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/10/09/proxmox-ve-%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A8%B3%E4%BF%AE%E6%AD%A3%E7%89%88/</guid>
+      <description>お恥ずかしい限りの誤訳が見つかりましたので、修正版をあげておきます。修正個所は、&amp;#8221;Add an ehternet device&amp;#8221; を「ドライブ全体を追加」としていたところです。何を見てたんでしょうね＞自分。^^;
+次のファイルを gunzip で展開した後、/usr/share/locale/ja/LC_MESSAGES/pve-manager.mo に上書きしてください。
+Proxmox VE 日本語ファイル
+ご迷惑をおかけします。</description>
+    </item>
+    
+    <item>
+      <title>Thoughts</title>
+      <link>https://www.loginterests.com/posts/2009-12-28-thoughts/</link>
+      <pubDate>Sun, 27 Dec 2009 16:06:03 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-28-thoughts/</guid>
+      <description>本年最後の更新。かも。
+Mac でノート作成といえば、Circus Ponies の Notebook が有名ですが、新しいノートアプリケーションが来年の1月に発売されます。開発は、green &amp;amp; slimy で、Thoughts というアプリケーションです。日本語ローカライズを担当したので、一足早くレポートをば。
+起動すると、まずはウェルカムウィンドウが開きます。写真では英語ですが、正式版ではちゃんと日本語になりますのでご心配なく。^^;
+この画面には、ヘルプ表示やウェブサイトへのリンクがあるだけで、実際の操作はもうひとつ表示される「シェルフ (本棚)」ウィンドウから行います。
+シェルフ (本棚) に表示されているのはもちろん「ブック (本)」ということで、ノートは基本的に「ブック」単位で管理します。ブックを開くと、
+とこんなリングバインダーを模した入力／表示画面が表示されます。ノートはページ単位で作成し、ページごとにタイトル、作成日が設定可能です (ディフォルトのタイトルは「名称未設定」、日付はページ作成日になります)。文字はもちろん、画像を貼り付けることもできますし、ウェブやメールアドレス、ほかのページへのリンクを作成することもできます。例えば、
+と、ご覧の通りです。
+また、ノートをとるのは単に覚え書きというだけでなく、後に資料として活用する、学生さんならレポートとして提出するということがままあるものですが、Thoughts にはページ単位で、Rich テキスト文書や、PDF 文書、Word 文書、Open Office 文書にエクスポートする機能が標準で備わっており、少し見栄えを整えて、エクスポートすれば「提出相手の環境にあわせた形式」の資料がすぐでき上がるという優れものでもあるのです。これだけでも購入の価値があるのではと思うのですが、いかがでしょう。
+2010年1月17日までに予約購入すると、プレオーダーバンドルということで、Yum (料理のレシピ管理ソフト)、Family (家系図作成ソフト) というソフトがついてきます。さらに、ブログか Twitter で一言宣伝すると、ResizeMe (画像のバッチ編集ソフト) がおまけにつきます。価格は、€24 です。ノート作成ソフトの購入をお考えでしたら是非どうぞ。</description>
+    </item>
+    
+    <item>
+      <title>Mac.AppStorm Christmas Giveaway</title>
+      <link>https://www.loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</link>
+      <pubDate>Fri, 25 Dec 2009 08:15:18 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</guid>
+      <description>MacAppStorm が、総額 $7,000 のシェアウェアをクリスマスイヴまで毎日日替わりでプレゼント! という企画を行っています。
+ 1日 Tweetie for Mac (終了) 2日 Things(終了) 3日 Rader (終了) 4日 Forklift (終了) 5日 CSSEdit (終了) 6日 Espresso (終了) 7日 Billings (終了) 8日 Daylite (終了) 9日 CleanMyMac &amp;amp; MacHider (終了) 10日 LittleSnapper (終了) 11日 Wallet (終了) 12日 Times (終了) 13日 Just In Mind (終了) 14日 Pixelmator (終了) 15日 Delibar (終了) 16日 RapidWeaver (終了) 17日 Postbox (終了) 18日 Mailplane (終了) 19日 Socialite (終了) 20日 Hazel (終了) 21日 Bento (終了) 22日 1Password (終了) 23日 DEVONthink (終了) 24日 &amp;#8220;The Finale” (iPod Touch, Things, Espresso, Daylite, CSSEdit, iPod Shuffle) (終了)   日によってプレゼントされるライセンスの数は異なります。応募は、Twitter でツイートするとか、コメントを書き込むといった簡単手順がほとんどなので、皆さん、どしどし応募しましょう!</description>
+    </item>
+    
+    <item>
+      <title>MacUpdate Promo からの贈り物</title>
+      <link>https://www.loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</link>
+      <pubDate>Sat, 19 Dec 2009 00:01:25 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</guid>
+      <description>期限は不明ですが、MacUpdate Promo で、MainMenu と Videobox が無料です。お早めに!</description>
+    </item>
+    
+    <item>
+      <title>追加しておきたい Growl スタイル</title>
+      <link>https://www.loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</link>
+      <pubDate>Fri, 18 Dec 2009 15:47:40 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</guid>
+      <description>Mac 使いで Growl を入れてないって人はいないと思うんですが、最近試してみてこれはイイッ! っていうスタイルがあったのでご紹介。
+ひとつは、Basics というスタイル。こんな感じです。
+もうひとつは、Mono。
+どちらも作者は、Christopher Lobay さん。カナダ在住の方なのかな? 入手は作者さんのサイトからどうぞ。</description>
+    </item>
+    
+    <item>
+      <title>MacStories Apps Tree</title>
+      <link>https://www.loginterests.com/posts/2009-12-16-macstories-apps-tree/</link>
+      <pubDate>Wed, 16 Dec 2009 01:21:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-16-macstories-apps-tree/</guid>
+      <description>MacStories がクリスマス企画として、総額 $10,000 のソフトウェアをプレゼント!
+詳しくはこちらの記事 &amp;#8220;MacStories Apps Tree: 300 Licenses of Mac and iPhone Apps Up for Grabs Worth $10,000!&amp;#8221; をご覧頂くとして、プレゼントされるソフトは、
+ Things (2 licenses) &amp;#8230; 言わずと知れた GTDソフトのベストセラー。 Pixelmator (7 licenses) &amp;#8230; 言わずと知れたイメージエディタのベストセラー。 Espresso (5 licenses) &amp;#8230; Web 開発統合環境。Coda の対抗馬。 DropZone (15 licenses) &amp;#8230; ファイルをドロップすることで様々なアクションを起こすことができる一種のランチャ。Ruby で書かれたプラグインで機能拡張が可能です。 Daylite (2 licenses) &amp;#8230; ビジネスワークルフロー支援ツール。 TextExpander (1 license) &amp;#8230; Typinator と同種のソフト。タイピングのオートコレクトと登録した単文を数ストロークで一発展開が可能なオートコレクショニューティリティ。 Billings (2 licenses) &amp;#8230; 請求書管理。単価を設定し、作業ごとにタイマーを起動すれば、月末には綺麗な請求書ができあがっていてあら不思議。 xScope (3 licenses) &amp;#8230; ウェブデザイナー必携のスクリーンスケーラとかメジャーなど便利な機能がセットになったユーティティ。 Acorn (5 licenses) &amp;#8230; 画像編集ソフト。操作パレットが一カ所にまとめられていて非常にわかりやすい UI が特長です。 Tags (5 licenses) &amp;#8230; ファイル、画像、Safari の URL、メールにタグをつけて管理する非常に使い勝手の良いファイル管理／検索ソフトです。Version 2 で、OpenMeta 互換から、正式に OpenMeta 準拠となりました。 Palettes (5 promo codes) &amp;#8230; iPhoneアプリです。カラーパレットの作成管理が行えます。※ US ストア用のプロモーションコードです。 Picturesque (2 licenses) &amp;#8230; ま、もう説明の必要はありませんね。:) IconBuilder (3 licenses) &amp;#8230; Photoshop のアイコン作成用プラグインです。 Black Ink (5 licenses) &amp;#8230; クロスワードパズル。 MarsEdit (5 licenses) &amp;#8230; ブログエディタ。 DrawIt (3 licenses) &amp;#8230; 最近あちこちのバンドルで見かけるベクタードローイングツールです。 Silverback (2 licenses) &amp;#8230; スクリーンムービーキャプチャと iChat カメラの映像を合成してユーザビリティテストの記録を撮るソフトです。 MacSnapper (5 licenses) &amp;#8230; スクリーンショットや画像からウェブページやPDFを作成したりブログに書き出したりするソフトです。 Textmate (2 licenses) &amp;#8230; 言わずと知れたプログラマ御用達のテキストエディタです。 Money (10 licenses) &amp;#8230; 家計簿ソフトというよりパーソナル会計管理ソフトというべきでしょうね。 Fontcase (3 licenses) &amp;#8230; フォント管理ソフト。UI が綺麗でとても便利ですよ。 Manhour (3 licenses) &amp;#8230; タイムトラッキングツール。 PathFinder (10 licenses) &amp;#8230; 今更説明するまでもないファイル管理ソフト。 CSSEdit (5 licenses) &amp;#8230; 今更説明するまでもない CSS ファイルエディタ。 Slammer (5 licenses) &amp;#8230; スクリーンスケール・メジャー。画面上の物差しですね。 Tweetie (5 licenses) &amp;#8230; Twitter クライアント。 Tinygrab (5 premium subscriptions) &amp;#8230; スクリーンキャプチャソフト + イメージアップロードサーバの無制限使用権 1年分。 Notebook (1 license) &amp;#8230; Circus Ponies のノートテイカー。何でもスクラップ。 BannerZest Pro (1 license) &amp;#8230; Flash アニメ作成ツール。 Times (5 licenses) &amp;#8230; UI が凝ってる RSSリーダー。使いやすいかは人それぞれ。 Opacity (1 license) &amp;#8230; ドローイングソフト。アイコンも作れるよ。 BrushPilot (10 licenses) &amp;#8230; Photoshop のブラシ管理ツール。 MindNode Pro (3 licenses) &amp;#8230; 軽快、シンプル、必要にして十分な機能のマインドマッピングソフト。 Spotify (4 invites) &amp;#8230; 招待制の音楽ストリーミングサービス。無料でいっぱい聞ける。 Quickscale (10 licenses) &amp;#8230; 画像の大きさを縮小するツール。 Screenflow (1 license) &amp;#8230; スクリーンムービーキャプチャソフト。 Idea Organizer (5 promo codes) &amp;#8230; iPhone アプリ。いつでもどこでもアイデア収集。テキストでも映像でも写真でも記録できます。※ US ストア用のプロモーションコードです。 1Password (3 licenses) &amp;#8230; 説明不要のパスワード管理ソフト。パスワード以外も管理可。 Gity (5 licenses) .</description>
+    </item>
+    
+    <item>
+      <title>Kiwi – Twitter client for Mac</title>
+      <link>https://www.loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</link>
+      <pubDate>Fri, 11 Dec 2009 14:40:20 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</guid>
+      <description>Stacks や、Blocks といった Rapidweaver のプラグインを開発、販売している YourHead Software が、Mac 用の Twitter クライアント、Kiwi のクローズドβテストを行っています。
+ディフォルトのメイン画面はこんな感じです。
+テーマを切り替えることで表示を変更することができます。例えば、環境設定から
+と、Slate を選択すると、以下のように表示が変わります。
+このように、見た目重視なところもあるクライアントですが、機能面でも Tweetie や、Socialite といった他のクライアントに比べてひけをとりません。マルチアカウント対応で、使い勝手は、Tweetie に似ているところがありますが、もちろん、他のクライアントにはない特長もあります。例えば、特定の語句を含むツイートを非表示にしたり、色をつけたり、指定のスタイルを設定したりするといったことができます。環境設定の &amp;#8220;Rules&amp;#8221; に以下のような設定を行うと、&amp;#8221;RT:&amp;#8221;という語句を含むツイートを表示しないようにすることができます。
+いかがでしょう? 結構期待できるクライアントだと思うのですが。
+ところで、βテストは、基本的に招待制なのですが、招待コードが手に入りましたので、この記事をご覧頂いた方に提供したいと思います。以下のコードをβテスターの招待ページに入力して下さい。ダウンロードリンクが記載されたメールが先方から届きます。先着4名様限りです。
+ 42524B25 82924345 22425965 72825985 987FFB36 588F2356 B89F4976 889F6996 69FF93B6  註記: 青字のコードは、vswallows さんからの頂き物です。</description>
+    </item>
+    
+    <item>
+      <title>MacUpdate Promo Holiday Bundle</title>
+      <link>https://www.loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</link>
+      <pubDate>Wed, 09 Dec 2009 13:24:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</guid>
+      <description>今年もやってきました。MacUpdate Promo Holiday Bundle 。
+価格は例によって、$49.99 です。
+ PathFinder ($39.95) &amp;#8230; 有名すぎるほど有名なファイル管理ソフト。Finder の代替も可能です Socialite ($20.00) &amp;#8230; Twitter、Facebook、Flickr、Google Reader、RSS クライアント Yep ($39.00) &amp;#8230; (PDF) ドキュメント管理ソフト。OpenMeta 準拠のタグによる管理が特徴 Radio Gaga ($39.99) &amp;#8230; インターネットラジオレコーダー GarageSale ($34.99) &amp;#8230; eBay 出品管理ソフト DragThing ($29.00) &amp;#8230; これまた説明不要の有名なアプリランチャ Speed Download ($25.00) &amp;#8230; 老舗(?)のファイルダウンローダ HealthNut ($19.00) &amp;#8230; カロリー計算と体重管理 PCalc ($19.00) &amp;#8230; 科学計算用電卓ソフト Machinarium ($19.95) &amp;#8230; パズル／アドベンチャーゲーム iRip ($19.95) &amp;#8230; iPod から楽曲を Mac にコピー  以上、総額 $446.77 のソフトが、$49.99 で買えます。また、例によってアーリーバイヤーには、ボーナスソフトがついてきます。今年は以下の三つ。
+ PowerTunes ($19.</description>
+    </item>
+    
+    <item>
+      <title>MacHeist nano Bundle</title>
+      <link>https://www.loginterests.com/posts/2009-11-06-macheist-nano-bundle/</link>
+      <pubDate>Fri, 06 Nov 2009 03:07:23 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-11-06-macheist-nano-bundle/</guid>
+      <description>MacHeist nano Bundle がスタートしました。以下のソフトウェアが無料です!
+ ShoveBox ($24.95) ノート、ウェブページなどのスクラップソフトです。MacHeist 3 で入手できなかった方はぜひどうぞ。 WriteRoom ($24.95) フルスクリーンエディタ。 Twitterrific ($14.95) 最も古くからある Twitter クライアント。 TinyGrab ($14.00) スクリーンキャプチャソフト。日に10個までですが、アップロードサービスが無料でついてきます。(£10 の有料プランもあり) Hordes of Orcs ($24.95) タワー防衛ゲーム。 Mariner Write ($49.95) ワードプロセッサ。500,000 人がバンドルに申し込めばロックが外れます。  奮ってご参加のほどを!</description>
+    </item>
+    
+    <item>
+      <title>Cash for Clunkers Confluence Edition!</title>
+      <link>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</link>
+      <pubDate>Wed, 04 Nov 2009 06:59:45 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</guid>
+      <description>ATLASSIAN の Cash for Clunkers 再び! 今度は、Wiki システムが対象です!
+MediaWiki や、DokuWiki、MindTouch など使ってみましたが、MediaWiki や DokuWiki は、Wiki 文法が面倒で使ってくれる人がいません。MindTouch はその点の問題はないものの、*nix でのインストール／運用がしち面倒くさい! だからといってそれだけのために、Windows サーバを立てるわけにもいかないし。
+その点、Confluence はインストールも運用も手間いらずです。
+今回のポンコツ下取りキャンペーンｗは、使えないコラボレーションシステムの代わりに、Confluence の Starter Edition (10 ユーザ) が無料で貰えるキャンペーン! (または、20%引きクーポン) これは応募しない手はないですよ!
+Cash for Clunkers のページから「Make the trade」をクリックして以下の要領で応募しましょう!
+ ATLASSIAN.com のアカウントがない方はここでアカウントを作成。既に持っている方は、ログインします。 20%引きクーポンか、Stater Edition プレゼントかを選びます。 &amp;#8220;Select your clunker&amp;#8221; で下取り (?) に出すツールを選択。リストになければ、”OTHER (if clunker not listed)&amp;#8221; を選択して、そのすぐ下の欄にツールの名前を入力します。 そして、&amp;#8221;What frustrates you about your current clunker?&amp;#8221; の欄にいかにそれがポンコツであるかを切々と記入。:D &amp;#8220;Upload a screenshot of your clunker&amp;#8221; のボタンをクリックしてそのポンコツツールのスクリーンショットを指定します。 最後に、&amp;#8221;Submit&amp;#8221; ボタンをクリックで、応募終了!  期限は、12月11日 (金) です。奮ってご応募のほどを!</description>
+    </item>
+    
+    <item>
+      <title>CloudApp &amp; Droplr</title>
+      <link>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
+      <pubDate>Thu, 22 Oct 2009 13:43:54 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
+      <description>どちらもまだクローズドβテスト中ですが、幸いにも招待を受けることができたので、ちょっと感想など。
+CloudApp 使い始めて間もないのですが、画像や動画、ファイルのアップロードと URL 短縮が同時に行えるサービスです (もちろん、URL の短縮だけを行うこともできます。MobileMe の iDisk + bit.ly or tr.im といった感じのサービスですね)。利用するには、クライアントアプリケーションをダウンロード・インストールする必要があります。Web から利用することはできません (参照するだけならブラウザがあれば事足りるのは当然なんですけどね)。しかも、アップロードしたファイルの管理はもとより、URLのクリック数を取得することもできません。始まったばかりでこれから様々な機能が実装されていく状態といったところです。一般公開はかなり先になるのではないでしょうか。ちなみにクライアントアプリは、Mac 専用なので、今のところ Windows から利用することはできません。
+Droplr 一方の Droplr も同様のサービスですが、こちらはアップロードしたファイルの管理や URL のクリック数を参照することができます (削除もできます)。URL短縮に使用するドメイン名を「droplr.com」「drp.ly」のいずれかから選択することができる他、自前のドメイン名があればそれを使用することもできるようになっています。こちらもクライアントアプリが Mac にしか対応していないため、Windows からは利用できません。
+総じて、Droplr の方が機能については先行していますが、両方ともまだクローズドβテスト中なのは冒頭で述べた通りで、CloudApp も遠からず機能を充実させていくことと思われます。スクリーンショットなども掲載できれば良かったのですが、開発者からそれはやめてくれと釘を刺されているので、文字だけの紹介になったことについてはご勘弁を。しばらく使い込んでからまた詳しくレポートしたいと考えています。</description>
+    </item>
+    
+    <item>
+      <title>ATLASSIAN Starter License</title>
+      <link>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
+      <pubDate>Wed, 07 Oct 2009 03:27:18 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
+      <description>ATLASSIAN が Starter License の販売を開始しました。この Starter License による売り上げは、Room to Read に全額寄付されます。前回のキャンペーンは期間限定でしたが、この Starter License の販売に期限はありません。いつでも購入可能です。
+Starter License が適用される製品は、以下の通りです。
+ JIRA (10 ユーザ) … バグトラッキングシステム Confluence (10 ユーザ) … エンタープライズ Wiki システム GreenHopper (10 ユーザ) &amp;#8230; プロジェクト管理システム Bamboo (10 ユーザ) &amp;#8230; 継続的インテグレーションサーバ FishEye (10 コミッタ、5 リポジトリ) &amp;#8230; リポジトリ管理システム Crowd (50 ユーザ) &amp;#8230; シングルサインオンシステム  価格は、それぞれ $10 (JIRA と Confluence は日本円 (1,000円) でも購入できます) で、一年間の保守契約付き（新しいバージョンが出れば、1年間無料でアップデートできます。もちろんサポートもあります）。保守契約は、年 $10 (または 1,000円) で延長することが可能です。一度に最大 3年間延長することができますし、もちろんその後も、年 $10 (または 1,000円)で延長していけます。</description>
+    </item>
+    
+    <item>
+      <title>SlipStream</title>
+      <link>https://www.loginterests.com/posts/2009-09-23-slipstream/</link>
+      <pubDate>Wed, 23 Sep 2009 13:14:34 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-09-23-slipstream/</guid>
+      <description>MacDeveper.net で見つけました。
+Window スイッチャーなんですが、Exposé と違って、リスト表示された Window を切り替えるタイプ。こんなの↓です。
+選択した Window のプレビューが上半分に表示されるのが、ミソ。今は単に現在のデスクトップに選択した Window だけが表示されるのみですが、Windows 7 みたいに他の Window をフレームで表示したり、Spaces の配置を反映するようにすれば、かなり使えるソフトになるのではないかと思っています。
+まだα版 (βにも至っていない) で、かなり機能が足りないけど、面白そうなので、しばらく使ってみようかと。</description>
+    </item>
+    
+    <item>
+      <title>Forklift</title>
+      <link>https://www.loginterests.com/posts/2009-06-21-forklift/</link>
+      <pubDate>Sat, 20 Jun 2009 16:14:44 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-06-21-forklift/</guid>
+      <description>Binarynights のファイルマネージャ &amp;amp; FTP + Amazon S3 クライアント、Forklift が今だけ $9.95。(普段は、$44.95) いつまでディスカウントが続くかわかんないので、取り敢えず買っておいて損はありませんよ！</description>
+    </item>
+    
+    <item>
+      <title>MacUpdate Bundle 販売開始</title>
+      <link>https://www.loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
+      <pubDate>Sun, 31 May 2009 03:23:15 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
+      <description>毎年恒例の MacUpdate Promo Bundle が今年も始まりました。今回は買いだと思うんですが、いかがでしょう。
+ TechTool Pro 5 ($98.00) Micromat の定番総合メンテナンスソフトです。 
+ Parallels Desktop ($79.99) 仮想PC環境構築ソフト。VMware Fusion と熾烈な争いを行っています。 
+ Circus Ponies NoteBook ($49.95) ジャーナルソフトなんですが、画像の取り込みなどはもちろん、簡単な図形を使ったチャートが書けたり、さらには Multidex という機能があるんですが、これが秀逸。色んな角度から索引を自動生成してくれます。Journler や MacJournal、Together といった定番ジャーナルソフトに比べると若干欠ける機能もあるのですが、To DO やアウトラインモードも充実していますし、なんと言っても紙のノートそのままを UI にしているところも秀逸です。ディフォルトでは日本語の表示で行間がおかしくなるので、フォント設定とページ設定を変更してやる必要があるのですが、まあ、それはご愛敬と言うことで。お奨めのソフトです。 
+ NetBarrier X5 ($49.95) Intego の Firewall ソフトで、VirusBarrier を胡散臭く言う人にもこれだけは褒めてる人が多い変なソフト。^^; Little Snittch と同じことをやってくれます。 
+ DVDRemaster PRO ($49.99) DVD に録画された映像を他の形式に変換してくれるコンバータです。例えば、2層DVDを1層DVDに収まるように圧縮したりもしてくれます。動作には同社が無償で公開している Fairmount が必要で、その Fairmount は、VLC を必要とします。まあ、暗号化されていない DVD の変換を行うだけでしたら、DVDRemaster PRO 単体でおっけーなんですけどね。 
+ Multiplex ($35.00) DVD 管理ソフトですが、現在の版は、amazon.</description>
+    </item>
+    
+    <item>
+      <title>Versions 日本語ヘルプ</title>
+      <link>https://www.loginterests.com/posts/2009-04-23-versions-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%98%E3%83%AB%E3%83%97/</link>
+      <pubDate>Thu, 23 Apr 2009 04:45:41 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-04-23-versions-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%98%E3%83%AB%E3%83%97/</guid>
+      <description>Subversion クライアント、Versions のヘルプとメインメニューを日本語化しました。
+開発元によると、現在のバージョンは、ローカライズを考慮していないので、リソースを完全に翻訳するのは無理とのことで、実際無理でした。^^;
+なのでまあ、ヘルプとメニューだけでもと。あと、起動時に表示されるウェルカム画面も一応日本語にしてあります。例によって、何があっても自己責任ってことでよろしく。
+Versions 日本語ヘルプパッケージ
+誤訳や翻訳漏れを指摘して頂ければ、凄く助かりますので、どうかひとつよろしく。;)</description>
+    </item>
+    
+    <item>
+      <title>MarsEdit と SubEthaEdit の日本語化</title>
+      <link>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</link>
+      <pubDate>Fri, 17 Apr 2009 18:22:11 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</guid>
+      <description>日本語化のペースが落ちてます。
+いや、大物に取りかかっていたせいなんですが。^^;
+というわけで、今回は二点。
+一つ目は、ブログエディタ MarsEdit の日本語インストーラです。さくさく書けてさくさくアップロードできるので、ecto 捨てて、こっちに走ろうかと思案中。
+こちらからどうぞ。MarsEdit 2.3.1 日本語インストーラ
+もうひとつは、超有名なエディタ、SubEthaEdit の最新版 3.2.1 の日本語インストーラです。Mac界隈では、シェアウェアのエディタというと、TextMate や BBEdit が有名ですが、ドイツ生まれは伊達ではありません。なんとドキュメントのリアルタイムコラボレーション、要はインターネットを介して同時に複数の人間が同一テキストを編集することができるんです。AGILE開発に役立ちそうですね。
+こちらからどうそ。SubEthaEdit 3.2.1 日本語インストーラ
+なお、くどいようですが、実行は自己責任でお願いします。:)</description>
+    </item>
+    
+    <item>
+      <title>MacHeist 3 Bundle 販売開始!</title>
+      <link>https://www.loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
+      <pubDate>Wed, 25 Mar 2009 03:19:55 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
+      <description>MacHeist の バンドル販売が始まりました。期間は今日から14日間。今回も盛りだくさんです。
+ iSale ($39.95) eBay 用のオークションツール。  Picturesque ($34.95) イメージフィルターツールってとこでしょうか。反射や影といったフィルターに特化したレタッチソフトっす。  SousChef ($30.00) レシピ管理ソフト。日本ではあまりなじみがないですかね。  World of Goo ($20.00) 物理アクションゲーム? Wii でも出てますね。  PhoneView ($19.95) iPhone/iPod Touch を USBストレージにしちゃいます。  LittleSnapper ($39.00) スクリーンキャプチャソフト。撮るだけじゃなく、注釈をつけたり、flickr へアップロードとかもできちゃう。  ACorn ($49.95) フォトレタッチソフト。  KineMac ($299.00) 3D アニメーション作成ソフト。ってか、私には使いこなすことなど&amp;#8230;^^;   もちろんまだありますが、ここまでは、すぐに手に入ります。
+さて、MacHeist といえば、当然チャリティなのですが、今回、売り上げの 25% を各種ボランティア団体へ寄付することになっています。いくつか対象となる団体があるのですが、どこに寄付するかを買い手が選択できるところが、ミソ。わからなくても、全団体に均等割に寄付するオプションもあるので、別段悩む必要はありません。
+で、その寄付額 (=売り上げの 25%) が、$100,000USD を越えると、
+ WireTap Studio ($69.00) 音声レコーダー。ミキシングもバッチリ!   $400,000USD を越えると、
+ BoinxTV ($199.00) TVとあるように、番組編集ソフトです。Podcast の作成に是非ってとこでしょうか。   が追加されます。さらに、これは推測ですが、$1,000,000USD (?</description>
+    </item>
+    
+    <item>
+      <title>StoryMill 3.2.1 日本語リソースパッケージ</title>
+      <link>https://www.loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</link>
+      <pubDate>Sun, 14 Dec 2008 09:54:55 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</guid>
+      <description>うっかりしている間に、StoryMill がバージョンアップして 3.2.1 になってました。ので、日本語リソースも対応してみました。ご自由にお使い下さい。ただし、ご使用は、at your own risk で。:-)
+StoryMill 3.2.1 日本語リソースパッケージ</description>
+    </item>
+    
+    <item>
+      <title>StoryMill 日本語リソース</title>
+      <link>https://www.loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</link>
+      <pubDate>Sun, 30 Nov 2008 06:20:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</guid>
+      <description>日本の物書きには、日本語がわかりやすいかと思いまして、以前紹介した StoryMill の日本語リソースを作ってみました。対応バージョンは、3.2です。
+StoryMill.app 配下の Contents/Resources の下に、解凍してできた Japanese.lproj をコピーするか、移動するかすれば、メニュー、ダイアログ、ツールバーなどが日本語化されます。テンプレートが一部未訳なのは、ご愛敬。^^;
+テンプレートを翻訳した上でしばらく使ってみて、誤訳などなさそうであれば、Mariner Software へ送ろうと思っています。
+誤訳や不自然な箇所を見つけてくれる人、大募集中です。
+StoryMill 日本語リソースをダウンロード</description>
+    </item>
+    
+    <item>
+      <title>DeskSpace</title>
+      <link>https://www.loginterests.com/posts/2008-09-04-deskspace/</link>
+      <pubDate>Wed, 03 Sep 2008 20:35:32 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-09-04-deskspace/</guid>
+      <description>Mac ばかりなのも何なので、Windows の小物もひとつ。今更ではありますけど。
+Mac だと、Spaces で行っているような複数の仮想デスクトップを管理ソフトなんですが、まあ、PC-Unix の compiz とか、Beryl なんかがやってることが、Windowsでもできてしまう商品。Otaku Software の Deskspace というシェアウェアです。
+が、使い始めると案外面白い。他のデスクトップが透けて見えるので、どこに何を配置したか結構見てわかるのが意外でした。以前は、特定のデスクトップでアプリケーションを起動することができなかったんですが、最新版(1.5.5.2)では、ちゃんとその機能も追加されており、使用するソフトのカテゴリごとにデスクトップを切り替えたり、あるいは、仕事用、息抜き用なんてデスクトップを整理できたりするようになってます。使えるソフトに育ってきたってことでしょうか。
+でもやっぱりこういうソフトは視覚エフェクトが命ですので、デスクトップがぐりんぐりんとマウスの動きにあわせて回転する様を鑑賞するのが、正しいPCユーザの姿なのでしょう。(笑
+仮想デスクトップソフトは数あれど、結構気に入ってます。他のが味もそっけもなさすぎなだけなんでしょうけど。
+少し前のバージョンから、こっそり日本語リソース作って、を Otaku Software のフォーラムに上げたりしてるんですが、まあその程度にはお気に入りなわけです。</description>
+    </item>
+    
+    <item>
+      <title>StoryMill</title>
+      <link>https://www.loginterests.com/posts/2008-08-22-storymill/</link>
+      <pubDate>Fri, 22 Aug 2008 06:17:11 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-08-22-storymill/</guid>
+      <description>最近、ちょこちょこと小説もどきを書いている。まあ、内容は完全に妄想なので、それはさておき。テキストエディタでしこしこ書いてたんですが、長くなればなるほど見通しが悪くなるのは仕方のないところ。手頃なツールがないかと探していると、よくあるアウトラインプロセッサは、Googleで簡単に引っかかるもののシーンごとにテキストを管理できるとか、登場人物がリストできるとか、ちょっとあれば便利そうっていう特化した機能を持つ物がない。映画の脚本とか専用のソフトはあるけど、そっちは興味ないし。
+で、さらに小説専用とかでググったら出てきました。そのものずばりが目的のソフトで、StoryMill。アメリカではプロフェッショナルな方も使ってるとか。開発と販売元は、MARINER Software。
+や、とにかく書きたいとこを先に書いて、体裁は後から整えるという、趣味の小説書き（SS書きの方が一般的?）にはとても重宝します。 submissionといって、どこの出版社やエージェントに原稿を送ったかまで管理できるところが、や、アメリカ的です。ｗ</description>
+    </item>
+    
+    <item>
+      <title>MailPlane</title>
+      <link>https://www.loginterests.com/posts/2008-06-05-mailplane/</link>
+      <pubDate>Wed, 04 Jun 2008 16:59:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-06-05-mailplane/</guid>
+      <description>さて、昨日紹介した、MixiDock の記事でもふれましたが、GMail 使いにお勧めしたいのが、MailPlane。GMail のあの画面の操作性を中心に、かゆところに手が届く工夫が見られます。画面は、こんな感じ
+ツールバーから「メールの作成」を、選択すると、別ウィンドウが開く。他のメール見ながら書くのに便利。Webメーラーは、そのへんに不満があったんだけど、こいつは、無問題。何より、複数のアカウントを一括で管理できるっていうのが、あっしみたいにあれこれ使い分けてる身には、重宝します。できれば、各アカウント画面をタブで管理して、同時にそれぞれのアカウントを同時に参照できるようにしてもらえたら、もっと使い勝手が増すように思う。Google Appsのアカウントも管理できるので、まあ、GMailブラウザの中でも最強ではないでしょうか。これのPC版がないのが残念。</description>
+    </item>
+    
+    <item>
+      <title>Mixi 専用ブラウザ</title>
+      <link>https://www.loginterests.com/posts/2008-06-03-mixi-%E5%B0%82%E7%94%A8%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6/</link>
+      <pubDate>Mon, 02 Jun 2008 18:04:19 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-06-03-mixi-%E5%B0%82%E7%94%A8%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6/</guid>
+      <description>ターゲッティッドブラウザって、２ちゃんブラウザが多分、一番有名ですし、Gmail ブラウザなんてのも結構普及してるようなので、あってもおかしくないなーと思って、ぐぐったら、一杯出てきました。私は、ネット閲覧には、Macを使ってるものですから、MixiDockを使ってます。（ちなみに、Gmail専用ブラウザは、MailPlane）で、その MixiDock ですが、見た目はこんなの
+細かいところの使い勝手を少しよくしてくれるってぐらいですが、普通のブラウザで操作するよりも、たったそれだけで使い勝手がよくなるので、最近この手のツールをよく使います。本体画面部分は、このツールに限らず、Web kit や、Internet Explorer のレンダリングエンジン、MozillaのGeckoなんか使って作られているので、画面の見栄えが劣るわけでなく。これからは、機能の分割・統合を検討した結果としての専用ツール化ってのは減っていって、目的面（オブジェクト）での専用ツール化っていうのがユーテリティアプリ開発の主流になっていくんですかね。</description>
+    </item>
+    
+  </channel>
+</rss>

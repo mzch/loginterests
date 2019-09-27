@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>boot-132 on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/boot-132/</link>
+    <description>Recent content in boot-132 on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Wed, 13 May 2009 17:25:32 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/boot-132/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>10.5.7 の夢を…失敗!</title>
+      <link>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</link>
+      <pubDate>Wed, 13 May 2009 17:25:32 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</guid>
+      <description>10.5.7 がリリースされたので、早速入れてみる。
+10.5.6 の時と同様にコンボアップデータから行ったんですが、なんと、AppleHDAが kernel panic。後でこれは10.5.6のに戻せば直るという情報を入手したんですが、この時は「いいや、インストールやり直しちゃお」と軽い気持ちで OS インストールからやり直し。
+Boot132 でブートしてインストーラを起動。待つことしばし&amp;#8230;例の画面で移行アシスタントを使ってアカウント情報やアプリケーション諸々を移行。ここまでは問題なし。
+10.5.7 のコンボアップデートをかける。問題なし。リブートする。音が鳴らない&amp;#8230;けど継続。ここで、Chameleon 2.0 RC1 をインストール。/Extra に追加の kext をコピー。com.apple.Boot.plist もコピー。DSDT.aml もコピー。再起動。
+こんなメッセージが出て上がってきやしねぇ。
+ boot0:GPT
+boot0:testing
+boot0:testing
+boot0:done
+boot1:error
+ 何度やっても同じ。
+なぜだー！仕方ないので、以前のように EFIパーティションにインストールを試みる。すると、IOAPICがハング。なぜだー！
+仕方ないので、Boot132経由で使ってます。</description>
+    </item>
+    
+    <item>
+      <title>続けて夢を見ました。</title>
+      <link>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Mon, 22 Dec 2008 00:19:31 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>EFI boot v6 を落として、USBデバイス経由でなく、スタンドアローンで起動するようにしてみました。この、EFI boot は、Boot-132にインスパイヤされたものだと作成者自身が記事で述べているように、GUIDパーティションに必ずついてくる EFIパーティションにブートローダやら、kextを突っ込んでしまえという方法です。元々 Apple はここを使ってないので、昨今の風潮にあわせた資源の有効活用ってやつですね。やり方はごっつ簡単。Leopard 導入済みの環境でも、DVDのインストーラから起動した環境でもインストール可能です。
+■必要なもの
+ efi_boot_v6.1.zip を InsanelyMac の [Guide] Boot from EFI partition, zero modification installs on Intel SSE2 or better&amp;#8230;, Zero-modification Leopard installs. Share disks between macs &amp;amp; ha ってエントリから落とす。 zip を展開しておく。 DSDT Pacher で、DSDT.aml を造っておく。  [1] インストール先ディスクのデバイス名を取得する
+ ターミナルを開き、sudo -s でルートになっておく。 レパード実行環境なら、diskutil info / | grep Identifier を実行。表示されたディスク名(disk0s2 とか)をメモっとく。 DVD起動なら、diskutil info /Volume/なんとか | grep Identifier。/Volume/なんとか は、対象のディスクのマウントポイント。  [2] EFIパーティションを初期化する</description>
+    </item>
+    
+    <item>
+      <title>夢を見ました</title>
+      <link>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Thu, 18 Dec 2008 05:40:32 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>Leopard を PCにインストールするという夢を見たので、忘れないうちにメモしておいたり。オンボのサウンドがどうやっても認識しないけど、USBの音源あるし、ま、いっかってことで。
+　ちなみに、10.5.6 は、スリープから戻ってこないっす。デスクトップをスリープ運用する人は、あんましいないかもしんないけど。(10.5.5だと、ちゃんとスリープから復帰します)
+　カーネルブート時にネットワークアダプタが認識されないため、ホストUUID が設定されない問題があった。そのせいで、Time Machines が正常に開始しなかったり、Xcode がエラーを吐いたり、色々問題が。^^; おまけ 4 に解決方法を追記。(2008/12/19)
+■ 環境
+ M/B: Asus P5E WS Pro CPU: Intel Core 2 Quad (Q6600) 2.4GHz MEM: 8GB VGA: GeForce 8600GT 256MB Sound: USB音源 DVD: PIONEER DVD-RW (内蔵) PATA &amp;amp; I・Oデータ SVRP-UN8PL2 (外付) USB  ■ 必要なもの
+ ブート可能な USBデバイス Retail の Mac OS X 10.5 Leopard インストールディスク  ■ 下準備
+ boot-132 をダウンロード。generic.iso でOK。http://www.mediafire.com/?uwd9dtttjfk。夢置場から Pre Boot CD をダウンロードしても可。http://dream.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/linux/</link>
+    <description>Recent content in Linux on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Tue, 15 Jan 2019 09:11:02 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pydio Cells の隠し仕様</title>
+      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
+最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
+ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
+[2019/03/15 追記] バージョン 1.4 でこの問題が解決されていることを確認しました。</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7 の firewalld</title>
+      <link>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</link>
+      <pubDate>Sat, 27 Jan 2018 08:00:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</guid>
+      <description>気分が乗ったので、CentOS 7 をインストールした。ファイアウォールの設定が結構手間だったので、備忘録代わりに記録しておく。
+まず、定番のサービスポートを開けておく。
+sudo firewall-cmd --permanent --zone=public --add-service=http sudo firewall-cmd --permanent --zone=public --add-service=https sudo firewall-cmd --permanent --zone=public --add-service=pop3 sudo firewall-cmd --permanent --zone=public --add-service=pop3s sudo firewall-cmd --permanent --zone=public --add-service=imap sudo firewall-cmd --permanent --zone=public --add-service=imaps sudo firewall-cmd --permanent --zone=public --add-service=smtp sudo firewall-cmd --permanent --zone=public --add-service=smtps sudo firewall-cmd --permanent --zone=public --add-service=smtp-submission sudo firewall-cmd --permanent --zone=public --add-service=ftp 自宅は固定アドレスで、かつ ipv6 も割り当てられているので、そこからは全ポートを受け付けてもらえるように開放する。
+sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv4&amp;#34; source address=&amp;#34;118.243.217.235&amp;#34; accept&amp;#39;sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv6&amp;#34; source address=&amp;#34;2405:6584:7840:800::/64&amp;#34; accept&amp;#39; 内部通信用のインターフェースは無条件で信頼する。</description>
+    </item>
+    
+    <item>
+      <title>Debian Stretch – GRUB 2 のバグ?</title>
+      <link>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:12 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</guid>
+      <description>KVM のシリアルポート経由で、ブートメッセージをチェックするようにしているのだが、Debian Stretch をゲストにすると、なぜか GRUB 2 がシリアルコンソールにメニューを表示しない問題があった。
+実用上さして気にするほどでもなかったので放置してたのだが、他のディストリビューション (CentOS 7, Ubuntu 16) ではちゃんと表示されるので、いっちょ修正するか、と手を出してみた。
+結論。sid の GRUB 2 と入れ替えたら問題なく表示された。なぜ Stretch では直さないのかよくわからない。バックポートが難しいのだろうか。
+使用しているスクリプトで kvm の起動待ちをしている部分が悪さをしていることがわかった。起動確認をしている間に grub メニューが表示されるため、シリアルコンソールに制御が移ったときには表示済みのため、一見表示されていないように見えただけだった。反省。</description>
+    </item>
+    
+    <item>
+      <title>シリアルコンソール出力あれこれ</title>
+      <link>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</link>
+      <pubDate>Sun, 21 Jan 2018 18:25:52 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</guid>
+      <description>KVM で VM を起動するときにシリアルコンソールに起動情報が流れてくれたら起動の様子がわかって大変便利なので、その設定を追加。
+1. Debian GNU/Linux /etc/defaults/grub を以下のように修正。
+# If you change this file, run &amp;#39;update-grub&amp;#39; afterwards to update # /boot/grub/grub.cfg. # For full documentation of the options in this file, see: # info -f grub -n &amp;#39;Simple configuration&amp;#39; GRUB_DEFAULT=0 GRUB_TIMEOUT=5 GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian` GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;quiet&amp;#34; GRUB_CMDLINE_LINUX=&amp;#39;console=tty0 console=ttyS0,115200n8&amp;#39; # Uncomment to enable BadRAM filtering, modify to suit your needs # This works with Linux (no patch required) and with any kernel that obtains # the memory map information from GRUB (GNU Mach, kernel of FreeBSD .</description>
+    </item>
+    
+    <item>
+      <title>ちょっとした KVM サポートツール</title>
+      <link>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Wed, 07 Jan 2015 19:50:06 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
+      <description>そろそろよかろうと思って、サーバーを jessie に上げたら、Xen が起動しない。ホスティングサーバーの変更もあったので、思い切って仮想化基盤を KVM に変更……というか、回帰しました。
+ところが、xen-tools のようなお手軽ツールがありません。いや、あることはあるのですが、古いバージョンにしか対応してなくて、しかも最近全くメンテされてない状態。
+一応、昔気に入ってて、日本語翻訳までした Proxmox VE も見てみたのですが、えらく進化してしまって、機能てんこ盛りで、こんなんイラネ。VNC もセキュリティに気を遣うのはわかるんですが、ごく一部のクライアントしか対応してないプロトコルしか外に出さない＝使いにくい Java クライアントとか、HTML 5 版のやっぱり使いにくいクライアントしか想定にないみたいで、愛想が尽きた。
+まあ、イメージは素の状態から CD イメージとか、debootstrap とか使って作るので、VM の作成や削除の機能はいらないや。となると、VM の起動／停止が簡単にできればそれでいいんだけど……ないですね。そんなツール。
+ということで、vmmaestro という名前だけは大層なシェルスクリプトをでっち上げました。GitHub にて絶賛公開中。一応、vhost-net とか、x-data-plane とかにも対応してます。</description>
+    </item>
+    
+  </channel>
+</rss>

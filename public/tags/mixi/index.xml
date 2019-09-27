@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mixi on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/mixi/</link>
+    <description>Recent content in mixi on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 02 Jun 2008 18:04:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/mixi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mixi 専用ブラウザ</title>
+      <link>https://www.loginterests.com/posts/2008-06-03-mixi-%E5%B0%82%E7%94%A8%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6/</link>
+      <pubDate>Mon, 02 Jun 2008 18:04:19 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2008-06-03-mixi-%E5%B0%82%E7%94%A8%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6/</guid>
+      <description>ターゲッティッドブラウザって、２ちゃんブラウザが多分、一番有名ですし、Gmail ブラウザなんてのも結構普及してるようなので、あってもおかしくないなーと思って、ぐぐったら、一杯出てきました。私は、ネット閲覧には、Macを使ってるものですから、MixiDockを使ってます。（ちなみに、Gmail専用ブラウザは、MailPlane）で、その MixiDock ですが、見た目はこんなの
+細かいところの使い勝手を少しよくしてくれるってぐらいですが、普通のブラウザで操作するよりも、たったそれだけで使い勝手がよくなるので、最近この手のツールをよく使います。本体画面部分は、このツールに限らず、Web kit や、Internet Explorer のレンダリングエンジン、MozillaのGeckoなんか使って作られているので、画面の見栄えが劣るわけでなく。これからは、機能の分割・統合を検討した結果としての専用ツール化ってのは減っていって、目的面（オブジェクト）での専用ツール化っていうのがユーテリティアプリ開発の主流になっていくんですかね。</description>
+    </item>
+    
+  </channel>
+</rss>

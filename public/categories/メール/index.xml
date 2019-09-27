@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>メール on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/categories/%E3%83%A1%E3%83%BC%E3%83%AB/</link>
+    <description>Recent content in メール on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 12 Aug 2019 13:29:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/categories/%E3%83%A1%E3%83%BC%E3%83%AB/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formspree</title>
+      <link>https://www.loginterests.com/posts/2019-08-12-formspree/</link>
+      <pubDate>Mon, 12 Aug 2019 13:29:10 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-08-12-formspree/</guid>
+      <description>例によって例のごとく、ドキュメントが未整備なオープンソースアプリをインストールしたので、そのメモ。
+Formspree は、静的サイトなどにメールフォームを設置するためのサーバーアプリケーションである。設置が面倒な方は、ホスティングサービスもあるので、そちらを利用された方がよいかと。
+ まず、Python をインストールする。Python は、個人的に pyenv を使うので、そのように。
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv .profile を編集して、以下を追記。
+PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34; export PYENV_ROOT if [ -d &amp;#34;$PYENV_ROOT/bin&amp;#34; ] ; then PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34; eval &amp;#34;$(pyenv init -)&amp;#34; fi 前提ファイルをインストール
+sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libmariadb-dev-compat libpq-dev Node.js もインストールしておく。
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs Python をインストール。その後、pipenv をインストール。</description>
+    </item>
+    
+    <item>
+      <title>Postfix, Dovecot and MySQL</title>
+      <link>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</link>
+      <pubDate>Mon, 24 Jun 2019 12:50:31 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</guid>
+      <description>Postfix と Dovecot を使って、メールサーバーを運用しているのだが、うちは構成が少し変則的で、メール送信サーバー (SMTP) とメール受信サーバー (IMAP/POP3) が分離している。最終的なメールの配送は Dovecot の LMTP デーモンに頼っているのだが、エイリアスにメールが配送されないという問題が発覚した。
+別にバグでも何でもなく、ただの構成ミスである。Dovecot の仮想メールボックス機能を使ってメールアドレスを管理しているのだが、当初、Postfix の送信サーバーと Dovecot の受信サーバーは同居していたので、ローカルの配送は、Postfix の Virtual Transport に任せていた。この時点では、エイリアスの処理も問題なかった。
+最近、サーバーの移転を行ったのにあわせて、送信サーバーと受信サーバーの分離を行ったのだが、これは、ローカル配送に Dovecot の LMTP デーモンが使えることがわかったからである。で、何も考えずに移行して嵌まった、と。
+アドレス管理のバックエンドに MySQL を使い、PostfixAdmin で Web から管理していたのだが、それ自体はまあついで。問題は、LMTP に配送を移したことで、Postfix の Virtual Transport が解釈されなくなってしまったことにある。別ソフトなんだから、当たり前ですな。そのため、MySQL で管理していたエイリアス情報が参照されなくなってしまい、未達になっていた、と。
+多分、色んな解決法があるんでしょうけど、バックエンドに MySQL を使っている私の場合は、Dovecot のユーザー情報取得部分に手を入れることで、部分的に解決した。具体的には、ユーザー情報を MySQL から取得するクエリー文を以下のように修正しただけ。
+sql user_query = SELECT concat(&#39;/var/mail/&#39;, maildir) as mail, concat(&#39;*:bytes=&#39;, quota) as quota_rule, 998 as uid, 8 as gid FROM mailbox WHERE active = &#39;1&#39; AND username = (SELECT goto FROM alias WHERE (address = &#39;%u&#39; AND alias.</description>
+    </item>
+    
+  </channel>
+</rss>

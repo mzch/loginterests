@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Router on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/router/</link>
+    <description>Recent content in Router on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 13:13:18 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/router/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NTT PR-S300NE ファームウェアバージョン 22.02 の問題</title>
+      <link>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Sun, 18 Mar 2018 13:13:18 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</guid>
+      <description>うちは、ドコモ光なのだが、元々はフレッツ光ネクスト ファミリー・スーパーハイスピードタイプ 隼だった。
+なので、ルーターに、NTT PR-S300NE が入ってる。これに嵌まった。
+というのも、長らく ASAHI-NET の固定 IP アドレスサービスを利用していたのだが、このたび、Mac mini を使って自宅サーバーを立てた。ところが、メジャーなメールサービスへメールを送ろうとすると、拒否される。原因を調べたところ、割り当てられていたアドレスが、動的 IP レンジにあるアドレスで、これが迷惑メールブロックに登録されていたのである。ちなみに、解除の方法はない。
+そこで、やはり固定 IP アドレスサービスを提供しているインターリンクに乗り換えたのだが、ASAHI-NET の接続設定はそのままにして、2セッション目に、インターリンクを登録、接続するようにした。そうしたら、静的 IP マスカレードが効かなくなった。あれこれ設定を変えてみたり、サーバーのファイアウォールを無効にしてみたりと試行錯誤の末、セッションを重複させているのがトラブルの原因らしいということを突きとめた。
+つまり、いったん、設定を全部削除して、改めてインターリンクだけを一番目のセッションに登録し、静的 IP マスカレードを設定し直したら、疎通するようになったということだ。
+こんなんで折角の日曜日を潰してしまったことに軽くショックを受けている。orz</description>
+    </item>
+    
+  </channel>
+</rss>

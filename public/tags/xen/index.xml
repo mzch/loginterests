@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xen on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/tags/xen/</link>
+    <description>Recent content in Xen on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 26 Mar 2012 10:06:38 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/tags/xen/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Debian で Xen 4.1 を</title>
+      <link>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
+      <pubDate>Mon, 26 Mar 2012 10:06:38 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
+      <description>パッケージで入れられてしめしめとか思ってたら、何か依存関係でも壊したのか、起動しないゲストがあったでござる。ということで、バニラな方法で入れ直す。元ネタは昨日と同じでこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
+Xen.org からソースを取ってきます。現時点での最新版は、4.1.2。
+wget http://bits.xensource.com/oss-xen/release/4.1.2/xen-4.1.2.tar.gz ビルドに必要なパッケージをインストールします。/etc/apt/source.list に以下の行を追加して、
+deb-src http://ftp.jp.debian.org/debian/ sid main&amp;lt;/code&amp;gt; 以下を実行。
+apt-get build-dep xen apt-get build-dep xen-utils-common build-dep で入らないパッケージを追加で入れます。
+apt-get install libx11-dev libssl-dev python2.6-dev で、おもむろにビルド
+make xen make tools make stubdom エラーがなければインストール。
+make install-xen make install-tools PYTHON_PREFIX_ARG= make install-stubdom Domain 0 に必要なサービスデーモンの起動設定を忘れずに。
+update-rc.d xencommons defaults update-rc.d xendomains defaults 4.0 までと互換性のある、xm ツールセットを使う場合は、xend も起動するようにしておきます。
+update-rc.d xend defaults ひとまず以上で、Xen が起動するはずです。再起動して確認しましょう。
+xl list 次のように、Domain-0 がリストされない場合、たいていは GRUB の設定ミスです。 Name ID Mem VCPUs State Time(s)</description>
+    </item>
+    
+    <item>
+      <title>Debian Squeeze に Xen 4.1 を入れる</title>
+      <link>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
+      <pubDate>Mon, 26 Mar 2012 01:31:58 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
+      <description>XenServer 6.0 の基盤になってたり、他のディストリがこぞって採用してるのが、Xen 4.1 なのですが、時期の関係で、Squeeze には、4.0 が収録されています。何か中途半端。sid にはパッケージがありますので、そっからソースを取ってきて（さすがにバイナリは持ってきても動かないので）、ビルドする方法を見つけましたので、備忘録がてら。
+元ネタはこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
+まずは、source.list に１行追加。
+deb-src http://ftp.jp.debian.org/debian/ sid main squeeze や wheezy の行があれば、コメントアウトしておきます。
+で、おもむろに、ビルド…する前に、パッケージをひとつ追加しておきます。ないとコンパイルがエラーになるので。
+apt-get install ipxe-qemu PXEブートに使うファームのQEMU用ROMイメージなんですが、なぜか Xen をインストールしても、build-dep しても入りません。
+まずはビルド環境を整えます。
+apt-get update apt-get build-dep xen apt-get build-dep xen-utils-common Xen のソースと Debian パッチの取り寄せ、ビルドも apt-get で済むのが便利なところ。
+cd /usr/src/ apt-get source xen -b apt-get source xen-utils-common -b エラーがなければパッケージができているので、dpkg でインストールすればおしまい。
+dpkg -i *xen*deb</description>
+    </item>
+    
+  </channel>
+</rss>

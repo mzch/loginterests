@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Server on 電脳業務日誌</title>
+    <link>https://www.loginterests.com/categories/server/</link>
+    <description>Recent content in Server on 電脳業務日誌</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <copyright>&amp;copy; 2008-2019 mzch</copyright>
+    <lastBuildDate>Mon, 12 Aug 2019 13:29:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.loginterests.com/categories/server/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Formspree</title>
+      <link>https://www.loginterests.com/posts/2019-08-12-formspree/</link>
+      <pubDate>Mon, 12 Aug 2019 13:29:10 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-08-12-formspree/</guid>
+      <description>例によって例のごとく、ドキュメントが未整備なオープンソースアプリをインストールしたので、そのメモ。
+Formspree は、静的サイトなどにメールフォームを設置するためのサーバーアプリケーションである。設置が面倒な方は、ホスティングサービスもあるので、そちらを利用された方がよいかと。
+ まず、Python をインストールする。Python は、個人的に pyenv を使うので、そのように。
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv .profile を編集して、以下を追記。
+PYENV_ROOT=&amp;#34;$HOME/.pyenv&amp;#34; export PYENV_ROOT if [ -d &amp;#34;$PYENV_ROOT/bin&amp;#34; ] ; then PATH=&amp;#34;$PYENV_ROOT/bin:$PATH&amp;#34; eval &amp;#34;$(pyenv init -)&amp;#34; fi 前提ファイルをインストール
+sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libmariadb-dev-compat libpq-dev Node.js もインストールしておく。
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs Python をインストール。その後、pipenv をインストール。</description>
+    </item>
+    
+    <item>
+      <title>Apache で php-fpm を使う</title>
+      <link>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
+      <pubDate>Fri, 05 Jul 2019 05:12:38 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
+      <description>やっぱり、Apache でも http2 を有効にしたい！ということで、慣れ親しんだ、php_module からおさらばして、php-fpm で構成し直した。Debian &amp;amp; php 7.3 での例を示す。
+まず、php-fpm をインストール。まあ、php_module を削除すれば、勝手に php-fpm が入るんですが。ダウンタイムを極力避けるなら、この手順で。
+sudo apt install php-fpm 次に proxy_fcgi を有効にする。
+sudo a2enmod proxy_fcgi そうしたら、php_module を削除する。
+sudo apt purge libapache2-mod-php libapache2-mod-php7.3 prefork モジュールが読み込まれているのをやめて、event モジュールに差し替える。ついでに、http2 モジュールを有効にする。
+sudo a2dismod mpm_prefork sudo a2enmod mpm_event http2 最後に、Apache の php-fpm 設定を有効にする。
+sudo a2enconf php7.3-fpm あとは、Apache を再起動するだけ。
+sudo systemctl restart apache2 うむ。簡単だった。</description>
+    </item>
+    
+    <item>
+      <title>Prismo</title>
+      <link>https://www.loginterests.com/posts/2019-06-27-prismo/</link>
+      <pubDate>Thu, 27 Jun 2019 01:20:15 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-06-27-prismo/</guid>
+      <description>Prismo をインストールしてみたが、ドキュメントが腐っているという、オープンソースフリーソフトにありがちなものだったので、インストール手順をまとめておく。
+ ソースを git clone https://gitlab.com/prismosuite/prismoとかして ダウンロードする。 ruby 2.5.1 が必要なので、rvm なり、rbenv なりで環境を整えておく。おすすめは、rbenv。 Node.JS 10.x と yarn が必要なので、インストールしておく。 bundler をインストール。gem isntall bundler sidekiq をインストール。gem install sidekiq Gemfile を修正する。
+--- Gemfile.orig	2019-06-26 09:30:35.440184122 -0700 +++ Gemfile	2019-06-26 06:50:29.313718143 -0700 @@ -77,17 +77,19 @@ gem &amp;#39;webmention&amp;#39; gem &amp;#39;webmention-endpoint&amp;#39; gem &amp;#39;doorkeeper&amp;#39; +gem &amp;#39;listen&amp;#39;, &amp;#39;&amp;gt;= 3.0.5&amp;#39;, &amp;#39;&amp;lt; 3.2&amp;#39; +gem &amp;#39;bullet&amp;#39;  group :development, :test do gem &amp;#39;dotenv-rails&amp;#39; gem &amp;#39;byebug&amp;#39;, platforms: %i[mri mingw x64_mingw] - gem &amp;#39;bullet&amp;#39; + # gem &amp;#39;bullet&amp;#39; gem &amp;#39;rspec-rails&amp;#39;, &amp;#39;~&amp;gt; 3.</description>
+    </item>
+    
+    <item>
+      <title>Postfix, Dovecot and MySQL</title>
+      <link>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</link>
+      <pubDate>Mon, 24 Jun 2019 12:50:31 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</guid>
+      <description>Postfix と Dovecot を使って、メールサーバーを運用しているのだが、うちは構成が少し変則的で、メール送信サーバー (SMTP) とメール受信サーバー (IMAP/POP3) が分離している。最終的なメールの配送は Dovecot の LMTP デーモンに頼っているのだが、エイリアスにメールが配送されないという問題が発覚した。
+別にバグでも何でもなく、ただの構成ミスである。Dovecot の仮想メールボックス機能を使ってメールアドレスを管理しているのだが、当初、Postfix の送信サーバーと Dovecot の受信サーバーは同居していたので、ローカルの配送は、Postfix の Virtual Transport に任せていた。この時点では、エイリアスの処理も問題なかった。
+最近、サーバーの移転を行ったのにあわせて、送信サーバーと受信サーバーの分離を行ったのだが、これは、ローカル配送に Dovecot の LMTP デーモンが使えることがわかったからである。で、何も考えずに移行して嵌まった、と。
+アドレス管理のバックエンドに MySQL を使い、PostfixAdmin で Web から管理していたのだが、それ自体はまあついで。問題は、LMTP に配送を移したことで、Postfix の Virtual Transport が解釈されなくなってしまったことにある。別ソフトなんだから、当たり前ですな。そのため、MySQL で管理していたエイリアス情報が参照されなくなってしまい、未達になっていた、と。
+多分、色んな解決法があるんでしょうけど、バックエンドに MySQL を使っている私の場合は、Dovecot のユーザー情報取得部分に手を入れることで、部分的に解決した。具体的には、ユーザー情報を MySQL から取得するクエリー文を以下のように修正しただけ。
+sql user_query = SELECT concat(&#39;/var/mail/&#39;, maildir) as mail, concat(&#39;*:bytes=&#39;, quota) as quota_rule, 998 as uid, 8 as gid FROM mailbox WHERE active = &#39;1&#39; AND username = (SELECT goto FROM alias WHERE (address = &#39;%u&#39; AND alias.</description>
+    </item>
+    
+    <item>
+      <title>ドメイン名を変更しました</title>
+      <link>https://www.loginterests.com/posts/2019-06-02-change-domain/</link>
+      <pubDate>Sun, 02 Jun 2019 07:56:58 +0900</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-06-02-change-domain/</guid>
+      <description>旧来の daybook.biz から、新たに loginterests.com にドメイン名を変更しました。気分転換というか、既に（というか、最初から）日誌になってなかったので、興味のあることをつらつら記録していく、という現状に近い意味を持たせようか、と。
+あと、サーバーを Debian Buster にアップグレードしたんですが、なぜか daybook.biz だけ不調になりまして、ここも心機一転。Wordpress から、Hugo へプラットホームを変えました。サイトジェネレータ型のいいところは、素の HTML/CSS/Javascript を置くだけなので、システムの変更に強い点。今回、図らずも Wordpress はその弱点を晒してしまったということで。Worddpress 本体は、PHP のバージョンが上がってもきちんと対応してるので、まあ、使ってるプラグインとかテーマが悪いのでしょう。
+細々続いているこのサイトですが、今後ともよろしくお願いします。はい。
+なお、一応、旧来のサイトも残してあります。見てみたいという奇特な方は、こちらからどうぞ。</description>
+    </item>
+    
+    <item>
+      <title>Vanilla Forums</title>
+      <link>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</link>
+      <pubDate>Sat, 04 May 2019 10:36:17 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
+      <description>Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
+まずは、nginx と php をインストール
+sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
+nginx の server {} ディレクティブ内で以下のように設定。
+root /srv/vanilla; # Add index.php to the list if you are using PHP index index.php; # Block some folders as an extra hardening measure.</description>
+    </item>
+    
+    <item>
+      <title>Newspipe のインストール</title>
+      <link>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Fri, 05 Apr 2019 10:16:03 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>Feedbin の設置には成功したものの、どうやってもフィードを更新してくれなくて、使用を断念したが、他によさげなアグリゲーターがないか、😎 Awesome lists about all kinds of interesting topics で探したところ、Newspipe が使いやすそうだったので、これをインストールしてみた。
+結果から言うと、丸二日かかって稼働に成功。やったね！😁
+まず、Python 3.7 以上が必要だが、Debian 9 (Stretch) に入っているのは、3.5。ということで、ソースからインストールする。現時点での最新版は、3.7.3。
+最初に、前提となるパッケージをインストールしておく。
+sudo apt install -y build-essential python-dev python-setuptools python-pip python-smbus libssl-dev libffi-dev zlib1g-dev libreadline-gplv2-dev libsqlite3-dev libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev uuid-dev tk-dev zlibc libpq-dev libmariadbclient-dev sudo apt install -y apache2-dev sudo pip install pipenv 次に、適当なところでアーカイブを展開し、以下を実行する。
+./configure --enable-shared --enable-optimizations make sudo make altinstall sudo ldconfig &amp;ndash;enable-shared オプションって推奨されてないんじゃないの？と思う人もいるかも知れませんが、mod_wsgi に共有ライブラリが必要なので、指定せざるを得ません。最後の ldconfig は、Python 共有ライブラリを認識させるためのおまじない。やっておかないと実行時にエラーが起きます。
+Python がインストールできたら、PostgreSQL も必要なので、インストールしておく。うちは、別インスタンスにインストール済みなので、パス。いずれにせよ、データベースを作成しておく。</description>
+    </item>
+    
+    <item>
+      <title>Feedbin のインストール</title>
+      <link>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Sun, 31 Mar 2019 15:42:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>結果的に、動作しなかったが、勿体ないので、記事は残しておく。
+ニュースサイトの閲覧に、サーバー設置型であるニュースフィーダーの Fever を使っているのだが、ディスコンになってしまって、乗り換え先を探していたところ、オープンソースで公開されている Freebin がよさげだったので、Debian GNU/Linux 9 Stretch にインストールしてみた。Feedbin に月 $5 払えば、インストールなどいらないのだが、ドキュメントに書かれていない設定が多数あって、試行錯誤に丸一日費やしたので、どこかに残しておかないと勿体なかったというのもある。😁
+まず、Stripe.com のアカウントが必要なので、サインアップする。
+ダッシュボードの「テスト API キーの取得」に、公開可能キーとシークレットキーがあるので、これをいったんコピーしておく。
+次に、サイドバーの Billing → 商品から、商品を 9 種類追加する。商品ごとの料金プランで、API ID に以下の値をひとつずつ設定する。面倒だが、Stripe.com に該当の API ID を持つ商品（料金プラン）がないとエラーになるので、頑張って設定する。
+ basic-monthly basic-yearly basic-monthly-2 basic-yearly-2 basic-monthly-3 basic-yearly-3 free timed trial  設定が終わったら、インストール作業に入る。まず、Feedbin を実行するユーザーを作成する。
+sudo useradd -m feedbin 実行には、memcahed、elasticsearch、ruby が必要なので、インストールする。ただし、システムデフォルトの ruby は、バージョンが古い (2.3) ので、rvm から必要なバージョンを導入しなくてはならない。(無論、rbenv から導入してもよい)
+sudo apt install dirmngr sudo apt install apt-transport-https sudo apt install curl sudo apt install memcached sudo apt install -t stretch-backports redis sudo gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E37D2BAF1CF37B13E2069D6956105BD0E739499BDB curl -sSL https://get.</description>
+    </item>
+    
+    <item>
+      <title>小槌をインストールしてみた</title>
+      <link>https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Sat, 16 Mar 2019 05:22:01 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>サーバーインストール型の家計簿があるのを見つけて、インストールしてみたので、手順を備忘録として残しておく。家計簿ソフトの名前は、小槌 (GitHub リポジトリ)
+まず、node.js をインストール
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs 続けて、ruby その他をインストール
+sudo apt install -y ruby ruby-dev build-essential zlib1g-dev MySQL/MariaDB のライブラリをインストール
+sudo apt install libmysqlclient-dev または、
+sudo apt install libmariadbclient-dev-compat Debian 9 stretch デフォルトの gem はバージョンが低いので、アップデートする。
+gem -v 2.5.2.1 sudo gem update --system (省略) gem -v 3.0.3 Bundler をインストール
+sudo gem install bundler GitHub から、ソースをクローン。
+sudo git clone https://github.com/everyleaf/kozuchi.git Bundle を使って、必要なモジュールをインストール</description>
+    </item>
+    
+    <item>
+      <title>Pydio Cells の隠し仕様</title>
+      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
+最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
+ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
+[2019/03/15 追記] バージョン 1.4 でこの問題が解決されていることを確認しました。</description>
+    </item>
+    
+    <item>
+      <title>I/O Flood 最高!</title>
+      <link>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</link>
+      <pubDate>Wed, 30 May 2018 11:23:23 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</guid>
+      <description>突然、このブログを含むサーバー群にアクセスできなくなった。VM を実行しているホスト自体が落ちたようだ。
+そこで、サポートに連絡したら、一時間かからずに復旧してくれた。何でもサーバーのマザーボードが壊れたらしい。
+新しいマシンにディスクを移動して、設定を調整した上でブート、疎通確認までしてくれた。マネージドでもないのに。しかも、何気に CPU が、Xeon L5520 (4コア8スレッド) デュアルから、Xeon L5639 (6コア12スレッド) デュアルにアップグレードされている。どうやら同型機は売り切れていたらしい。追加料金は一切なし。
+やっぱ、専用サーバーを借りるなら、I/O Flood に限る！との思いを新たにした。ありがとう！I/O Flood！</description>
+    </item>
+    
+    <item>
+      <title>メールサーバー間の SMTP 通信を暗号化する</title>
+      <link>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 19 Mar 2018 18:55:28 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</guid>
+      <description>メールサーバー間の通信で、TLSを使った暗号化が可能なのは知っていたが、面倒なので放置していた。
+が、Gmail などで暗号化通信で送られてきたメールにはその旨記載があったり、世の中も動いてきてるので、今回、対応することにした。
+Debian の場合 apt install ca-certificates で、CA証明書を導入しておくことを忘れない。
+/etc/postfix/main.cf に以下の行を挿入。
+smtp_tls_CAfile = /etc/ssl/certs/ca-certificates.crt smtp_tls_security_level = may smtp_tls_loglevel = 1 FreeBSD の場合 pkg install ca_root_nss で、CA証明書を導入しておくことを忘れない。
+/usr/local/etc/postfix/main.cf に以下の行を挿入。
+smtp_tls_CAfile = /usr/local/etc/ssl/cert.pem smtp_tls_security_level = may smtp_tls_loglevel = 1 これで、送信時に暗号化通信を行える相手には、暗号化して送信し、そうでない相手には平文で送信するようになる。
+共通 次に受信時の暗号化通信だが、メールのヘッダに暗号通信の記録を残すことを含め、main.cf へ次の行を挿入。
+smtpd_use_tls=yes smtpd_tls_received_header = yes 無論、SSL 証明書を Let&amp;#8217;s Encrypt などから取得して、設定しておくことを忘れない。
+以上で対応は終了だった。簡単すぎて拍子抜け。もっと早くに対応しておくべきだった。</description>
+    </item>
+    
+    <item>
+      <title>NTT PR-S300NE ファームウェアバージョン 22.02 の問題</title>
+      <link>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Sun, 18 Mar 2018 13:13:18 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</guid>
+      <description>うちは、ドコモ光なのだが、元々はフレッツ光ネクスト ファミリー・スーパーハイスピードタイプ 隼だった。
+なので、ルーターに、NTT PR-S300NE が入ってる。これに嵌まった。
+というのも、長らく ASAHI-NET の固定 IP アドレスサービスを利用していたのだが、このたび、Mac mini を使って自宅サーバーを立てた。ところが、メジャーなメールサービスへメールを送ろうとすると、拒否される。原因を調べたところ、割り当てられていたアドレスが、動的 IP レンジにあるアドレスで、これが迷惑メールブロックに登録されていたのである。ちなみに、解除の方法はない。
+そこで、やはり固定 IP アドレスサービスを提供しているインターリンクに乗り換えたのだが、ASAHI-NET の接続設定はそのままにして、2セッション目に、インターリンクを登録、接続するようにした。そうしたら、静的 IP マスカレードが効かなくなった。あれこれ設定を変えてみたり、サーバーのファイアウォールを無効にしてみたりと試行錯誤の末、セッションを重複させているのがトラブルの原因らしいということを突きとめた。
+つまり、いったん、設定を全部削除して、改めてインターリンクだけを一番目のセッションに登録し、静的 IP マスカレードを設定し直したら、疎通するようになったということだ。
+こんなんで折角の日曜日を潰してしまったことに軽くショックを受けている。orz</description>
+    </item>
+    
+    <item>
+      <title>NetBSD の virtio は、vhost-net に対応していない</title>
+      <link>https://www.loginterests.com/posts/2018-02-06-netbsd-%E3%81%AE-virtio-%E3%81%AFvhost-net-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84/</link>
+      <pubDate>Tue, 06 Feb 2018 09:10:45 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-02-06-netbsd-%E3%81%AE-virtio-%E3%81%AFvhost-net-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84/</guid>
+      <description>調子に乗って、NetBSD もインストールしてみた。
+最初、ネットワークアダプタを認識してるのに外部へも外部からも通信できなくて頭を捻ったのだが、kvm の vhost-net を off にしたら問題なく通信するようになった。他の BSD が vhost-net に対応していたので、これはちょっと意外。</description>
+    </item>
+    
+    <item>
+      <title>最近のBSD の virtio 対応状況</title>
+      <link>https://www.loginterests.com/posts/2018-01-30-%E6%9C%80%E8%BF%91%E3%81%AEbsd-%E3%81%AE-virtio-%E5%AF%BE%E5%BF%9C%E7%8A%B6%E6%B3%81/</link>
+      <pubDate>Tue, 30 Jan 2018 08:26:56 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-30-%E6%9C%80%E8%BF%91%E3%81%AEbsd-%E3%81%AE-virtio-%E5%AF%BE%E5%BF%9C%E7%8A%B6%E6%B3%81/</guid>
+      <description>NetBSD は試していないのでわからないけれども、FreeBSD、OpenBSD、DragonFly BSD はすべてデフォルトで virtio ドライバを搭載しているので、普通に kvm 上でインストールできる。進歩したものだ。</description>
+    </item>
+    
+    <item>
+      <title>OpenBSD のインストールについて覚え書き</title>
+      <link>https://www.loginterests.com/posts/2018-01-30-openbsd-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A6%9A%E3%81%88%E6%9B%B8%E3%81%8D/</link>
+      <pubDate>Tue, 30 Jan 2018 08:21:44 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-30-openbsd-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A6%9A%E3%81%88%E6%9B%B8%E3%81%8D/</guid>
+      <description>OpenBSD をインストールする際、カーネルやブートストラッパが / に置かれるため、ディスクパーティションの先頭は必ず / になるよう配置しなくてはならない。Linux の癖で swap を先頭にしてブートせずに嵌まったので、覚え書き代わりにメモ。</description>
+    </item>
+    
+    <item>
+      <title>CentOS 7 の firewalld</title>
+      <link>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</link>
+      <pubDate>Sat, 27 Jan 2018 08:00:14 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-27-centos-7-%E3%81%AE-firewalld/</guid>
+      <description>気分が乗ったので、CentOS 7 をインストールした。ファイアウォールの設定が結構手間だったので、備忘録代わりに記録しておく。
+まず、定番のサービスポートを開けておく。
+sudo firewall-cmd --permanent --zone=public --add-service=http sudo firewall-cmd --permanent --zone=public --add-service=https sudo firewall-cmd --permanent --zone=public --add-service=pop3 sudo firewall-cmd --permanent --zone=public --add-service=pop3s sudo firewall-cmd --permanent --zone=public --add-service=imap sudo firewall-cmd --permanent --zone=public --add-service=imaps sudo firewall-cmd --permanent --zone=public --add-service=smtp sudo firewall-cmd --permanent --zone=public --add-service=smtps sudo firewall-cmd --permanent --zone=public --add-service=smtp-submission sudo firewall-cmd --permanent --zone=public --add-service=ftp 自宅は固定アドレスで、かつ ipv6 も割り当てられているので、そこからは全ポートを受け付けてもらえるように開放する。
+sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv4&amp;#34; source address=&amp;#34;118.243.217.235&amp;#34; accept&amp;#39;sudo firewall-cmd --permanent --zone=public --add-rich-rule=&amp;#39;rule family=&amp;#34;ipv6&amp;#34; source address=&amp;#34;2405:6584:7840:800::/64&amp;#34; accept&amp;#39; 内部通信用のインターフェースは無条件で信頼する。</description>
+    </item>
+    
+    <item>
+      <title>Debian Stretch – GRUB 2 のバグ?</title>
+      <link>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</link>
+      <pubDate>Thu, 25 Jan 2018 17:53:12 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</guid>
+      <description>KVM のシリアルポート経由で、ブートメッセージをチェックするようにしているのだが、Debian Stretch をゲストにすると、なぜか GRUB 2 がシリアルコンソールにメニューを表示しない問題があった。
+実用上さして気にするほどでもなかったので放置してたのだが、他のディストリビューション (CentOS 7, Ubuntu 16) ではちゃんと表示されるので、いっちょ修正するか、と手を出してみた。
+結論。sid の GRUB 2 と入れ替えたら問題なく表示された。なぜ Stretch では直さないのかよくわからない。バックポートが難しいのだろうか。
+使用しているスクリプトで kvm の起動待ちをしている部分が悪さをしていることがわかった。起動確認をしている間に grub メニューが表示されるため、シリアルコンソールに制御が移ったときには表示済みのため、一見表示されていないように見えただけだった。反省。</description>
+    </item>
+    
+    <item>
+      <title>DragonFly BSD の IPv6 設定問題</title>
+      <link>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</link>
+      <pubDate>Sun, 21 Jan 2018 21:47:10 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</guid>
+      <description>なぜか、/etc/rc.conf に以下の設定をしても反映されない。
+ipv6_enable=&amp;#34;YES&amp;#34; ipv6_network_interfaces=&amp;#34;vtnet0&amp;#34; ipv6_ifconfig_vtnet0=&amp;#34;inet6 2001:470:d:461::7:1 prefixlen 64&amp;#34; ipv6_defaultrouter=&amp;#34;2001:470:d:461::1&amp;#34; 仕方ないので、/etc/rc.local にコマンドを直書きしてごまかした。
+#! /bin/sh ifconfig vtnet0 inet6 2001:470:d:461::7:1 prefixlen 64 alias&amp;amp;lt;br /&amp;gt; route add -inet6 default 2001:470:d:461::1&amp;amp;lt;br /&amp;gt; 解決法をご存じの方がいらしたら、ぜひコメントをお願いしたい。
+追記。
+メーリングリストで質問したら、ipv6_ifconfig_vtnet0 の設定がよくないと指摘された。
+-ipv6_ifconfig_vtnet0=&amp;#34;inet6 2001:470:d:461::7:1 prefixlen 64&amp;#34; +ipv6_ifconfig_vtnet0=&amp;#34;2001:470:d:461::7:1&amp;#34;  と、アドレスだけ指定するのが、DragonFly での作法とか。指摘してくれた、Aaron に感謝。</description>
+    </item>
+    
+    <item>
+      <title>シリアルコンソール出力あれこれ</title>
+      <link>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</link>
+      <pubDate>Sun, 21 Jan 2018 18:25:52 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</guid>
+      <description>KVM で VM を起動するときにシリアルコンソールに起動情報が流れてくれたら起動の様子がわかって大変便利なので、その設定を追加。
+1. Debian GNU/Linux /etc/defaults/grub を以下のように修正。
+# If you change this file, run &amp;#39;update-grub&amp;#39; afterwards to update # /boot/grub/grub.cfg. # For full documentation of the options in this file, see: # info -f grub -n &amp;#39;Simple configuration&amp;#39; GRUB_DEFAULT=0 GRUB_TIMEOUT=5 GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian` GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;quiet&amp;#34; GRUB_CMDLINE_LINUX=&amp;#39;console=tty0 console=ttyS0,115200n8&amp;#39; # Uncomment to enable BadRAM filtering, modify to suit your needs # This works with Linux (no patch required) and with any kernel that obtains # the memory map information from GRUB (GNU Mach, kernel of FreeBSD .</description>
+    </item>
+    
+    <item>
+      <title>DragonFly BSD 5.0.2 をインストールしてみた。</title>
+      <link>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-5-02-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Sun, 21 Jan 2018 18:10:09 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-5-02-%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>DragonFly BSD RELEASE 5.0.2 をインストールして、はまった点を備忘録代わりに書く。Debian も FreeBSD も慣れちゃって、ちょっと新鮮な雰囲気を味わいたかったので。DragonFly BSD を選択した次第。
+1. HAMMER2 が不安定? HAMMER2 というより、インストーラがバグってるのか、120GB の空き容量に対して、5G しかスライスを切ってくれない。いくらなんでもこれではテストもできません。ってことで、HAMMER でインストールし直した。
+2. ネットワークインターフェースの設定にコツがいる。 外部向きと内部向きの二つのインターフェースが載ってるわけだが、内部向けには当然、デフォルトゲートウェイなんぞ設定しない。最初、外部I/F→内部I/Fと設定したら、デフォルトゲートウェイが空の設定ができあがってしまい、通信できなかった。内部I/Fを設定してから、外部I/Fにデフォルトゲートウェイを含めて設定するのが正しい手順のよう。
+3. /etc/ssh/sshd_config が公開鍵認証前提でインストールされる。 ssh で入れないと思って、設定ファイルをよく見たら、PasswordAuthentication が、no になっていた。仕方ないので、コンソールから一時的に、yes に変更して対処。インストールしたのは、レンタルサーバー（専用サーバー上に KVM で作成）だったので、VNC コンソールで作業はやりにくい。ここはすぱっと ssh でパスワード認証して入れるようにしてほしかった。
+あとは、sudo と logwatch を入れて、ファイアウォールの設定をすませてインストール完了。</description>
+    </item>
+    
+    <item>
+      <title>ちょっとした KVM サポートツール</title>
+      <link>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Wed, 07 Jan 2015 19:50:06 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
+      <description>そろそろよかろうと思って、サーバーを jessie に上げたら、Xen が起動しない。ホスティングサーバーの変更もあったので、思い切って仮想化基盤を KVM に変更……というか、回帰しました。
+ところが、xen-tools のようなお手軽ツールがありません。いや、あることはあるのですが、古いバージョンにしか対応してなくて、しかも最近全くメンテされてない状態。
+一応、昔気に入ってて、日本語翻訳までした Proxmox VE も見てみたのですが、えらく進化してしまって、機能てんこ盛りで、こんなんイラネ。VNC もセキュリティに気を遣うのはわかるんですが、ごく一部のクライアントしか対応してないプロトコルしか外に出さない＝使いにくい Java クライアントとか、HTML 5 版のやっぱり使いにくいクライアントしか想定にないみたいで、愛想が尽きた。
+まあ、イメージは素の状態から CD イメージとか、debootstrap とか使って作るので、VM の作成や削除の機能はいらないや。となると、VM の起動／停止が簡単にできればそれでいいんだけど……ないですね。そんなツール。
+ということで、vmmaestro という名前だけは大層なシェルスクリプトをでっち上げました。GitHub にて絶賛公開中。一応、vhost-net とか、x-data-plane とかにも対応してます。</description>
+    </item>
+    
+    <item>
+      <title>Debian で Xen 4.1 を</title>
+      <link>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
+      <pubDate>Mon, 26 Mar 2012 10:06:38 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
+      <description>パッケージで入れられてしめしめとか思ってたら、何か依存関係でも壊したのか、起動しないゲストがあったでござる。ということで、バニラな方法で入れ直す。元ネタは昨日と同じでこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
+Xen.org からソースを取ってきます。現時点での最新版は、4.1.2。
+wget http://bits.xensource.com/oss-xen/release/4.1.2/xen-4.1.2.tar.gz ビルドに必要なパッケージをインストールします。/etc/apt/source.list に以下の行を追加して、
+deb-src http://ftp.jp.debian.org/debian/ sid main&amp;lt;/code&amp;gt; 以下を実行。
+apt-get build-dep xen apt-get build-dep xen-utils-common build-dep で入らないパッケージを追加で入れます。
+apt-get install libx11-dev libssl-dev python2.6-dev で、おもむろにビルド
+make xen make tools make stubdom エラーがなければインストール。
+make install-xen make install-tools PYTHON_PREFIX_ARG= make install-stubdom Domain 0 に必要なサービスデーモンの起動設定を忘れずに。
+update-rc.d xencommons defaults update-rc.d xendomains defaults 4.0 までと互換性のある、xm ツールセットを使う場合は、xend も起動するようにしておきます。
+update-rc.d xend defaults ひとまず以上で、Xen が起動するはずです。再起動して確認しましょう。
+xl list 次のように、Domain-0 がリストされない場合、たいていは GRUB の設定ミスです。 Name ID Mem VCPUs State Time(s)</description>
+    </item>
+    
+    <item>
+      <title>Debian Squeeze に Xen 4.1 を入れる</title>
+      <link>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
+      <pubDate>Mon, 26 Mar 2012 01:31:58 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
+      <description>XenServer 6.0 の基盤になってたり、他のディストリがこぞって採用してるのが、Xen 4.1 なのですが、時期の関係で、Squeeze には、4.0 が収録されています。何か中途半端。sid にはパッケージがありますので、そっからソースを取ってきて（さすがにバイナリは持ってきても動かないので）、ビルドする方法を見つけましたので、備忘録がてら。
+元ネタはこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
+まずは、source.list に１行追加。
+deb-src http://ftp.jp.debian.org/debian/ sid main squeeze や wheezy の行があれば、コメントアウトしておきます。
+で、おもむろに、ビルド…する前に、パッケージをひとつ追加しておきます。ないとコンパイルがエラーになるので。
+apt-get install ipxe-qemu PXEブートに使うファームのQEMU用ROMイメージなんですが、なぜか Xen をインストールしても、build-dep しても入りません。
+まずはビルド環境を整えます。
+apt-get update apt-get build-dep xen apt-get build-dep xen-utils-common Xen のソースと Debian パッチの取り寄せ、ビルドも apt-get で済むのが便利なところ。
+cd /usr/src/ apt-get source xen -b apt-get source xen-utils-common -b エラーがなければパッケージができているので、dpkg でインストールすればおしまい。
+dpkg -i *xen*deb</description>
+    </item>
+    
+    <item>
+      <title>ProviderService というホスティングプロバイダー</title>
+      <link>https://www.loginterests.com/posts/2012-02-24-/</link>
+      <pubDate>Fri, 24 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2012-02-24-/</guid>
+      <description>先日、さくらインターネットが、「さくらの専用サーバー」を発表しましたが、国内のレンタルサーバー業界においても海外同様の価格破壊がこれから始まるのでしょうか。これで初期費用がなければ、本当に衝撃的なのですが、さすがにそこまで消費側に都合よくいかないようです。それでも、対抗プランを出せなければ顧客の流出が必至の同業者は茫然自失ってところじゃないでしょうか。価格もさることながら、顧客自身がリモートからクラウドと連携したネットワークを構成・管理することができるって、周到に準備してないと対抗しようがないですからね。
+さて、さくらインターネットの専用サーバーについては実際にサービスが始まれば山ほどレビューが出てくるでしょうからそれを待つとして、海外ではどうかを見てみましょう。いえ、クラウドとの連携とかVLAN組み放題とか最短納品10分とか、そんなサービスはありませんよ? そこはさすがにさくらが世界に誇っていい点だと思います。じゃあせめてということで、似たような構成のサーバーが他の国では一体いくらくらいになるのか、どこまで安いサービスがあるのか、ちょっと調べてみました。
+「さくらの専用サーバー」の最小構成が、HP DL200 Xeon 2.4GHz (4コア)、メモリ 16GB、ディスク 2×1TB HDD ですが、このスペックだと専鯖最安国(?)のアメリカ、ドイツ、オランダといえど、普通に、$200くらいします。なので余計にさくらの本気というややる気の凄さがわかるんですが、それはさておき。クーポンやバーゲンなどで例外的に安いものや、運営基盤が不明な業者(会社なのか個人なのかとか、どこにあるのかがわからない怪しい業者)を除いていくと、やっぱり$100くらいが底値なのかと思っていたのですが、そこを突き抜けて、ほぼ最安値と言えるプロバイダをひとつ見つけました。それがタイトルの、ProviderService です。
+なんか、いかにも取ってつけたような名前ですが、ちゃんと運営されている業者さんです。AMD Athlon II X4 605e (4コア)、メモリ 16GB、ディスク 2×1TB HDD で、CPUがちょい見劣りしますが、この構成で、月53.78ユーロ、約5725円(2/23現在)です。しかも初期費用なし。安すぎです。ドイツにあるのがとても惜しい。そうです。ドイツの会社なんです。日本からだと、TTLが、260ms以上あるんです。国内向けのウェブサイトなんかまず置けないですね。いや、置いてもいいんですが、普通に重くなりますよ? しかし借りなければ実態はわかりません。ということで借りてみました。さすがにこの価格では、リモートコンソールの類いはついてきませんが、マシンのリブート、OS の再インストール、レスキューモードでの再起動、IP アドレスの逆引き設定などができるコントロールパネルがあります。ログインすると、こんな感じ。
+画面表示はまあ必要最小限を強調したようなそっけないものなんですが、機能は足りてます。^^;
+リブート関係は、通常のブートシーケンスの設定、レスキューモードでのリブート、OS 再インストールが選択可能です。レスキューモードというのは、PCで言うと、OSのインストールメディアから起動して回復コンソールを起ち上げるって感じですね。Mac とか Linux だと、シングルユーザーモードが該当します。やれることもリモートだというだけで、シングルユーザーモードそのまんまですが。しかしこれがあるおかげで、リモートコンソールが使用できない問題をある程度回避できます。ネットワーク設定をミスって外部からアクセスできなくなっても、まだ何とかする手段が確保されているこということですので。あの価格で KVM をつけられるはずもないので、この点はかなりポイントが高いと思います。
+リモートから OS の再インストールができると言っても選択肢は多くありません。CentOS と、Debian あと、Ubuntu です。個人的には、Debian が入れられれば良かったので、全く問題なかったのですが、</description>
+    </item>
+    
+    <item>
+      <title>アメリカ西海岸のお勧め専用サーバ</title>
+      <link>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</link>
+      <pubDate>Sat, 08 Jan 2011 13:08:59 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</guid>
+      <description>あけましておめでとうございます。新年のっけからまたサーバの話というのもどうかと思ったのですが、一応調べたことはまとめておきたいと思いまして…(^^;) これを最後にまた Mac ネタに戻りたいと思っています。
+ということで、アメリカ西海岸にあるお勧めの専用サーバ業者です。普通の方は専用サーバを借りることなんてまずないと思いますが、情報をまとめているところもありませんので。
+ プロバイダ  SLA   特徴など  ロケーション     Take 2 Hosting   なし   SLAはありませんが、価格、安定度ともに抜群です。ほとんど売り切れ状態が続いているのが玉に瑕。詳しくは以前のエントリをご覧下さい。   San Jose, CA     WebNX   Network: 100%
+Power: 99.9%   少し高いのですが、WebHostingTalk では必ず名前が挙がる、実績のあるプロバイダです。保証が欲しい方にお勧め。   Los Angeles, CA     Ubiquity Server Solutions   Network: 100%
+Power: 100%
+1時間以内の故障部品交換   ここも少し高いのですが、老舗のプロバイダです。ロス以外にもアトランタ、ダラス、シカゴ、ニューヨーク、シアトルにデータセンターがあります。   Los Angeles, CA</description>
+    </item>
+    
+    <item>
+      <title>Incero</title>
+      <link>https://www.loginterests.com/2010/12/31/incero/</link>
+      <pubDate>Fri, 31 Dec 2010 02:13:51 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/12/31/incero/</guid>
+      <description>VPS を紹介したので、専用サーバーもついでに。
+Incero LLC は、テキサス州オースチンにある会社ですが、Netplix のノースカロライナ州アシュビルにあるデータセンターにコロケーションしています。完全に東海岸ですね。日本からだと、ping が、200ms 程度とちょっと遠いですが、アメリカ向けのコンテンツを置くなら問題になりません。 ここは普段は高めの設定なんですが、ホリデーシーズン (もう終わりですが) 以外でもたまに値引きを行っており、それに当たると、お手頃価格で高性能サーバーを借りることができます。今現在ですと、以下の構成のサーバーが $189 (初期費用なし) です。   CPU   Core i7 930 2.8GHz     RAM   12GB     HDD   2x500GB     M/B   SuperMicro 製サーバー用マザーボード     リモートKVM   IPMI 2.0 対応     OS   CentOS 64bit 他 (自分でインストールすることも可能)     転送量   100Mbps unmetered 占有    他にもATOMサーバーなどがセールされています。詳しくは、WebHostingTalk の記事をご覧下さい。 以前も、WebHostingTalk.</description>
+    </item>
+    
+    <item>
+      <title>アメリカ西海岸のお勧め VPS</title>
+      <link>https://www.loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</link>
+      <pubDate>Thu, 30 Dec 2010 16:32:40 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</guid>
+      <description>VPS をしかも海外のものを借りる人はあまりいないでしょうけど、現時点でお勧めプロバイダのまとめです。
+  プロバイダ  仮想化ソフト   特徴など  ロケーション     Linode   Xen PV   鉄板中の鉄板です。   Fremont, CA 他    6Sync   KVM   Linode じゃなければどこ? という質問に必ず挙げられるプロバイダです。ここも鉄板と言ってよいでしょう。WHT でもすこぶる評判が良いところです。(2011/3/14 追加)   Los Angeles, CA 他    prgmr   Xen PV   転送量少なめですが、技術力があるプロバイダです。
+ San Jose, CA    RapidXen   Xen PV   XenベースのVPSプロバイダとしては老舗ですね。転送量課金ではなく帯域幅で課金する点が他所と異なるところ。   Los Angeles, CA     RapidKVM   KVM   RapidXen の運営会社が KVMベースで提供する VPS サービスです。価格が少々お高めになっています。   Los Angeles, CA     ARP Networks   KVM   提供される OS に FreeBSD があることが特徴です。価格面もお得感のある設定です。   Los Angeles, CA     ClubUpTime  Xen PV  WebHostingTalk.</description>
+    </item>
+    
+    <item>
+      <title>Take 2 Hosting</title>
+      <link>https://www.loginterests.com/2010/10/10/take-2-hosting/</link>
+      <pubDate>Sat, 09 Oct 2010 16:01:44 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/10/10/take-2-hosting/</guid>
+      <description>さて、しかし東海岸はちょっと&amp;#8230;せめて西海岸にあれば&amp;#8230;という方もいらっしゃるかと。そんな方にあつらえたようなプロバイダがあります。Take 2 Hosting です。
+ロケーションは、サンノゼ (カリフォルニア州) でこれ以上アジアやオーストラリアに近づけるには、ハワイかグアムにでもデータセンターを置くしかない。そんなことするなら、シンガポールに置きますやね。まあ、それはともかく、ここの特徴はデリバリーが早い! ことと、完全に自動化された保守ツールにあります。
+まず、サーバーの電源ON/OFF、再起動は独自のコントロールパネルから簡単に行うことができます。ここがすごいと思うのは、OS の再インストールまでコントロールパネルでできてしまうところです。再インストールしたい OS と RAID の有無や種類を選択してボタンをクリックするだけという、まるで VPS みたいな操作性です (実際には誤操作防止のために決められたキーワードを入力しなくてはならないのですが)。
+ こんな感じです  さらに、リモートKVMはありませんが、サーバーごとにターミナルサーバーのアカウントが割り振られており、SSH 経由でシリアルポートにアクセスすることができます。OS のコンソールはもちろん、BIOS の出力もディフォルトでシリアルポートに割り当てられていますので、上記のコントロールパネルとあわせて KVM と同じ＝ローカルコンソールと同じことができるようになっています。実際、これだけあればほとんどサポートに頼ることなくサーバーの運用が可能です。
+また、ディスクが RAID 前提で最低でも 2 組装着されているのもポイント高いです。
+回線は標準が、下り（サーバーからのダウンロード）10Mbps unmetered で、上り（サーバーへのアップロード）は制限がありません。ストリーミングする人には心もとない帯域ですが、その場合は追加費用を払って回線をアップグレードして頂くしか。^^; 50Mbps と 100Mbps がメニューにあります。
+ここもサポートがしっかりしており、海外のサーバーを初めて借りるという方でも安心してお勧めできます。が、一度運用を始めたら、ものすごく安定してるので、ピンポイントにハードウェア障害とか起きたりしない限り、サポートのお世話になることなんてほとんどないんじゃないでしょうか。私は一度ディスクを大容量のものに換装してもらうためにチケットを切ったことがあるだけで、ほかにサポートへ連絡する必要が生じたことはありませんでした。
+惜しむらくは、優良なプロバイダであるがゆえに、売り切れが多いという点です。現に今も完売状態です。アメリカ西海岸のサーバーを検討していて、ここに在庫があれば、迷わず申し込んだほうがいいです。</description>
+    </item>
+    
+    <item>
+      <title>Proxmox VE 日本語訳修正版</title>
+      <link>https://www.loginterests.com/2010/10/09/proxmox-ve-%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A8%B3%E4%BF%AE%E6%AD%A3%E7%89%88/</link>
+      <pubDate>Sat, 09 Oct 2010 01:06:27 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/10/09/proxmox-ve-%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A8%B3%E4%BF%AE%E6%AD%A3%E7%89%88/</guid>
+      <description>お恥ずかしい限りの誤訳が見つかりましたので、修正版をあげておきます。修正個所は、&amp;#8221;Add an ehternet device&amp;#8221; を「ドライブ全体を追加」としていたところです。何を見てたんでしょうね＞自分。^^;
+次のファイルを gunzip で展開した後、/usr/share/locale/ja/LC_MESSAGES/pve-manager.mo に上書きしてください。
+Proxmox VE 日本語ファイル
+ご迷惑をおかけします。</description>
+    </item>
+    
+    <item>
+      <title>Dedicated Lime</title>
+      <link>https://www.loginterests.com/2010/10/08/dedicated-lime/</link>
+      <pubDate>Thu, 07 Oct 2010 18:44:31 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/2010/10/08/dedicated-lime/</guid>
+      <description>何年か前から海外の専用サーバーを借りる機会があって、主にアメリカのサーバーをよくチェックしてるんですが、お値段が比較的安価で、回線容量もそこそこ、安定性も合格点と三拍子そろったプロバイダはなかなかありません。しかし、やはり探せばあるもので、今現在個人的にイチオシなのが、Dedicated Lime というプロバイダです。もちろん、私自身使用しています。
+ロケーションがアトランタ (ジョージア州) とほとんど東海岸なので、日本から ping を打つと、応答が大体 180ms-190ms と、ちょっと遠いのが難点といえば難点ですが、当然、それを補って余りある利点があります。
+まず、安い。ハードウェアに HP ® Proliant を使用しており、Xeon 3.0Ghz (P4世代) x 2、メモリ3GB、起動用の内蔵ディスクとは別に RAID-1 構成の SANディスクが 300GB、リモート KVM が付属して (←これ重要)、月々 $89 です。もちろん、もっと最近のモデルもラインアップには揃えられています。
+ハードディスクというのはやはりサーバーを構成するパーツの中ではどうしても壊れやすく、いくらバックアップをとってあったとしてもクラッシュしてしまえばある程度のダウンタイムが発生してしまいます。バックアップからクラッシュまでの間に更新があったとしたら取り戻しようがないのも悩みのたね。まさかそのためにフォールトトレラントを構成するわけにもいきません。そこで比較的安価でプロバイダーも対応が慣れている RAID を構成することでその危険を少しでも小さくするというのが、私がサーバーを構成する時の基本になっています。ごく小規模のサーバーにおいて、ハードウェア RAID か、ソフトウェア RAID かというのは今どき問題になりませんが、そもそもディスクをふたつ装着するのに高い別料金をとるところが多いこと多いこと。
+その点、ここ Dedicated Lime は RAID-1 前提の構成なので安心できるわけですね。
+ハードウェアでいえばもう一点。リモートＫVMが付属していることが大きいです。リモートメディアマウント機能つきですから、辛抱強い人であれば自力で OS のインストールを行うことができます。まあ実際はファイアウォールの設定をミスって SSH でログインできなくなったとか、BIOSの設定を変更したいとか、ローカルコンソールがないとどうしようもない状況に陥った時に出番なんですが、そんなときでも安心なわけです。これ、普通のプロバイダだと安いところでもつけたら最低でも月々 $40 以上はかかります。
+次に回線。WebHostingTalk.com のオファーセクションをずらっと眺めてみてください。同価格帯のサーバーですと、月転送量が 2000GB とか、3000GB というところが多いのですが、Dedicated Limeは、100Mbps Unmetered です! 共有回線なので、最低保証は上り下り合わせて6000GB となりますが、いちいち転送量を気にしなくてもよいというのは精神衛生上、非常に重要なことです。
+そして、何よりもここをオススメする一番の理由は、サポートが丁寧なことです。私の下手糞な英語に対してきちんきちんと応対してくれます。借りる前も借りた後もそれは変わりません。中の人一人で担当しているらしくすぐに返事が返ってこないこともありますが、長時間の放置はありません。対応もこちらの意図を汲んで的確に行ってくれます。
+最後に安定性。今年の1月から3月にかけて、月一ペースでデータセンターで障害があったのですが、状況を逐一報告してくれてユーザーとしては安心していることができました。今はそんなこともなく、安定運用に戻っています。全く問題は起きていません。
+いかがでしょう。日本の低スペックで高いサーバーで我慢されているなら、こちらのサーバを検討した方がいいと思いますよ。</description>
+    </item>
+    
+    <item>
+      <title>ドメイン名を変えました</title>
+      <link>https://www.loginterests.com/posts/2010-05-11-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%90%8D%E3%82%92%E5%A4%89%E3%81%88%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <pubDate>Mon, 10 May 2010 18:23:27 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2010-05-11-%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E5%90%8D%E3%82%92%E5%A4%89%E3%81%88%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <description>いやまあ、大した変更ではないんですが、http://daybook.asia から http://daybook.biz に。
+まあそれだけなんですけどね。^^; 別段、元のアドレスが死んだわけではないのですが、気分的に。</description>
+    </item>
+    
+    <item>
+      <title>VPS ショートレビュー (2/2)</title>
+      <link>https://www.loginterests.com/posts/2010-03-12-vps-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC-22/</link>
+      <pubDate>Fri, 12 Mar 2010 08:20:27 +0000</pubDate>
+      
+      <guid>https://www.loginterests.com/posts/2010-03-12-vps-%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC-22/</guid>
+      <description>サーバーの移設に手こずり、後半がえらく遅くなってしまいました。しかもブログの設定をミスってて記事にアクセスできない状態が続いていたようで&amp;#8230;昨日今日のにわか管理者じゃあるまいし、お恥ずかしい次第。^^;
+そうそう、前回紹介した Delimiter USA ですが、あれからどんどん拠点を拡大しており、現時点で「フランクフルト、サンノゼ、パリ」に加えて「ニューヨーク、アトランタ、マイアミ、トロント、シドニー、マレーシア、シンガポール、ロンドン、コペンハーゲン、バルセロナ、プラハ、ハイファ (イスラエル)」から選択が可能になっています。どうしちゃったんでしょう。世界制覇でも目指してるんでしょうか。ｗ
+閑話休題。では前回紹介できなかったところを軽く流してみましょう。
+RAM Host 評価: ☆☆
+特段これといって不具合があるわけではなく、ごく普通のサーバーでしたが、CPUが、Core 2 Duo というのがちょっと&amp;#8230;お試しだけで終わりました。
+ ロケーション   サンノゼ (アメリカ、カリフォルニア州)、ダラス (アメリカ、テキサス州)、ドイツ、ニュージーランド    仮想環境  Linux Xen (PV、共有カーネル)、OpenVZ    コントロール
+パネル   独自。ローカルコンソールがないくらいで機能は SolusVM とあまり変わりがない。    対応OS  Arch Linux (32), CentOS 4.x/5.x (32), Debian 3.1.x/4.0.x/5.0.x (32), Fedora 10 (32), 同 11 (32), Gentoo 2009.7.18/2010.1.5 (32), OpenSUSE 10.3/11.1 (32), Ubuntu 8.04/9.04/9.10 (32)   サポート   普通です。</description>
+    </item>
+    
+  </channel>
+</rss>
