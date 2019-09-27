@@ -1,6 +1,8 @@
 baseurl = "https://www.loginterests.com"
 languageCode = "ja"
 Title = "電脳業務日誌"
+theme = "potato-dark"
+
 # Copyright notice. This is displayer in the footer.
 copyright = "&copy; 2008-2019 mzch"
 
@@ -32,8 +34,8 @@ pygmentsCodefences = true
 [menu]
 
   [[menu.main]]
-    name = "Post"
-    url = "/"
+    name = "Posts"
+    url = "/posts"
     weight = 1
 
   [[menu.main]]
@@ -45,7 +47,17 @@ pygmentsCodefences = true
     name = "Tags"
     url = "/tags"
     weight = 3
-
+	
+  [[menu.main]]
+    name = "Privacy Policy"
+    url = "/privacy"
+    weight = 4
+	
+  [[menu.main]]
+    name = "Terms & Conditions"
+    url = "/terms"
+    weight = 5
+	
   [[menu.main]]
     name = "About"
     url = "/about"

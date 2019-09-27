@@ -27,7 +27,7 @@
   <meta property="og:type" content="website" />
   
   
-  <meta name="generator" content="Hugo 0.58.0" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <meta name="generator" content="Hugo 0.58.3" /><link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://www.loginterests.com/css/style.css" />
   
   <link href="https://www.loginterests.com/index.xml" rel="alternate" type="application/rss+xml" title="電脳業務日誌" />
@@ -50,7 +50,7 @@
     
       
       <li class="p-menu__listitem">
-        <a href="/">Post</a>
+        <a href="/posts">Posts</a>
       </li>
       
     
@@ -63,6 +63,18 @@
       
       <li class="p-menu__listitem">
         <a href="/tags">Tags</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/privacy">Privacy Policy</a>
+      </li>
+      
+    
+      
+      <li class="p-menu__listitem">
+        <a href="/terms">Terms &amp; Conditions</a>
       </li>
       
     
@@ -87,7 +99,7 @@
 
 <article class="c-article p-list-article">
   <header>
-    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/">Posts</a></h2>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-08-12-formspree/">Formspree</a></h2>
     <p class="c-article__meta">
       Posted on
       <time datetime="2019-08-12T13:29:10&#43;09:00">
@@ -96,8 +108,246 @@
     </p>
   </header>
   <div class="c-article__summary">
-    
+    例によって例のごとく、ドキュメントが未整備なオープンソースアプリをインストールしたので、そのメモ。
+Formspree は、静的サイトなどにメールフォームを設置するためのサーバーアプリケーションである。設置が面倒な方は、ホスティングサービスもあるので、そちらを利用された方がよいかと。
+ まず、Python をインストールする。Python は、個人的に pyenv を使うので、そのように。
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv .profile を編集して、以下を追記。
+PYENV_ROOT=&#34;$HOME/.pyenv&#34; export PYENV_ROOT if [ -d &#34;$PYENV_ROOT/bin&#34; ] ; then PATH=&#34;$PYENV_ROOT/bin:$PATH&#34; eval &#34;$(pyenv init -)&#34; fi 前提ファイルをインストール
+sudo apt install build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev libmariadb-dev-compat libpq-dev Node.js もインストールしておく。
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs Python をインストール。その後、pipenv をインストール。
   </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-08-12-formspree/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-07-08-readthedocs/">Read The Docs のインストール</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-07-08T17:12:49&#43;09:00">
+        Jul 8, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    ソースコード開発管理には多種多様なバージョン管理ツールが揃っているが、ドキュメントについては、同じツールを使えばいいやということか、あまり種類がない。その中でもよく使われている、Read The Docs をインストールしてみた。
+ドキュメント管理のツールなので、さぞかしドキュメントが充実しているだろう…ということはなく、やっぱり腐っているところがある。
+まず第一に、プロダクションユースの設定が公開されているソース自体に含まれていない。つまり、自分で書かないといけない。この時点でまあ論外といえば論外なのだが、開発版の設定はついてくるので、Django のドキュメントを眺めつつ、適宜修正。うちは、以下のようにした。バックエンドに PostgreSQL を使うように指定。ドメイン名は、仮に example.jp としておく。
+&#34;&#34;&#34;Local development settings, including local_settings, if present.&#34;&#34;&#34; from __future__ import absolute_import import os from .base import CommunityBaseSettings class CommunityProductionSettings(CommunityBaseSettings): &#34;&#34;&#34;Settings for personal production use&#34;&#34;&#34; SECRET_KEY = &#39;(充分な長さのシークレットキー。とりあえず、ランダムな16進数で50桁もあればいいかも)&#39; PRODUCTION_DOMAIN = &#39;www.example.jp&#39; WEBSOCKET_HOST = &#39;www.example.jp&#39; @property def DATABASES(self): # noqa return { &#39;default&#39;: { &#39;ENGINE&#39;: &#39;django.db.backends.postgresql_psycopg2&#39;, &#39;NAME&#39;: &#39;readthedocs&#39;, &#39;USER&#39; : &#39;readthedocs&#39;, &#39;PASSWORD&#39; : &#39;パスワード&#39;, &#39;HOST&#39; : &#39;localhost&#39;, &#39;PORT&#39; : &#39;5432&#39;, } } # Email DEFAULT_FROM_EMAIL = &#39;no-reply@example.
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-07-08-readthedocs/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/">Apache で php-fpm を使う</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-07-05T05:12:38&#43;09:00">
+        Jul 5, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    やっぱり、Apache でも http2 を有効にしたい！ということで、慣れ親しんだ、php_module からおさらばして、php-fpm で構成し直した。Debian &amp; php 7.3 での例を示す。
+まず、php-fpm をインストール。まあ、php_module を削除すれば、勝手に php-fpm が入るんですが。ダウンタイムを極力避けるなら、この手順で。
+sudo apt install php-fpm 次に proxy_fcgi を有効にする。
+sudo a2enmod proxy_fcgi そうしたら、php_module を削除する。
+sudo apt purge libapache2-mod-php libapache2-mod-php7.3 prefork モジュールが読み込まれているのをやめて、event モジュールに差し替える。ついでに、http2 モジュールを有効にする。
+sudo a2dismod mpm_prefork sudo a2enmod mpm_event http2 最後に、Apache の php-fpm 設定を有効にする。
+sudo a2enconf php7.3-fpm あとは、Apache を再起動するだけ。
+sudo systemctl restart apache2 うむ。簡単だった。
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-06-27-prismo/">Prismo</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-06-27T01:20:15&#43;09:00">
+        Jun 27, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Prismo をインストールしてみたが、ドキュメントが腐っているという、オープンソースフリーソフトにありがちなものだったので、インストール手順をまとめておく。
+ ソースを git clone https://gitlab.com/prismosuite/prismoとかして ダウンロードする。 ruby 2.5.1 が必要なので、rvm なり、rbenv なりで環境を整えておく。おすすめは、rbenv。 Node.JS 10.x と yarn が必要なので、インストールしておく。 bundler をインストール。gem isntall bundler sidekiq をインストール。gem install sidekiq Gemfile を修正する。
+--- Gemfile.orig	2019-06-26 09:30:35.440184122 -0700 +++ Gemfile	2019-06-26 06:50:29.313718143 -0700 @@ -77,17 +77,19 @@ gem &#39;webmention&#39; gem &#39;webmention-endpoint&#39; gem &#39;doorkeeper&#39; +gem &#39;listen&#39;, &#39;&gt;= 3.0.5&#39;, &#39;&lt; 3.2&#39; +gem &#39;bullet&#39;  group :development, :test do gem &#39;dotenv-rails&#39; gem &#39;byebug&#39;, platforms: %i[mri mingw x64_mingw] - gem &#39;bullet&#39; + # gem &#39;bullet&#39; gem &#39;rspec-rails&#39;, &#39;~&gt; 3.
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-06-27-prismo/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/">Postfix, Dovecot and MySQL</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-06-24T12:50:31&#43;09:00">
+        Jun 24, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Postfix と Dovecot を使って、メールサーバーを運用しているのだが、うちは構成が少し変則的で、メール送信サーバー (SMTP) とメール受信サーバー (IMAP/POP3) が分離している。最終的なメールの配送は Dovecot の LMTP デーモンに頼っているのだが、エイリアスにメールが配送されないという問題が発覚した。
+別にバグでも何でもなく、ただの構成ミスである。Dovecot の仮想メールボックス機能を使ってメールアドレスを管理しているのだが、当初、Postfix の送信サーバーと Dovecot の受信サーバーは同居していたので、ローカルの配送は、Postfix の Virtual Transport に任せていた。この時点では、エイリアスの処理も問題なかった。
+最近、サーバーの移転を行ったのにあわせて、送信サーバーと受信サーバーの分離を行ったのだが、これは、ローカル配送に Dovecot の LMTP デーモンが使えることがわかったからである。で、何も考えずに移行して嵌まった、と。
+アドレス管理のバックエンドに MySQL を使い、PostfixAdmin で Web から管理していたのだが、それ自体はまあついで。問題は、LMTP に配送を移したことで、Postfix の Virtual Transport が解釈されなくなってしまったことにある。別ソフトなんだから、当たり前ですな。そのため、MySQL で管理していたエイリアス情報が参照されなくなってしまい、未達になっていた、と。
+多分、色んな解決法があるんでしょうけど、バックエンドに MySQL を使っている私の場合は、Dovecot のユーザー情報取得部分に手を入れることで、部分的に解決した。具体的には、ユーザー情報を MySQL から取得するクエリー文を以下のように修正しただけ。
+sql user_query = SELECT concat('/var/mail/', maildir) as mail, concat('*:bytes=', quota) as quota_rule, 998 as uid, 8 as gid FROM mailbox WHERE active = '1' AND username = (SELECT goto FROM alias WHERE (address = '%u' AND alias.
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-06-02-change-domain/">ドメイン名を変更しました</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-06-02T07:56:58&#43;09:00">
+        Jun 2, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    旧来の daybook.biz から、新たに loginterests.com にドメイン名を変更しました。気分転換というか、既に（というか、最初から）日誌になってなかったので、興味のあることをつらつら記録していく、という現状に近い意味を持たせようか、と。
+あと、サーバーを Debian Buster にアップグレードしたんですが、なぜか daybook.biz だけ不調になりまして、ここも心機一転。Wordpress から、Hugo へプラットホームを変えました。サイトジェネレータ型のいいところは、素の HTML/CSS/Javascript を置くだけなので、システムの変更に強い点。今回、図らずも Wordpress はその弱点を晒してしまったということで。Worddpress 本体は、PHP のバージョンが上がってもきちんと対応してるので、まあ、使ってるプラグインとかテーマが悪いのでしょう。
+細々続いているこのサイトですが、今後ともよろしくお願いします。はい。
+なお、一応、旧来のサイトも残してあります。見てみたいという奇特な方は、こちらからどうぞ。
+  </div>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-05-04-vanilla-forums/">Vanilla Forums</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-05-04T10:36:17Z">
+        May 4, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
+まずは、nginx と php をインストール
+sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
+nginx の server {} ディレクティブ内で以下のように設定。
+root /srv/vanilla; # Add index.php to the list if you are using PHP index index.php; # Block some folders as an extra hardening measure.
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-05-04-vanilla-forums/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/">Newspipe のインストール</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-04-05T10:16:03Z">
+        Apr 5, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    Feedbin の設置には成功したものの、どうやってもフィードを更新してくれなくて、使用を断念したが、他によさげなアグリゲーターがないか、😎 Awesome lists about all kinds of interesting topics で探したところ、Newspipe が使いやすそうだったので、これをインストールしてみた。
+結果から言うと、丸二日かかって稼働に成功。やったね！😁
+まず、Python 3.7 以上が必要だが、Debian 9 (Stretch) に入っているのは、3.5。ということで、ソースからインストールする。現時点での最新版は、3.7.3。
+最初に、前提となるパッケージをインストールしておく。
+sudo apt install -y build-essential python-dev python-setuptools python-pip python-smbus libssl-dev libffi-dev zlib1g-dev libreadline-gplv2-dev libsqlite3-dev libbz2-dev libncursesw5-dev libgdbm-dev liblzma-dev uuid-dev tk-dev zlibc libpq-dev libmariadbclient-dev sudo apt install -y apache2-dev sudo pip install pipenv 次に、適当なところでアーカイブを展開し、以下を実行する。
+./configure --enable-shared --enable-optimizations make sudo make altinstall sudo ldconfig &ndash;enable-shared オプションって推奨されてないんじゃないの？と思う人もいるかも知れませんが、mod_wsgi に共有ライブラリが必要なので、指定せざるを得ません。最後の ldconfig は、Python 共有ライブラリを認識させるためのおまじない。やっておかないと実行時にエラーが起きます。
+Python がインストールできたら、PostgreSQL も必要なので、インストールしておく。うちは、別インスタンスにインストール済みなので、パス。いずれにせよ、データベースを作成しておく。
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/">Feedbin のインストール</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-03-31T15:42:14Z">
+        Mar 31, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    結果的に、動作しなかったが、勿体ないので、記事は残しておく。
+ニュースサイトの閲覧に、サーバー設置型であるニュースフィーダーの Fever を使っているのだが、ディスコンになってしまって、乗り換え先を探していたところ、オープンソースで公開されている Freebin がよさげだったので、Debian GNU/Linux 9 Stretch にインストールしてみた。Feedbin に月 $5 払えば、インストールなどいらないのだが、ドキュメントに書かれていない設定が多数あって、試行錯誤に丸一日費やしたので、どこかに残しておかないと勿体なかったというのもある。😁
+まず、Stripe.com のアカウントが必要なので、サインアップする。
+ダッシュボードの「テスト API キーの取得」に、公開可能キーとシークレットキーがあるので、これをいったんコピーしておく。
+次に、サイドバーの Billing → 商品から、商品を 9 種類追加する。商品ごとの料金プランで、API ID に以下の値をひとつずつ設定する。面倒だが、Stripe.com に該当の API ID を持つ商品（料金プラン）がないとエラーになるので、頑張って設定する。
+ basic-monthly basic-yearly basic-monthly-2 basic-yearly-2 basic-monthly-3 basic-yearly-3 free timed trial  設定が終わったら、インストール作業に入る。まず、Feedbin を実行するユーザーを作成する。
+sudo useradd -m feedbin 実行には、memcahed、elasticsearch、ruby が必要なので、インストールする。ただし、システムデフォルトの ruby は、バージョンが古い (2.3) ので、rvm から必要なバージョンを導入しなくてはならない。(無論、rbenv から導入してもよい)
+sudo apt install dirmngr sudo apt install apt-transport-https sudo apt install curl sudo apt install memcached sudo apt install -t stretch-backports redis sudo gpg --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E37D2BAF1CF37B13E2069D6956105BD0E739499BDB curl -sSL https://get.
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/" class="c-article__btn p-list-article__btn">Read more</a></li>
+  
+</article>
+
+
+
+
+<article class="c-article p-list-article">
+  <header>
+    <h2 class="c-title c-article__title"><a href="https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">小槌をインストールしてみた</a></h2>
+    <p class="c-article__meta">
+      Posted on
+      <time datetime="2019-03-16T05:22:01Z">
+        Mar 16, 2019
+      </time>
+    </p>
+  </header>
+  <div class="c-article__summary">
+    サーバーインストール型の家計簿があるのを見つけて、インストールしてみたので、手順を備忘録として残しておく。家計簿ソフトの名前は、小槌 (GitHub リポジトリ)
+まず、node.js をインストール
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install -y nodejs 続けて、ruby その他をインストール
+sudo apt install -y ruby ruby-dev build-essential zlib1g-dev MySQL/MariaDB のライブラリをインストール
+sudo apt install libmysqlclient-dev または、
+sudo apt install libmariadbclient-dev-compat Debian 9 stretch デフォルトの gem はバージョンが低いので、アップデートする。
+gem -v 2.5.2.1 sudo gem update --system (省略) gem -v 3.0.3 Bundler をインストール
+sudo gem install bundler GitHub から、ソースをクローン。
+sudo git clone https://github.com/everyleaf/kozuchi.git Bundle を使って、必要なモジュールをインストール
+  </div>
+  
+  <a href="https://www.loginterests.com/posts/2019-03-16-%E5%B0%8F%E6%A7%8C%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/" class="c-article__btn p-list-article__btn">Read more</a></li>
   
 </article>
 
@@ -109,9 +359,11 @@
     </div>
     <div class="c-pagination__older">
       
+      <a href="/page/2/">Older</a>
+      
     </div>
   </div>
-  <span class="c-pagination__count p-pagination__count">Page 1 of 1</span>
+  <span class="c-pagination__count p-pagination__count">Page 1 of 11</span>
 </nav>
 
   </main>
