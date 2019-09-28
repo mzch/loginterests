@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/server/</link>
+    <link>https://loginterests.com/tags/server/</link>
     <description>Recent content in Server on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 02 Jun 2019 07:56:58 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ドメイン名を変更しました</title>
-      <link>https://www.loginterests.com/posts/2019-06-02-change-domain/</link>
+      <link>https://loginterests.com/posts/2019-06-02-change-domain/</link>
       <pubDate>Sun, 02 Jun 2019 07:56:58 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-06-02-change-domain/</guid>
+      <guid>https://loginterests.com/posts/2019-06-02-change-domain/</guid>
       <description>旧来の daybook.biz から、新たに loginterests.com にドメイン名を変更しました。気分転換というか、既に（というか、最初から）日誌になってなかったので、興味のあることをつらつら記録していく、という現状に近い意味を持たせようか、と。
 あと、サーバーを Debian Buster にアップグレードしたんですが、なぜか daybook.biz だけ不調になりまして、ここも心機一転。Wordpress から、Hugo へプラットホームを変えました。サイトジェネレータ型のいいところは、素の HTML/CSS/Javascript を置くだけなので、システムの変更に強い点。今回、図らずも Wordpress はその弱点を晒してしまったということで。Worddpress 本体は、PHP のバージョンが上がってもきちんと対応してるので、まあ、使ってるプラグインとかテーマが悪いのでしょう。
 細々続いているこのサイトですが、今後ともよろしくお願いします。はい。
@@ -26,10 +26,10 @@
     
     <item>
       <title>I/O Flood 最高!</title>
-      <link>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</link>
+      <link>https://loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</link>
       <pubDate>Wed, 30 May 2018 11:23:23 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</guid>
+      <guid>https://loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</guid>
       <description>突然、このブログを含むサーバー群にアクセスできなくなった。VM を実行しているホスト自体が落ちたようだ。
 そこで、サポートに連絡したら、一時間かからずに復旧してくれた。何でもサーバーのマザーボードが壊れたらしい。
 新しいマシンにディスクを移動して、設定を調整した上でブート、疎通確認までしてくれた。マネージドでもないのに。しかも、何気に CPU が、Xeon L5520 (4コア8スレッド) デュアルから、Xeon L5639 (6コア12スレッド) デュアルにアップグレードされている。どうやら同型機は売り切れていたらしい。追加料金は一切なし。
@@ -38,10 +38,10 @@
     
     <item>
       <title>ちょっとした KVM サポートツール</title>
-      <link>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
       <pubDate>Wed, 07 Jan 2015 19:50:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
       <description>そろそろよかろうと思って、サーバーを jessie に上げたら、Xen が起動しない。ホスティングサーバーの変更もあったので、思い切って仮想化基盤を KVM に変更……というか、回帰しました。
 ところが、xen-tools のようなお手軽ツールがありません。いや、あることはあるのですが、古いバージョンにしか対応してなくて、しかも最近全くメンテされてない状態。
 一応、昔気に入ってて、日本語翻訳までした Proxmox VE も見てみたのですが、えらく進化してしまって、機能てんこ盛りで、こんなんイラネ。VNC もセキュリティに気を遣うのはわかるんですが、ごく一部のクライアントしか対応してないプロトコルしか外に出さない＝使いにくい Java クライアントとか、HTML 5 版のやっぱり使いにくいクライアントしか想定にないみたいで、愛想が尽きた。
@@ -51,10 +51,10 @@
     
     <item>
       <title>Debian で Xen 4.1 を</title>
-      <link>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
+      <link>https://loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
       <pubDate>Mon, 26 Mar 2012 10:06:38 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
+      <guid>https://loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
       <description>パッケージで入れられてしめしめとか思ってたら、何か依存関係でも壊したのか、起動しないゲストがあったでござる。ということで、バニラな方法で入れ直す。元ネタは昨日と同じでこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
 Xen.org からソースを取ってきます。現時点での最新版は、4.1.2。
 wget http://bits.xensource.com/oss-xen/release/4.1.2/xen-4.1.2.tar.gz ビルドに必要なパッケージをインストールします。/etc/apt/source.list に以下の行を追加して、
@@ -70,10 +70,10 @@ xl list 次のように、Domain-0 がリストされない場合、たいてい
     
     <item>
       <title>Debian Squeeze に Xen 4.1 を入れる</title>
-      <link>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
       <pubDate>Mon, 26 Mar 2012 01:31:58 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
       <description>XenServer 6.0 の基盤になってたり、他のディストリがこぞって採用してるのが、Xen 4.1 なのですが、時期の関係で、Squeeze には、4.0 が収録されています。何か中途半端。sid にはパッケージがありますので、そっからソースを取ってきて（さすがにバイナリは持ってきても動かないので）、ビルドする方法を見つけましたので、備忘録がてら。
 元ネタはこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
 まずは、source.list に１行追加。

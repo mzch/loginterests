@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>物書き御用達 on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E7%89%A9%E6%9B%B8%E3%81%8D%E5%BE%A1%E7%94%A8%E9%81%94/</link>
+    <link>https://loginterests.com/tags/%E7%89%A9%E6%9B%B8%E3%81%8D%E5%BE%A1%E7%94%A8%E9%81%94/</link>
     <description>Recent content in 物書き御用達 on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 14 Dec 2008 09:54:55 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E7%89%A9%E6%9B%B8%E3%81%8D%E5%BE%A1%E7%94%A8%E9%81%94/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E7%89%A9%E6%9B%B8%E3%81%8D%E5%BE%A1%E7%94%A8%E9%81%94/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>StoryMill 3.2.1 日本語リソースパッケージ</title>
-      <link>https://www.loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</link>
+      <link>https://loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</link>
       <pubDate>Sun, 14 Dec 2008 09:54:55 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</guid>
+      <guid>https://loginterests.com/posts/2008-12-14-storymill-321-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8/</guid>
       <description>うっかりしている間に、StoryMill がバージョンアップして 3.2.1 になってました。ので、日本語リソースも対応してみました。ご自由にお使い下さい。ただし、ご使用は、at your own risk で。:-)
 StoryMill 3.2.1 日本語リソースパッケージ</description>
     </item>
     
     <item>
       <title>StoryMill 日本語リソース</title>
-      <link>https://www.loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</link>
+      <link>https://loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</link>
       <pubDate>Sun, 30 Nov 2008 06:20:14 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</guid>
+      <guid>https://loginterests.com/posts/2008-11-30-storymill-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9/</guid>
       <description>日本の物書きには、日本語がわかりやすいかと思いまして、以前紹介した StoryMill の日本語リソースを作ってみました。対応バージョンは、3.2です。
 StoryMill.app 配下の Contents/Resources の下に、解凍してできた Japanese.lproj をコピーするか、移動するかすれば、メニュー、ダイアログ、ツールバーなどが日本語化されます。テンプレートが一部未訳なのは、ご愛敬。^^;
 テンプレートを翻訳した上でしばらく使ってみて、誤訳などなさそうであれば、Mariner Software へ送ろうと思っています。
@@ -37,10 +37,10 @@ StoryMill 日本語リソースをダウンロード</description>
     
     <item>
       <title>StoryMill</title>
-      <link>https://www.loginterests.com/posts/2008-08-22-storymill/</link>
+      <link>https://loginterests.com/posts/2008-08-22-storymill/</link>
       <pubDate>Fri, 22 Aug 2008 06:17:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-08-22-storymill/</guid>
+      <guid>https://loginterests.com/posts/2008-08-22-storymill/</guid>
       <description>最近、ちょこちょこと小説もどきを書いている。まあ、内容は完全に妄想なので、それはさておき。テキストエディタでしこしこ書いてたんですが、長くなればなるほど見通しが悪くなるのは仕方のないところ。手頃なツールがないかと探していると、よくあるアウトラインプロセッサは、Googleで簡単に引っかかるもののシーンごとにテキストを管理できるとか、登場人物がリストできるとか、ちょっとあれば便利そうっていう特化した機能を持つ物がない。映画の脚本とか専用のソフトはあるけど、そっちは興味ないし。
 で、さらに小説専用とかでググったら出てきました。そのものずばりが目的のソフトで、StoryMill。アメリカではプロフェッショナルな方も使ってるとか。開発と販売元は、MARINER Software。
 や、とにかく書きたいとこを先に書いて、体裁は後から整えるという、趣味の小説書き（SS書きの方が一般的?）にはとても重宝します。 submissionといって、どこの出版社やエージェントに原稿を送ったかまで管理できるところが、や、アメリカ的です。ｗ</description>

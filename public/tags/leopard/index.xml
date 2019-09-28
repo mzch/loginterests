@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leopard on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/leopard/</link>
+    <link>https://loginterests.com/tags/leopard/</link>
     <description>Recent content in Leopard on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Thu, 12 Feb 2009 16:55:42 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/leopard/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/leopard/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>夢の続き</title>
-      <link>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
+      <link>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
       <pubDate>Thu, 12 Feb 2009 16:55:42 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
+      <guid>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
       <description>ELSA の GLADIAC 988 GTZ 512M (8800GT) を買ったので、夢を見ているPCに換装してみました。Boot.plist の書き換えを忘れずに。
 で、起動したところ、ちゃんと認識され、機嫌良く動いています。これで、Snow Leopard の OpenCL も恐くないってとこでしょうか。:-)</description>
     </item>
     
     <item>
       <title>夢の中で音が鳴りました</title>
-      <link>https://www.loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 01 Jan 2009 18:22:52 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>探し方が、まだまだ足りなかったようです。InsanelyMac の以下のエントリから、ALC888用のkextを落として入れると、内蔵オーディオで音がなりました。
 [HOW TO] Patch AppleHDA &amp;#8211; Knowledge Base
 このエントリに記載されている Desktop ALC883 CAD0 5.1(記事のかなり下の方にリンクがあります)をダウンロードして、/System/Library/Extensions にインストールするか、EFI boot をインストールしたバーティションの /Extensions にコピーして、update.sh を実行し直すか、boot-132 の initrd.img にコピーするか、いずれかを行って、とにかくブート時に読み込まれるようにすると、内蔵音源から音がなります。
@@ -37,10 +37,10 @@ EFI boot Kit for P5E WS PRO ←全部まとめてダウンロードはこちら�
     
     <item>
       <title>夢の中で sleep しました</title>
-      <link>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 25 Dec 2008 14:30:20 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>やはり夢ですので、間抜けなことを気づかずにしていたようです。
 Kernel boot オプション に -f を指定しないと、オンボードの NIC を認識しなかったのですが、EFI Studioで、EFI string を作成する際に、Ethernet を追加し忘れていたようで、
  Device: に、Display を選択。その下のドロップダウンリストで、GeForce 8600GT 256MB を選択。Add device をクリック。 Device: Ethernet を選択。Add device をクリック。  として、Boot.plist を作成したら、普通に、オンボードの NIC を認識しました。情けない。^^;
@@ -54,10 +54,10 @@ sudo cp Info.</description>
     
     <item>
       <title>続けて夢を見ました。</title>
-      <link>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Mon, 22 Dec 2008 00:19:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>EFI boot v6 を落として、USBデバイス経由でなく、スタンドアローンで起動するようにしてみました。この、EFI boot は、Boot-132にインスパイヤされたものだと作成者自身が記事で述べているように、GUIDパーティションに必ずついてくる EFIパーティションにブートローダやら、kextを突っ込んでしまえという方法です。元々 Apple はここを使ってないので、昨今の風潮にあわせた資源の有効活用ってやつですね。やり方はごっつ簡単。Leopard 導入済みの環境でも、DVDのインストーラから起動した環境でもインストール可能です。
 ■必要なもの
  efi_boot_v6.1.zip を InsanelyMac の [Guide] Boot from EFI partition, zero modification installs on Intel SSE2 or better&amp;#8230;, Zero-modification Leopard installs. Share disks between macs &amp;amp; ha ってエントリから落とす。 zip を展開しておく。 DSDT Pacher で、DSDT.aml を造っておく。  [1] インストール先ディスクのデバイス名を取得する
@@ -66,10 +66,10 @@ sudo cp Info.</description>
     
     <item>
       <title>夢を見ました</title>
-      <link>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 18 Dec 2008 05:40:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>Leopard を PCにインストールするという夢を見たので、忘れないうちにメモしておいたり。オンボのサウンドがどうやっても認識しないけど、USBの音源あるし、ま、いっかってことで。
 　ちなみに、10.5.6 は、スリープから戻ってこないっす。デスクトップをスリープ運用する人は、あんましいないかもしんないけど。(10.5.5だと、ちゃんとスリープから復帰します)
 　カーネルブート時にネットワークアダプタが認識されないため、ホストUUID が設定されない問題があった。そのせいで、Time Machines が正常に開始しなかったり、Xcode がエラーを吐いたり、色々問題が。^^; おまけ 4 に解決方法を追記。(2008/12/19)

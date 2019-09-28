@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>サーバー on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
+    <link>https://loginterests.com/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/</link>
     <description>Recent content in サーバー on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 02 Jun 2019 07:56:58 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ドメイン名を変更しました</title>
-      <link>https://www.loginterests.com/posts/2019-06-02-change-domain/</link>
+      <link>https://loginterests.com/posts/2019-06-02-change-domain/</link>
       <pubDate>Sun, 02 Jun 2019 07:56:58 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-06-02-change-domain/</guid>
+      <guid>https://loginterests.com/posts/2019-06-02-change-domain/</guid>
       <description>旧来の daybook.biz から、新たに loginterests.com にドメイン名を変更しました。気分転換というか、既に（というか、最初から）日誌になってなかったので、興味のあることをつらつら記録していく、という現状に近い意味を持たせようか、と。
 あと、サーバーを Debian Buster にアップグレードしたんですが、なぜか daybook.biz だけ不調になりまして、ここも心機一転。Wordpress から、Hugo へプラットホームを変えました。サイトジェネレータ型のいいところは、素の HTML/CSS/Javascript を置くだけなので、システムの変更に強い点。今回、図らずも Wordpress はその弱点を晒してしまったということで。Worddpress 本体は、PHP のバージョンが上がってもきちんと対応してるので、まあ、使ってるプラグインとかテーマが悪いのでしょう。
 細々続いているこのサイトですが、今後ともよろしくお願いします。はい。

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SSL on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/categories/ssl/</link>
+    <link>https://loginterests.com/categories/ssl/</link>
     <description>Recent content in SSL on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 19 Mar 2018 18:55:28 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/categories/ssl/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/categories/ssl/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>メールサーバー間の SMTP 通信を暗号化する</title>
-      <link>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</link>
       <pubDate>Mon, 19 Mar 2018 18:55:28 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</guid>
       <description>メールサーバー間の通信で、TLSを使った暗号化が可能なのは知っていたが、面倒なので放置していた。
 が、Gmail などで暗号化通信で送られてきたメールにはその旨記載があったり、世の中も動いてきてるので、今回、対応することにした。
 Debian の場合 apt install ca-certificates で、CA証明書を導入しておくことを忘れない。
@@ -32,19 +32,19 @@ smtpd_use_tls=yes smtpd_tls_received_header = yes 無論、SSL 証明書を Let&
     
     <item>
       <title>StartSSL が Opera に対応してた</title>
-      <link>https://www.loginterests.com/2010/10/06/startssl-%E3%81%8C-opera-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%9F/</link>
+      <link>https://loginterests.com/2010/10/06/startssl-%E3%81%8C-opera-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%9F/</link>
       <pubDate>Wed, 06 Oct 2010 10:17:12 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/10/06/startssl-%E3%81%8C-opera-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%9F/</guid>
+      <guid>https://loginterests.com/2010/10/06/startssl-%E3%81%8C-opera-%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%A6%E3%81%9F/</guid>
       <description>最近、StartSSLのサイトをチェックしていなかったので気付くのが遅くなったのですが、Opera の最新版にルート証明書が組み込まれており、これで主要なブラウザにすべて対応を果たしたことになります。携帯に対応する必要のないサイトなら、StartSSLも十分検討の対象となりますね。BlackBerryにも対応してくれたらスマートフォンでも問題がなくなるのですが。:)</description>
     </item>
     
     <item>
       <title>StartSSL (3/3)</title>
-      <link>https://www.loginterests.com/posts/2010-05-15-startssl-33/</link>
+      <link>https://loginterests.com/posts/2010-05-15-startssl-33/</link>
       <pubDate>Sat, 15 May 2010 01:46:22 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2010-05-15-startssl-33/</guid>
+      <guid>https://loginterests.com/posts/2010-05-15-startssl-33/</guid>
       <description>さて、SSL証明書の請求です。個人認証を受けていない場合は、
  サーバー証明書 (1ドメイン。有効期間1年間) クライアント／メールアドレス証明書 (有効期間1年間)  個人認証、企業認証を受けている場合は、
  サーバー証明書 (複数ドメイン、ワイルドカード可。個人／企業実在証明付き。有効期間2年間) クライアント／メールアドレス証明書 (個人／企業実在証明付き。有効期間2年間) コードサイン証明書 (個人／企業実在証明付き。有効期間2年間)  が請求できます。それでは、ごく一般的なサーバー証明書を例にとって請求方法を説明しましょう。
@@ -73,10 +73,10 @@ smtpd_use_tls=yes smtpd_tls_received_header = yes 無論、SSL 証明書を Let&
     
     <item>
       <title>StartSSL (2/3)</title>
-      <link>https://www.loginterests.com/posts/2010-05-14-startssl-23/</link>
+      <link>https://loginterests.com/posts/2010-05-14-startssl-23/</link>
       <pubDate>Fri, 14 May 2010 04:37:14 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2010-05-14-startssl-23/</guid>
+      <guid>https://loginterests.com/posts/2010-05-14-startssl-23/</guid>
       <description>さて、アカウントが開設されたので、個人認証を申し込むこととします。個人認証には、以下のものが必要です。
  最近の写真がある公的機関の証明書を二種類 支払いのためのクレジットカード (Visa, MasterCard, American Express) または Paypal アカウント  写真がある公的機関の証明書といえば、代表的なものはパスポートと運転免許証、あるいは写真付き住基カードでしょうか。運転免許証と健康保険証でも認証してもらえた例もあるようなので、二種類とも絶対に写真が必要というわけでもないようです。「免許証とか日本語だけど大丈夫なの?」と思われるかもしれませんが、大丈夫です。
 私はパスポートと運転免許証で認証してもらいました。その場合は、以下のものを用意します。なお、画像の大きさは 800&amp;#215;600 以下で、かつサイズも 1MB 以下でなくてはなりません。画像のフォーマットは、一般的なフォーマット (PDF, PNG, JPEGなど) で問題はありません。
@@ -95,10 +95,10 @@ smtpd_use_tls=yes smtpd_tls_received_header = yes 無論、SSL 証明書を Let&
     
     <item>
       <title>StartSSL (1/3)</title>
-      <link>https://www.loginterests.com/posts/2010-05-14-startssl1/</link>
+      <link>https://loginterests.com/posts/2010-05-14-startssl1/</link>
       <pubDate>Fri, 14 May 2010 00:43:45 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2010-05-14-startssl1/</guid>
+      <guid>https://loginterests.com/posts/2010-05-14-startssl1/</guid>
       <description>StartCom Linux というディストリビューションも開発しているイスラエルの StartCom が認証局として発行している証明書が、StartSSL 証明書です。昨年秋に Windows の証明書ストアにルート証明書が登録されたことにより、Internet Explore にも対応を果たしました。
 通常、SSL証明書というのは、発行申請ごとに認証を受けるのですが、StartCom は、証明書の発行プロセスと認証プロセスを完全に分離し、個人認証、組織認証について課金するというモデルをとっています。個人認証が、350日で $49.90-。組織認証も 350日で $49.90- (ただし、組織認証を受けるためには代表者または担当者が個人認証を受けている必要があります)。EV 認証は、やはり 350日で、$199.90 (組織認証とEV証明書1回分を含みます)。一度認証をうければ、その間、証明書はワイルドカード証明書を含めて発行し放題です (EV証明書だけは一回につき $49.90 必要です)。ここ以外では一番安いと思われる RapidSSL のワイルドカード証明書でも、年 $149 (日本だと年14800円) することを思えば、これは破格の安さではないでしょうか。しかも証明書は二年間有効です。
 認証? またそれは面倒な。と思ったあなた。大丈夫です。もし、SSL証明書が必要なドメインがひとつだけでしたら、認証は必要ありません。しかも認証が必要ないということは課金がありませんから、つまりタダで SSL証明書が入手できます。この場合、証明書の有効期間は一年間になります。

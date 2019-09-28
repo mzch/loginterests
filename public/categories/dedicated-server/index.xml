@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dedicated Server on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/categories/dedicated-server/</link>
+    <link>https://loginterests.com/categories/dedicated-server/</link>
     <description>Recent content in Dedicated Server on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 30 May 2018 11:23:23 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/categories/dedicated-server/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/categories/dedicated-server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>I/O Flood 最高!</title>
-      <link>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</link>
+      <link>https://loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</link>
       <pubDate>Wed, 30 May 2018 11:23:23 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</guid>
+      <guid>https://loginterests.com/posts/2018-05-30-i-o-flood-%E6%9C%80%E9%AB%98/</guid>
       <description>突然、このブログを含むサーバー群にアクセスできなくなった。VM を実行しているホスト自体が落ちたようだ。
 そこで、サポートに連絡したら、一時間かからずに復旧してくれた。何でもサーバーのマザーボードが壊れたらしい。
 新しいマシンにディスクを移動して、設定を調整した上でブート、疎通確認までしてくれた。マネージドでもないのに。しかも、何気に CPU が、Xeon L5520 (4コア8スレッド) デュアルから、Xeon L5639 (6コア12スレッド) デュアルにアップグレードされている。どうやら同型機は売り切れていたらしい。追加料金は一切なし。
@@ -26,10 +26,10 @@
     
     <item>
       <title>ちょっとした KVM サポートツール</title>
-      <link>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
       <pubDate>Wed, 07 Jan 2015 19:50:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
       <description>そろそろよかろうと思って、サーバーを jessie に上げたら、Xen が起動しない。ホスティングサーバーの変更もあったので、思い切って仮想化基盤を KVM に変更……というか、回帰しました。
 ところが、xen-tools のようなお手軽ツールがありません。いや、あることはあるのですが、古いバージョンにしか対応してなくて、しかも最近全くメンテされてない状態。
 一応、昔気に入ってて、日本語翻訳までした Proxmox VE も見てみたのですが、えらく進化してしまって、機能てんこ盛りで、こんなんイラネ。VNC もセキュリティに気を遣うのはわかるんですが、ごく一部のクライアントしか対応してないプロトコルしか外に出さない＝使いにくい Java クライアントとか、HTML 5 版のやっぱり使いにくいクライアントしか想定にないみたいで、愛想が尽きた。
@@ -39,10 +39,10 @@
     
     <item>
       <title>Debian で Xen 4.1 を</title>
-      <link>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
+      <link>https://loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</link>
       <pubDate>Mon, 26 Mar 2012 10:06:38 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
+      <guid>https://loginterests.com/posts/2012-03-26-debian-%E3%81%A7-xen-4-1-%E3%82%92/</guid>
       <description>パッケージで入れられてしめしめとか思ってたら、何か依存関係でも壊したのか、起動しないゲストがあったでござる。ということで、バニラな方法で入れ直す。元ネタは昨日と同じでこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
 Xen.org からソースを取ってきます。現時点での最新版は、4.1.2。
 wget http://bits.xensource.com/oss-xen/release/4.1.2/xen-4.1.2.tar.gz ビルドに必要なパッケージをインストールします。/etc/apt/source.list に以下の行を追加して、
@@ -58,10 +58,10 @@ xl list 次のように、Domain-0 がリストされない場合、たいてい
     
     <item>
       <title>Debian Squeeze に Xen 4.1 を入れる</title>
-      <link>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</link>
       <pubDate>Mon, 26 Mar 2012 01:31:58 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2012-03-26-debian-squeeze-%E3%81%AB-xen-4-1-%E3%82%92%E5%85%A5%E3%82%8C%E3%82%8B/</guid>
       <description>XenServer 6.0 の基盤になってたり、他のディストリがこぞって採用してるのが、Xen 4.1 なのですが、時期の関係で、Squeeze には、4.0 が収録されています。何か中途半端。sid にはパッケージがありますので、そっからソースを取ってきて（さすがにバイナリは持ってきても動かないので）、ビルドする方法を見つけましたので、備忘録がてら。
 元ネタはこちら → Xen 4.1 from source with Debian Squeeze 2.6.32-5-xen-amd64 dom0 (test)
 まずは、source.list に１行追加。
@@ -76,10 +76,10 @@ dpkg -i *xen*deb</description>
     
     <item>
       <title>ProviderService というホスティングプロバイダー</title>
-      <link>https://www.loginterests.com/posts/2012-02-24-/</link>
+      <link>https://loginterests.com/posts/2012-02-24-/</link>
       <pubDate>Fri, 24 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-02-24-/</guid>
+      <guid>https://loginterests.com/posts/2012-02-24-/</guid>
       <description>先日、さくらインターネットが、「さくらの専用サーバー」を発表しましたが、国内のレンタルサーバー業界においても海外同様の価格破壊がこれから始まるのでしょうか。これで初期費用がなければ、本当に衝撃的なのですが、さすがにそこまで消費側に都合よくいかないようです。それでも、対抗プランを出せなければ顧客の流出が必至の同業者は茫然自失ってところじゃないでしょうか。価格もさることながら、顧客自身がリモートからクラウドと連携したネットワークを構成・管理することができるって、周到に準備してないと対抗しようがないですからね。
 さて、さくらインターネットの専用サーバーについては実際にサービスが始まれば山ほどレビューが出てくるでしょうからそれを待つとして、海外ではどうかを見てみましょう。いえ、クラウドとの連携とかVLAN組み放題とか最短納品10分とか、そんなサービスはありませんよ? そこはさすがにさくらが世界に誇っていい点だと思います。じゃあせめてということで、似たような構成のサーバーが他の国では一体いくらくらいになるのか、どこまで安いサービスがあるのか、ちょっと調べてみました。
 「さくらの専用サーバー」の最小構成が、HP DL200 Xeon 2.4GHz (4コア)、メモリ 16GB、ディスク 2×1TB HDD ですが、このスペックだと専鯖最安国(?)のアメリカ、ドイツ、オランダといえど、普通に、$200くらいします。なので余計にさくらの本気というややる気の凄さがわかるんですが、それはさておき。クーポンやバーゲンなどで例外的に安いものや、運営基盤が不明な業者(会社なのか個人なのかとか、どこにあるのかがわからない怪しい業者)を除いていくと、やっぱり$100くらいが底値なのかと思っていたのですが、そこを突き抜けて、ほぼ最安値と言えるプロバイダをひとつ見つけました。それがタイトルの、ProviderService です。
@@ -91,10 +91,10 @@ dpkg -i *xen*deb</description>
     
     <item>
       <title>アメリカ西海岸のお勧め専用サーバ</title>
-      <link>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</link>
+      <link>https://loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</link>
       <pubDate>Sat, 08 Jan 2011 13:08:59 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</guid>
+      <guid>https://loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</guid>
       <description>あけましておめでとうございます。新年のっけからまたサーバの話というのもどうかと思ったのですが、一応調べたことはまとめておきたいと思いまして…(^^;) これを最後にまた Mac ネタに戻りたいと思っています。
 ということで、アメリカ西海岸にあるお勧めの専用サーバ業者です。普通の方は専用サーバを借りることなんてまずないと思いますが、情報をまとめているところもありませんので。
  プロバイダ  SLA   特徴など  ロケーション     Take 2 Hosting   なし   SLAはありませんが、価格、安定度ともに抜群です。ほとんど売り切れ状態が続いているのが玉に瑕。詳しくは以前のエントリをご覧下さい。   San Jose, CA     WebNX   Network: 100%
@@ -105,20 +105,20 @@ Power: 100%
     
     <item>
       <title>Incero</title>
-      <link>https://www.loginterests.com/2010/12/31/incero/</link>
+      <link>https://loginterests.com/2010/12/31/incero/</link>
       <pubDate>Fri, 31 Dec 2010 02:13:51 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/12/31/incero/</guid>
+      <guid>https://loginterests.com/2010/12/31/incero/</guid>
       <description>VPS を紹介したので、専用サーバーもついでに。
 Incero LLC は、テキサス州オースチンにある会社ですが、Netplix のノースカロライナ州アシュビルにあるデータセンターにコロケーションしています。完全に東海岸ですね。日本からだと、ping が、200ms 程度とちょっと遠いですが、アメリカ向けのコンテンツを置くなら問題になりません。 ここは普段は高めの設定なんですが、ホリデーシーズン (もう終わりですが) 以外でもたまに値引きを行っており、それに当たると、お手頃価格で高性能サーバーを借りることができます。今現在ですと、以下の構成のサーバーが $189 (初期費用なし) です。   CPU   Core i7 930 2.8GHz     RAM   12GB     HDD   2x500GB     M/B   SuperMicro 製サーバー用マザーボード     リモートKVM   IPMI 2.0 対応     OS   CentOS 64bit 他 (自分でインストールすることも可能)     転送量   100Mbps unmetered 占有    他にもATOMサーバーなどがセールされています。詳しくは、WebHostingTalk の記事をご覧下さい。 以前も、WebHostingTalk.</description>
     </item>
     
     <item>
       <title>Take 2 Hosting</title>
-      <link>https://www.loginterests.com/2010/10/10/take-2-hosting/</link>
+      <link>https://loginterests.com/2010/10/10/take-2-hosting/</link>
       <pubDate>Sat, 09 Oct 2010 16:01:44 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/10/10/take-2-hosting/</guid>
+      <guid>https://loginterests.com/2010/10/10/take-2-hosting/</guid>
       <description>さて、しかし東海岸はちょっと&amp;#8230;せめて西海岸にあれば&amp;#8230;という方もいらっしゃるかと。そんな方にあつらえたようなプロバイダがあります。Take 2 Hosting です。
 ロケーションは、サンノゼ (カリフォルニア州) でこれ以上アジアやオーストラリアに近づけるには、ハワイかグアムにでもデータセンターを置くしかない。そんなことするなら、シンガポールに置きますやね。まあ、それはともかく、ここの特徴はデリバリーが早い! ことと、完全に自動化された保守ツールにあります。
 まず、サーバーの電源ON/OFF、再起動は独自のコントロールパネルから簡単に行うことができます。ここがすごいと思うのは、OS の再インストールまでコントロールパネルでできてしまうところです。再インストールしたい OS と RAID の有無や種類を選択してボタンをクリックするだけという、まるで VPS みたいな操作性です (実際には誤操作防止のために決められたキーワードを入力しなくてはならないのですが)。
@@ -131,10 +131,10 @@ Incero LLC は、テキサス州オースチンにある会社ですが、Netpli
     
     <item>
       <title>Dedicated Lime</title>
-      <link>https://www.loginterests.com/2010/10/08/dedicated-lime/</link>
+      <link>https://loginterests.com/2010/10/08/dedicated-lime/</link>
       <pubDate>Thu, 07 Oct 2010 18:44:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/10/08/dedicated-lime/</guid>
+      <guid>https://loginterests.com/2010/10/08/dedicated-lime/</guid>
       <description>何年か前から海外の専用サーバーを借りる機会があって、主にアメリカのサーバーをよくチェックしてるんですが、お値段が比較的安価で、回線容量もそこそこ、安定性も合格点と三拍子そろったプロバイダはなかなかありません。しかし、やはり探せばあるもので、今現在個人的にイチオシなのが、Dedicated Lime というプロバイダです。もちろん、私自身使用しています。
 ロケーションがアトランタ (ジョージア州) とほとんど東海岸なので、日本から ping を打つと、応答が大体 180ms-190ms と、ちょっと遠いのが難点といえば難点ですが、当然、それを補って余りある利点があります。
 まず、安い。ハードウェアに HP ® Proliant を使用しており、Xeon 3.0Ghz (P4世代) x 2、メモリ3GB、起動用の内蔵ディスクとは別に RAID-1 構成の SANディスクが 300GB、リモート KVM が付属して (←これ重要)、月々 $89 です。もちろん、もっと最近のモデルもラインアップには揃えられています。

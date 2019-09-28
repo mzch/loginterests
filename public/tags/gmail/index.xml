@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GMail on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/gmail/</link>
+    <link>https://loginterests.com/tags/gmail/</link>
     <description>Recent content in GMail on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Tue, 15 Feb 2011 16:31:25 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/gmail/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mailplane プレゼント</title>
-      <link>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</link>
+      <link>https://loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</link>
       <pubDate>Tue, 15 Feb 2011 16:31:25 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</guid>
+      <guid>https://loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</guid>
       <description>ということで、Macネタです。
 GMail 用クライアントとして、Sparrow が大人気のようですが、Web の操作感そのままの老舗 (?) メールソフト、MailPlane も忘れてはいけません。
 Web 版そのままの画面…って GMail のサイトを表示するソフトですから当然なんですが。(^^;)
@@ -35,10 +35,10 @@ UI 設定画面。広告を隠せたりします。
     
     <item>
       <title>MailPlane</title>
-      <link>https://www.loginterests.com/posts/2008-06-05-mailplane/</link>
+      <link>https://loginterests.com/posts/2008-06-05-mailplane/</link>
       <pubDate>Wed, 04 Jun 2008 16:59:14 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-06-05-mailplane/</guid>
+      <guid>https://loginterests.com/posts/2008-06-05-mailplane/</guid>
       <description>さて、昨日紹介した、MixiDock の記事でもふれましたが、GMail 使いにお勧めしたいのが、MailPlane。GMail のあの画面の操作性を中心に、かゆところに手が届く工夫が見られます。画面は、こんな感じ
 ツールバーから「メールの作成」を、選択すると、別ウィンドウが開く。他のメール見ながら書くのに便利。Webメーラーは、そのへんに不満があったんだけど、こいつは、無問題。何より、複数のアカウントを一括で管理できるっていうのが、あっしみたいにあれこれ使い分けてる身には、重宝します。できれば、各アカウント画面をタブで管理して、同時にそれぞれのアカウントを同時に参照できるようにしてもらえたら、もっと使い勝手が増すように思う。Google Appsのアカウントも管理できるので、まあ、GMailブラウザの中でも最強ではないでしょうか。これのPC版がないのが残念。</description>
     </item>

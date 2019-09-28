@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>File sharing on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/file-sharing/</link>
+    <link>https://loginterests.com/tags/file-sharing/</link>
     <description>Recent content in File sharing on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Tue, 15 Jan 2019 09:11:02 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/file-sharing/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/file-sharing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Pydio Cells の隠し仕様</title>
-      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <link>https://loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
       <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <guid>https://loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
       <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
 最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
 ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
@@ -26,10 +26,10 @@
     
     <item>
       <title>Droplr 正式サービス開始</title>
-      <link>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Mon, 14 Dec 2009 02:33:04 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
       <description>以前ちょこっと紹介した Droplr ですが、クローズドβが終了し、正式にサービスを開始しました。
 詳しくは、ウェブサイトの動画をご覧頂ければおわかりになると思いますが、使い方がとにかく簡単。URLやファイルをそのままメニューバーのアイコンにドロップするだけ。BlueBird、Echofon、Tweetie、Twitt といった Twitter クライアントに対応 (もちろん、twitter.com にも) しており、クリックひとつでツイート画面が開いて URL をペーストしてくれます。画像やファイルは合計 1GB まで保存可能で、これひとつでもうあれこれサービスを使い分ける必要はないのじゃないでしょうか。しかも無料。:)
 Twitter アカウントがあればすぐに使い始められますので、Mac で Twitter な方には是非お奨めしたいサービスです。Socialite とか、Kiwi、QFeeder、Twitterrific といった他のクライアントにも対応してくれれば嬉しいですね。 </description>

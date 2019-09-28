@@ -1,4 +1,4 @@
-baseurl = "https://www.loginterests.com"
+baseurl = "https://loginterests.com"
 languageCode = "ja"
 Title = "電脳業務日誌"
 theme = "potato-dark"
@@ -13,7 +13,7 @@ pygmentsCodefences = true
   paginate = 10
   # Social accounts. Link to these accounts are displayed in the header and
   # footer
-  twitter = "mzch"
+  twitter = "_mzch"
   facebook = "kch.matsumoto"
   instagram = "mzch"
   github = "mzch"

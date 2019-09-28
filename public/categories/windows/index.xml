@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Windows on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/categories/windows/</link>
+    <link>https://loginterests.com/categories/windows/</link>
     <description>Recent content in Windows on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 23 Sep 2009 10:45:21 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Windows 7 がネットに繋がらなくなる</title>
-      <link>https://www.loginterests.com/2009/09/23/windows-7-%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</link>
+      <link>https://loginterests.com/2009/09/23/windows-7-%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</link>
       <pubDate>Wed, 23 Sep 2009 10:45:21 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2009/09/23/windows-7-%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</guid>
+      <guid>https://loginterests.com/2009/09/23/windows-7-%E3%81%8C%E3%83%8D%E3%83%83%E3%83%88%E3%81%AB%E7%B9%8B%E3%81%8C%E3%82%89%E3%81%AA%E3%81%8F%E3%81%AA%E3%82%8B/</guid>
       <description>せっかく MSDN からダウンロードしたのに、ずっと放置していたので、連休で時間が余ってるうちに、Windows 7 をインストールしてみた。
 Visual Studio だの、Office だのをインストールした後、まとめて Windows Update をかけたら、再起動後になぜかネットに繋がらない。というか、ローカルネットワークは問題なく見えるんだけど、インターネットが駄目。ping すら到達しない。
 で、どのアップデートが悪さをしたのかわからないけど、繋がらない原因は、ディフォルトゲートウェイが重複して登録されるため。ルーティングテーブルがこんな感じになる。
@@ -26,10 +26,10 @@ IPv4 ルート テーブル ====================================================
     
     <item>
       <title>Windows 7 beta 1</title>
-      <link>https://www.loginterests.com/posts/2009-01-11-windows-7-beta-1/</link>
+      <link>https://loginterests.com/posts/2009-01-11-windows-7-beta-1/</link>
       <pubDate>Sun, 11 Jan 2009 10:35:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-01-11-windows-7-beta-1/</guid>
+      <guid>https://loginterests.com/posts/2009-01-11-windows-7-beta-1/</guid>
       <description>入れてみました。
 まだ Office とか、ユーティリティをいくつかインストールしただけなんですが、正直なところ、かなり期待できます。( Deskscape で「デスクトップごとに異なる壁紙を使用する」としているとテーマが無効になっちゃうとか、VMware Workstation のゲストから LAN に接続できないとか、問題はいくつかありますが。^^;)
 何よりも、Vistaと比べて反応が軽快です。ベータ 1 なのに。Longhorn とは大違い。
@@ -38,10 +38,10 @@ IPv4 ルート テーブル ====================================================
     
     <item>
       <title>DeskSpace</title>
-      <link>https://www.loginterests.com/posts/2008-09-04-deskspace/</link>
+      <link>https://loginterests.com/posts/2008-09-04-deskspace/</link>
       <pubDate>Wed, 03 Sep 2008 20:35:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-09-04-deskspace/</guid>
+      <guid>https://loginterests.com/posts/2008-09-04-deskspace/</guid>
       <description>Mac ばかりなのも何なので、Windows の小物もひとつ。今更ではありますけど。
 Mac だと、Spaces で行っているような複数の仮想デスクトップを管理ソフトなんですが、まあ、PC-Unix の compiz とか、Beryl なんかがやってることが、Windowsでもできてしまう商品。Otaku Software の Deskspace というシェアウェアです。
 が、使い始めると案外面白い。他のデスクトップが透けて見えるので、どこに何を配置したか結構見てわかるのが意外でした。以前は、特定のデスクトップでアプリケーションを起動することができなかったんですが、最新版(1.5.5.2)では、ちゃんとその機能も追加されており、使用するソフトのカテゴリごとにデスクトップを切り替えたり、あるいは、仕事用、息抜き用なんてデスクトップを整理できたりするようになってます。使えるソフトに育ってきたってことでしょうか。

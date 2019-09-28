@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>8800GT on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/8800gt/</link>
+    <link>https://loginterests.com/tags/8800gt/</link>
     <description>Recent content in 8800GT on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Thu, 12 Feb 2009 16:55:42 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/8800gt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/8800gt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>夢の続き</title>
-      <link>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
+      <link>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
       <pubDate>Thu, 12 Feb 2009 16:55:42 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
+      <guid>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
       <description>ELSA の GLADIAC 988 GTZ 512M (8800GT) を買ったので、夢を見ているPCに換装してみました。Boot.plist の書き換えを忘れずに。
 で、起動したところ、ちゃんと認識され、機嫌良く動いています。これで、Snow Leopard の OpenCL も恐くないってとこでしょうか。:-)</description>
     </item>

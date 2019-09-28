@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>America on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/america/</link>
+    <link>https://loginterests.com/tags/america/</link>
     <description>Recent content in America on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sat, 08 Jan 2011 13:08:59 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/america/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/america/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>アメリカ西海岸のお勧め専用サーバ</title>
-      <link>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</link>
+      <link>https://loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</link>
       <pubDate>Sat, 08 Jan 2011 13:08:59 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</guid>
+      <guid>https://loginterests.com/posts/2011-01-08-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81%E5%B0%82%E7%94%A8%E3%82%B5%E3%83%BC%E3%83%90/</guid>
       <description>あけましておめでとうございます。新年のっけからまたサーバの話というのもどうかと思ったのですが、一応調べたことはまとめておきたいと思いまして…(^^;) これを最後にまた Mac ネタに戻りたいと思っています。
 ということで、アメリカ西海岸にあるお勧めの専用サーバ業者です。普通の方は専用サーバを借りることなんてまずないと思いますが、情報をまとめているところもありませんので。
  プロバイダ  SLA   特徴など  ロケーション     Take 2 Hosting   なし   SLAはありませんが、価格、安定度ともに抜群です。ほとんど売り切れ状態が続いているのが玉に瑕。詳しくは以前のエントリをご覧下さい。   San Jose, CA     WebNX   Network: 100%
@@ -28,10 +28,10 @@ Power: 100%
     
     <item>
       <title>アメリカ西海岸のお勧め VPS</title>
-      <link>https://www.loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</link>
+      <link>https://loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</link>
       <pubDate>Thu, 30 Dec 2010 16:32:40 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</guid>
+      <guid>https://loginterests.com/posts/2010-12-31-%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E8%A5%BF%E6%B5%B7%E5%B2%B8%E3%81%AE%E3%81%8A%E5%8B%A7%E3%82%81-vps/</guid>
       <description>VPS をしかも海外のものを借りる人はあまりいないでしょうけど、現時点でお勧めプロバイダのまとめです。
   プロバイダ  仮想化ソフト   特徴など  ロケーション     Linode   Xen PV   鉄板中の鉄板です。   Fremont, CA 他    6Sync   KVM   Linode じゃなければどこ? という質問に必ず挙げられるプロバイダです。ここも鉄板と言ってよいでしょう。WHT でもすこぶる評判が良いところです。(2011/3/14 追加)   Los Angeles, CA 他    prgmr   Xen PV   転送量少なめですが、技術力があるプロバイダです。
  San Jose, CA    RapidXen   Xen PV   XenベースのVPSプロバイダとしては老舗ですね。転送量課金ではなく帯域幅で課金する点が他所と異なるところ。   Los Angeles, CA     RapidKVM   KVM   RapidXen の運営会社が KVMベースで提供する VPS サービスです。価格が少々お高めになっています。   Los Angeles, CA     ARP Networks   KVM   提供される OS に FreeBSD があることが特徴です。価格面もお得感のある設定です。   Los Angeles, CA     ClubUpTime  Xen PV  WebHostingTalk.</description>

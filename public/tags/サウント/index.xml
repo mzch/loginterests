@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>サウント on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%88/</link>
+    <link>https://loginterests.com/tags/%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%88/</link>
     <description>Recent content in サウント on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 13 May 2009 17:25:32 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>10.5.7 の夢を…失敗!</title>
-      <link>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</link>
+      <link>https://loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</link>
       <pubDate>Wed, 13 May 2009 17:25:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</guid>
+      <guid>https://loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</guid>
       <description>10.5.7 がリリースされたので、早速入れてみる。
 10.5.6 の時と同様にコンボアップデータから行ったんですが、なんと、AppleHDAが kernel panic。後でこれは10.5.6のに戻せば直るという情報を入手したんですが、この時は「いいや、インストールやり直しちゃお」と軽い気持ちで OS インストールからやり直し。
 Boot132 でブートしてインストーラを起動。待つことしばし&amp;#8230;例の画面で移行アシスタントを使ってアカウント情報やアプリケーション諸々を移行。ここまでは問題なし。

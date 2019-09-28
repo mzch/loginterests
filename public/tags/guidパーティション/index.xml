@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>GUIDパーティション on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/guid%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/</link>
+    <link>https://loginterests.com/tags/guid%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/</link>
     <description>Recent content in GUIDパーティション on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Fri, 20 Mar 2009 16:14:06 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/guid%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/guid%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EFI Studio 1.1</title>
-      <link>https://www.loginterests.com/posts/2009-03-21-efi-studio-11/</link>
+      <link>https://loginterests.com/posts/2009-03-21-efi-studio-11/</link>
       <pubDate>Fri, 20 Mar 2009 16:14:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-21-efi-studio-11/</guid>
+      <guid>https://loginterests.com/posts/2009-03-21-efi-studio-11/</guid>
       <description>EFI Studio が、1.1 にバージョンアップされてることに気がついたので、忘れないうちにメモ。
 EFI Studio 1.1
 GeForce 9800GT、9800GTX の GFX string が追加されただけかと思ってたら、EFIパーティションのインストーラがついてた。何か、どんどん便利になっていく。大丈夫か、EFI-x ?</description>
@@ -25,10 +25,10 @@ GeForce 9800GT、9800GTX の GFX string が追加されただけかと思って�
     
     <item>
       <title>続けて夢を見ました。</title>
-      <link>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Mon, 22 Dec 2008 00:19:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>EFI boot v6 を落として、USBデバイス経由でなく、スタンドアローンで起動するようにしてみました。この、EFI boot は、Boot-132にインスパイヤされたものだと作成者自身が記事で述べているように、GUIDパーティションに必ずついてくる EFIパーティションにブートローダやら、kextを突っ込んでしまえという方法です。元々 Apple はここを使ってないので、昨今の風潮にあわせた資源の有効活用ってやつですね。やり方はごっつ簡単。Leopard 導入済みの環境でも、DVDのインストーラから起動した環境でもインストール可能です。
 ■必要なもの
  efi_boot_v6.1.zip を InsanelyMac の [Guide] Boot from EFI partition, zero modification installs on Intel SSE2 or better&amp;#8230;, Zero-modification Leopard installs. Share disks between macs &amp;amp; ha ってエントリから落とす。 zip を展開しておく。 DSDT Pacher で、DSDT.aml を造っておく。  [1] インストール先ディスクのデバイス名を取得する

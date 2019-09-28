@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Snow Leopard on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/snow-leopard/</link>
+    <link>https://loginterests.com/tags/snow-leopard/</link>
     <description>Recent content in Snow Leopard on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 23 Sep 2009 09:43:19 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/snow-leopard/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/snow-leopard/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>続々・雪豹で夢を見るコツ</title>
-      <link>https://www.loginterests.com/posts/2009-09-23-%E7%B6%9A%E3%80%85%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</link>
+      <link>https://loginterests.com/posts/2009-09-23-%E7%B6%9A%E3%80%85%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</link>
       <pubDate>Wed, 23 Sep 2009 09:43:19 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-23-%E7%B6%9A%E3%80%85%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</guid>
+      <guid>https://loginterests.com/posts/2009-09-23-%E7%B6%9A%E3%80%85%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</guid>
       <description>SDMx86 が追加した kext を /Extra/Extensions へお引っ越し。したら、内蔵音源から音がしなくなった。orz
 ので、VoodooHDA.kext だけ、/System/Library/Extensions へ居残り。モジュールの依存関係が原因だと思われ。</description>
     </item>
     
     <item>
       <title>続・雪豹で夢を見るコツ</title>
-      <link>https://www.loginterests.com/posts/2009-09-23-%E7%B6%9A%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</link>
+      <link>https://loginterests.com/posts/2009-09-23-%E7%B6%9A%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</link>
       <pubDate>Wed, 23 Sep 2009 05:21:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-23-%E7%B6%9A%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</guid>
+      <guid>https://loginterests.com/posts/2009-09-23-%E7%B6%9A%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84/</guid>
       <description>P5E WS Pro の PATA に接続した DVD ドライブを認識させることができましたので、kext をバックアップ代わりに上げておくことに。
 darwin-ata からソースを落として、32/64bit 両対応でビルドしてから、Contents/Info.plist にデバイス ID を必要なだけ追加すれば OK でした。
 32/64bit 両対応の fakesmc.kext、NullCPUPowerManagement.kext、OpenHaltRestart.kext と併せて固めてありますので、必要な方は、こちらからどうぞ。もちろん、ご使用は、at your own risk で。:)</description>
@@ -35,10 +35,10 @@ darwin-ata からソースを落として、32/64bit 両対応でビルドして
     
     <item>
       <title>雪豹で夢を見るコツ – まとめ</title>
-      <link>https://www.loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <link>https://loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sun, 20 Sep 2009 11:28:56 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <guid>https://loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>P5E WS Professional と Geforce 8800GT で Snow Leopard の夢を見るためのまとめ。
 前提
  Leopard または Windows で、DSDT.aml を作成しておく。 8800GT・Ethernet・HDEF を組み込んだ EFI String を設定した com.apple.Boot.plist ファイルを作成しておく。   事前準備
@@ -48,19 +48,19 @@ darwin-ata からソースを落として、32/64bit 両対応でビルドして
     
     <item>
       <title>雪豹は機嫌を取るのが大変…</title>
-      <link>https://www.loginterests.com/posts/2009-09-19-%E9%9B%AA%E8%B1%B9%E3%81%AF%E6%A9%9F%E5%AB%8C%E3%82%92%E5%8F%96%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89/</link>
+      <link>https://loginterests.com/posts/2009-09-19-%E9%9B%AA%E8%B1%B9%E3%81%AF%E6%A9%9F%E5%AB%8C%E3%82%92%E5%8F%96%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89/</link>
       <pubDate>Sat, 19 Sep 2009 02:56:34 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-19-%E9%9B%AA%E8%B1%B9%E3%81%AF%E6%A9%9F%E5%AB%8C%E3%82%92%E5%8F%96%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89/</guid>
+      <guid>https://loginterests.com/posts/2009-09-19-%E9%9B%AA%E8%B1%B9%E3%81%AF%E6%A9%9F%E5%AB%8C%E3%82%92%E5%8F%96%E3%82%8B%E3%81%AE%E3%81%8C%E5%A4%A7%E5%A4%89/</guid>
       <description>電源 ON &amp;amp; 64bit モードで再起動 → Extensions.mkext 作り直し → リブート。という手順を踏まないと 32bit モードがログイン時に必ずカーネルパニックを引き起こす&amp;#8230;なぜ&amp;#8230;?</description>
     </item>
     
     <item>
       <title>雪豹は勝手に鳴くと思わざれ</title>
-      <link>https://www.loginterests.com/posts/2009-09-17-%E9%9B%AA%E8%B1%B9%E3%81%AF%E5%8B%9D%E6%89%8B%E3%81%AB%E9%B3%B4%E3%81%8F%E3%81%A8%E6%80%9D%E3%82%8F%E3%81%96%E3%82%8C/</link>
+      <link>https://loginterests.com/posts/2009-09-17-%E9%9B%AA%E8%B1%B9%E3%81%AF%E5%8B%9D%E6%89%8B%E3%81%AB%E9%B3%B4%E3%81%8F%E3%81%A8%E6%80%9D%E3%82%8F%E3%81%96%E3%82%8C/</link>
       <pubDate>Thu, 17 Sep 2009 14:56:48 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-17-%E9%9B%AA%E8%B1%B9%E3%81%AF%E5%8B%9D%E6%89%8B%E3%81%AB%E9%B3%B4%E3%81%8F%E3%81%A8%E6%80%9D%E3%82%8F%E3%81%96%E3%82%8C/</guid>
+      <guid>https://loginterests.com/posts/2009-09-17-%E9%9B%AA%E8%B1%B9%E3%81%AF%E5%8B%9D%E6%89%8B%E3%81%AB%E9%B3%B4%E3%81%8F%E3%81%A8%E6%80%9D%E3%82%8F%E3%81%96%E3%82%8C/</guid>
       <description>システム環境設定のサウンドをふと見れば、Line Out とか、Headphone が追加されている。SDMx86 をよくよく見れば、最初から VoodooHDA.kext が入ってる。つまりディフォルトで外付けの USB が選択されてるだけで、実はハナから内蔵音源は鳴っていたという落ち〜。orz
 いや、すごいっすよ、SDMx86。
 で、最初、カーネルパニックで落ちまくっていたのは、32bit ドライバのどれかがよくなかったみたいで、一度 64bit モードで起動して、Extentions.mkext を作り直してやれば、該当のドライバが排除される (= 64bit モードに対応していないため) ので、以降、32bit モードでも 正常に起動できるようになったと判明。それが何かは控えておくのを忘れたので今はわからないー。^^;
@@ -70,10 +70,10 @@ sudo kextcache -v 1 -m /System/Library/Caches/com.apple.kext.caches/Startup/Exte
     
     <item>
       <title>仕掛けはブートローダーにあり</title>
-      <link>https://www.loginterests.com/posts/2009-09-16-%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AF%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AB%E3%81%82%E3%82%8A/</link>
+      <link>https://loginterests.com/posts/2009-09-16-%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AF%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AB%E3%81%82%E3%82%8A/</link>
       <pubDate>Tue, 15 Sep 2009 18:38:09 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-16-%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AF%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AB%E3%81%82%E3%82%8A/</guid>
+      <guid>https://loginterests.com/posts/2009-09-16-%E4%BB%95%E6%8E%9B%E3%81%91%E3%81%AF%E3%83%96%E3%83%BC%E3%83%88%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC%E3%81%AB%E3%81%82%E3%82%8A/</guid>
       <description>Chameleon 2.0 (RC1-RC3) はブートしない問題は片づいてないのですが、2ch のログをつらつら眺めてると、こんな書き込みが。
  HDDにブートローダを入れるときは、そのHDDでブートしてから入れる
 これやらないとKPする可能性が高い
@@ -85,10 +85,10 @@ sudo kextcache -v 1 -m /System/Library/Caches/com.apple.kext.caches/Startup/Exte
     
     <item>
       <title>カメレオンは RAID が嫌いのようです</title>
-      <link>https://www.loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</link>
+      <link>https://loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</link>
       <pubDate>Sun, 13 Sep 2009 16:58:47 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</guid>
+      <guid>https://loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</guid>
       <description>インストールがすんなりいったので、大はしゃぎで記事を書いたのですが、いざ、iLife その他のアプリケーションをインストールすると、リブート後にカーネルパニックが必ず発生してしまい、大成功でも何でもありませんでした。orz
 起動時のディスクチェック (fsck) が起動された途端にカーネルがお亡くなりになっているので、ディスク関係のドライバが適合していないようだということはわかるのですが、ディスクの何が原因かわかりません。64bit モードで起動すると問題が起きないので、32bit ドライバに問題があるのは確かなのですが&amp;#8230;
 埒があかないので、とりあえず 64bit モードで運用することにしようと考えたところ、今度は、SDMx86 ディフォルトのブートローダーが 64bit 起動をコマンドラインのパラメータ以外では制御できないことがわかり、Chameleon に差し替えることに。(実は差し替えた後、添付の文書を読めば、64bit モード固定にできるのを発見! ショックが&amp;#8230;)
@@ -102,10 +102,10 @@ Snow Leopard で VIA チップセット対応が削られてしまったのも�
     
     <item>
       <title>雪豹でも夢を見ました…</title>
-      <link>https://www.loginterests.com/posts/2009-09-12-%E9%9B%AA%E8%B1%B9%E3%81%A7%E3%82%82%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2009-09-12-%E9%9B%AA%E8%B1%B9%E3%81%A7%E3%82%82%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Sat, 12 Sep 2009 07:51:30 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-12-%E9%9B%AA%E8%B1%B9%E3%81%A7%E3%82%82%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2009-09-12-%E9%9B%AA%E8%B1%B9%E3%81%A7%E3%82%82%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>Mac mini には全く問題なく入った Snow Leopard。OSX86 の方は当面 Leopard のままにしておくつもりなんですが、モノは試しで雪豹の夢を見てみることにしました。
 マシンスペックは以下の通り。
    パーツ 製品     M/B Asus P5E WS Pro   CPU Core 2 Quad Q6600 (3GHz にクロックアップ)   Memory 8GB   GPU 1 GeForce 8800GT (ELSA製)   GPU 2 GeForce 8600GT (メーカー忘れた)   FireWire Lacie Firewire 800 PCI-X Card   音源 AIWA (USB音源。一応ウーファーがついてる)    まず、夢置場から、SDMx86 R3 をダウンロード。これを使って、ブートディスクを作成します。Leopard で使っていた DSDT.</description>

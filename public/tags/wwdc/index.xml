@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WWDC on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/wwdc/</link>
+    <link>https://loginterests.com/tags/wwdc/</link>
     <description>Recent content in WWDC on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 08 Jun 2009 23:53:57 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/wwdc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>WWDC 2009 基調講演</title>
-      <link>https://www.loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</link>
+      <link>https://loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</link>
       <pubDate>Mon, 08 Jun 2009 23:53:57 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</guid>
+      <guid>https://loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</guid>
       <description>本日午前二時に毎年恒例の WWDC が開催され、その基調講演で Apple の新製品が発表されました。
 MacBook Pro 15 inches が刷新され、Express カードスロットの廃止と SD カードスロットの追加。MacBook アルミは、MacBook Pro 13 inches へリネームされ、FireWire 800 ポートを装備。MacBook は白ポリカ１機種だけに。MacBook Air と MacBook Pro (17inches を含む) は大幅な値下げとなりました。さすがに経済情勢を考慮したようです。尤も日本の価格は、相変わらずアップルレートなんですけどね。即日販売開始です。
 Snow Leopard も正式にお披露目。充分に期待できる内容になっています。まあ、詳細はすべて今までリークされてきた通りなんで、そういう意味で目新しい点はなし。発売は９月。ということで、Windows 7 より一足早く拝めそうです。Leopard からのアップデートは、$29。同ファミリパックは $49。フルパッケージは、$129。価格面は充分インパクトがありました。MSも見習って欲しいところです。販売開始は９月。

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chameleon on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/chameleon/</link>
+    <link>https://loginterests.com/tags/chameleon/</link>
     <description>Recent content in Chameleon on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 20 Sep 2009 11:28:56 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/chameleon/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/chameleon/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>雪豹で夢を見るコツ – まとめ</title>
-      <link>https://www.loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</link>
+      <link>https://loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</link>
       <pubDate>Sun, 20 Sep 2009 11:28:56 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</guid>
+      <guid>https://loginterests.com/posts/2009-09-20-%E9%9B%AA%E8%B1%B9%E3%81%A7%E5%A4%A2%E3%82%92%E8%A6%8B%E3%82%8B%E3%82%B3%E3%83%84-%E3%81%BE%E3%81%A8%E3%82%81/</guid>
       <description>P5E WS Professional と Geforce 8800GT で Snow Leopard の夢を見るためのまとめ。
 前提
  Leopard または Windows で、DSDT.aml を作成しておく。 8800GT・Ethernet・HDEF を組み込んだ EFI String を設定した com.apple.Boot.plist ファイルを作成しておく。   事前準備
@@ -27,10 +27,10 @@
     
     <item>
       <title>カメレオンはレガシー好みらしい</title>
-      <link>https://www.loginterests.com/posts/2009-09-20-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF%E3%83%AC%E3%82%AC%E3%82%B7%E3%83%BC%E5%A5%BD%E3%81%BF%E3%82%89%E3%81%97%E3%81%84/</link>
+      <link>https://loginterests.com/posts/2009-09-20-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF%E3%83%AC%E3%82%AC%E3%82%B7%E3%83%BC%E5%A5%BD%E3%81%BF%E3%82%89%E3%81%97%E3%81%84/</link>
       <pubDate>Sat, 19 Sep 2009 15:28:13 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-20-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF%E3%83%AC%E3%82%AC%E3%82%B7%E3%83%BC%E5%A5%BD%E3%81%BF%E3%82%89%E3%81%97%E3%81%84/</guid>
+      <guid>https://loginterests.com/posts/2009-09-20-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF%E3%83%AC%E3%82%AC%E3%82%B7%E3%83%BC%E5%A5%BD%E3%81%BF%E3%82%89%E3%81%97%E3%81%84/</guid>
       <description>うちのマシンが、Chameleon 2.0 ではブートメニューを操作できなかった原因は、BIOS の USB 設定が原因でした。Advanced &amp;gt; USB Configuration の
 Port 64/60 Emulation Legacy USB Support をともに、Enable にしてやると、ちゃんと Apple Keyboard の入力を拾うようになりました。
 や、SDMx86 の素のブートローダ (PC-EFI v9) だと何故か CPU のクロックとか、BIOS のバージョンとか、SMCから拾う値が異常な値になってたので、気持ち悪かったんですよねん。
@@ -39,10 +39,10 @@ Port 64/60 Emulation Legacy USB Support をともに、Enable にしてやると
     
     <item>
       <title>カメレオンは RAID が嫌いのようです</title>
-      <link>https://www.loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</link>
+      <link>https://loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</link>
       <pubDate>Sun, 13 Sep 2009 16:58:47 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</guid>
+      <guid>https://loginterests.com/posts/2009-09-14-%E3%82%AB%E3%83%A1%E3%83%AC%E3%82%AA%E3%83%B3%E3%81%AF-raid-%E3%81%8C%E5%AB%8C%E3%81%84%E3%81%AE%E3%82%88%E3%81%86%E3%81%A7%E3%81%99/</guid>
       <description>インストールがすんなりいったので、大はしゃぎで記事を書いたのですが、いざ、iLife その他のアプリケーションをインストールすると、リブート後にカーネルパニックが必ず発生してしまい、大成功でも何でもありませんでした。orz
 起動時のディスクチェック (fsck) が起動された途端にカーネルがお亡くなりになっているので、ディスク関係のドライバが適合していないようだということはわかるのですが、ディスクの何が原因かわかりません。64bit モードで起動すると問題が起きないので、32bit ドライバに問題があるのは確かなのですが&amp;#8230;
 埒があかないので、とりあえず 64bit モードで運用することにしようと考えたところ、今度は、SDMx86 ディフォルトのブートローダーが 64bit 起動をコマンドラインのパラメータ以外では制御できないことがわかり、Chameleon に差し替えることに。(実は差し替えた後、添付の文書を読めば、64bit モード固定にできるのを発見! ショックが&amp;#8230;)

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>格安 on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E6%A0%BC%E5%AE%89/</link>
+    <link>https://loginterests.com/tags/%E6%A0%BC%E5%AE%89/</link>
     <description>Recent content in 格安 on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Fri, 24 Feb 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E6%A0%BC%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E6%A0%BC%E5%AE%89/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ProviderService というホスティングプロバイダー</title>
-      <link>https://www.loginterests.com/posts/2012-02-24-/</link>
+      <link>https://loginterests.com/posts/2012-02-24-/</link>
       <pubDate>Fri, 24 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-02-24-/</guid>
+      <guid>https://loginterests.com/posts/2012-02-24-/</guid>
       <description>先日、さくらインターネットが、「さくらの専用サーバー」を発表しましたが、国内のレンタルサーバー業界においても海外同様の価格破壊がこれから始まるのでしょうか。これで初期費用がなければ、本当に衝撃的なのですが、さすがにそこまで消費側に都合よくいかないようです。それでも、対抗プランを出せなければ顧客の流出が必至の同業者は茫然自失ってところじゃないでしょうか。価格もさることながら、顧客自身がリモートからクラウドと連携したネットワークを構成・管理することができるって、周到に準備してないと対抗しようがないですからね。
 さて、さくらインターネットの専用サーバーについては実際にサービスが始まれば山ほどレビューが出てくるでしょうからそれを待つとして、海外ではどうかを見てみましょう。いえ、クラウドとの連携とかVLAN組み放題とか最短納品10分とか、そんなサービスはありませんよ? そこはさすがにさくらが世界に誇っていい点だと思います。じゃあせめてということで、似たような構成のサーバーが他の国では一体いくらくらいになるのか、どこまで安いサービスがあるのか、ちょっと調べてみました。
 「さくらの専用サーバー」の最小構成が、HP DL200 Xeon 2.4GHz (4コア)、メモリ 16GB、ディスク 2×1TB HDD ですが、このスペックだと専鯖最安国(?)のアメリカ、ドイツ、オランダといえど、普通に、$200くらいします。なので余計にさくらの本気というややる気の凄さがわかるんですが、それはさておき。クーポンやバーゲンなどで例外的に安いものや、運営基盤が不明な業者(会社なのか個人なのかとか、どこにあるのかがわからない怪しい業者)を除いていくと、やっぱり$100くらいが底値なのかと思っていたのですが、そこを突き抜けて、ほぼ最安値と言えるプロバイダをひとつ見つけました。それがタイトルの、ProviderService です。

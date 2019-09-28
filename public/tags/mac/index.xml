@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mac on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/mac/</link>
+    <link>https://loginterests.com/tags/mac/</link>
     <description>Recent content in Mac on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Thu, 08 Jan 2015 05:47:30 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac にも「紙芝居クリエーター」を！</title>
-      <link>https://www.loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</link>
+      <link>https://loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</link>
       <pubDate>Thu, 08 Jan 2015 05:47:30 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</guid>
+      <guid>https://loginterests.com/posts/2015-01-08-mac-%E3%81%AB%E3%82%82%E7%B4%99%E8%8A%9D%E5%B1%85%E3%82%AF%E3%83%AA%E3%82%A8%E3%83%BC%E3%82%BF%E3%83%BC%E3%82%92/</guid>
       <description>「紙芝居クリエーター」というのは、紙芝居動画、つまりよくギャルゲーなどでよく見かける、画面下部にセリフ枠があって、止め絵を次々に表示しながら文章を読ませる形式の動画を作成するアプリのことです。ニコニコでは、アイドルマスターの紙芝居動画のためのジャンルが確立しています。NovelsM@ster とか、im@s架空戦記シリーズとか。ストップモーションほど手がかからないし、比較的気軽に作り始めることができるので、案外、動画作成の入門に向いてるかも知れません。
 で、まあ、この紙芝居動画を作成するアプリですが、Mac 用にもあるんですけど……。「絵解き帳」という二鏡Pが作られたアプリです。ただ、最後に更新されたのが、2012年1月ということで、丸三年更新されてなくて、素の Yosemite ではシーンの追加ができなくなってしまっているのです。OS の仕様変更が原因です。
 最初は、これを手直しして、Yosemite でも動くようにして……と考えていたんですが、ビルド時に何十も警告が出て、それをいちいち調べながら修正していく手間と、不満点——同一のターゲットにエフェクトを多重にかけられない。そのせいでプラグインの作成がすごい手間——を鑑みて、自分で作ることにしました。
@@ -30,10 +30,10 @@
     
     <item>
       <title>新年プレゼント企画?</title>
-      <link>https://www.loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</link>
+      <link>https://loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</link>
       <pubDate>Fri, 13 Jan 2012 12:33:59 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</guid>
+      <guid>https://loginterests.com/posts/2012-01-13-%E6%96%B0%E5%B9%B4%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88%E4%BC%81%E7%94%BB/</guid>
       <description>順番があべこべになりましたが、新年明けましておめでとうございます。本年もどうかひとつよろしくお願いします。
 シェアウェアの翻訳をしたり、βテストに参加したりする関係で作者さんからライセンスを頂いたものがありますので、新年ということもありまして、これをプレゼントいたします。高いソフトはないですよ?
  Screens for iOS  1名様2名様   iPhone/iPad 向けの VNC クライアントです
@@ -43,10 +43,10 @@ shuto_zeppelin さんに贈呈いたしました     Bellhop   1名様   世界�
     
     <item>
       <title>Mac The Ripper を購入／アップグレードする手順</title>
-      <link>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</link>
+      <link>https://loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</link>
       <pubDate>Fri, 13 Jan 2012 11:55:46 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</guid>
+      <guid>https://loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</guid>
       <description>今いちわかりにくいので、備忘録を兼ねてまとめてみました。
  まず、このページを参照して開発者のメールアドレスを取得します。(2012/1/13時点では、Gordon Miller 氏の Gmail アドレスになっています) Paypal から、上記で取得したメールアドレス宛てに送金します。  Paypal の送信先にメールアドレスを入力します 金額は、新規にライセンスを購入する場合は、$40USD、アップグレードの場合は、$10USDです。  支払い種別はサービスを選択します。 支払い額を確定すると、メッセージの入力画面になりますが、Donation とか Donate という単語を含めてはいけません。Giftとすること、と開発者からお達しがあります。税務関係で揉めるんだとか。なので、件名には、&amp;#8221;Support gift&amp;#8221; などと入力すればよろしいでしょう。 ただし、最初の購入から1年以内でアップグレードとなった場合に限り、送金は必要ありません。 MTR 4 を起動します。 ライセンス登録／購入画面が表示されるので、I Need A License!  をクリックします。 テンプレートが設定された Mail.app のメール作成画面が表示されるので、トランザクションID、金額、送金日を記入します。
 	Thank you For Registering The Application Please Complete And Send To The Developer. xxxxxxxx xxxxxxxx Has Requested A License On Friday, January XX, 20XX (XX:XX). Version No 4200. MTR4-000-X-999-X-999 PLEASE ENTER ALL YOUR DONATION PROOF(S) HERE - Transacton Number: 9999999999999999X Amount: $40.</description>
@@ -54,10 +54,10 @@ shuto_zeppelin さんに贈呈いたしました     Bellhop   1名様   世界�
     
     <item>
       <title>iLocalize 4.0 翻訳修正</title>
-      <link>https://www.loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</link>
+      <link>https://loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</link>
       <pubDate>Fri, 27 May 2011 05:32:41 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</guid>
+      <guid>https://loginterests.com/posts/2011-05-27-ilocalize-4-0-%E7%BF%BB%E8%A8%B3%E4%BF%AE%E6%AD%A3/</guid>
       <description>Arizona Software の iLocalize は私も愛用しているのですが、最近リリースされたバージョン 4.0 に誤訳が1カ所あるのを見つけました (お恥ずかしい…)。開発元には修正版を送付済みですが、次のリリースまでに間があるので、お待ちになれない方は、添付の Localizable.strings.zip をダウンロードして展開すると出てくる Localizable.strings ファイルを
 /Applications/iLocalizes/Contents/Resources/ja.lproj/Localizable.strings に上書きコピーして下さい。
 iLocalize 4.0 日本語 Localizable.strings ファイル</description>
@@ -65,10 +65,10 @@ iLocalize 4.0 日本語 Localizable.strings ファイル</description>
     
     <item>
       <title>Mailplane プレゼント</title>
-      <link>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</link>
+      <link>https://loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</link>
       <pubDate>Tue, 15 Feb 2011 16:31:25 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</guid>
+      <guid>https://loginterests.com/posts/2011-02-16-mailplane-%E3%83%97%E3%83%AC%E3%82%BC%E3%83%B3%E3%83%88/</guid>
       <description>ということで、Macネタです。
 GMail 用クライアントとして、Sparrow が大人気のようですが、Web の操作感そのままの老舗 (?) メールソフト、MailPlane も忘れてはいけません。
 Web 版そのままの画面…って GMail のサイトを表示するソフトですから当然なんですが。(^^;)
@@ -86,20 +86,20 @@ UI 設定画面。広告を隠せたりします。
     
     <item>
       <title>日本語に翻訳しているソフトなど</title>
-      <link>https://www.loginterests.com/posts/2010-04-11-my-translations/</link>
+      <link>https://loginterests.com/posts/2010-04-11-my-translations/</link>
       <pubDate>Sat, 10 Apr 2010 16:19:30 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2010-04-11-my-translations/</guid>
+      <guid>https://loginterests.com/posts/2010-04-11-my-translations/</guid>
       <description>そういえば、Mac ソフトの翻訳などしてたりするわけですが、何のソフトを訳してるのかどこにも書いたことがないので、ちょっとまとめてみたり。
  Archiver &amp;#8211; アーカイバ。旧 Rucksack。 Changes &amp;#8211; 有名なテキスト差分抽出ツール。Coda や Espresso、BBEdit、TextWrangler へのインテグレーションをサポートしています。 Choosy &amp;#8211; ブラウザ選択ソフト。システム環境設定ペイン。 DaisyDisk &amp;#8211; ディスク使用量を視覚化。 DiffFork &amp;#8211; FileMerge より高機能かつユーザーフレンドリーな差分抽出アプリ。 DVDRemaster &amp;#8211; DVDリマスタリングソフト。 Flux &amp;#8211; Webサイトオーサリングツール。WYSIWYGなのがポイント。 FruitMenu &amp;#8211; アップルメニューやコンテクストメニューをカスタマイズ。 Fruux &amp;#8211; アドレスブック／カレンダー／ブックマーク／ノート同期ソフト。システム環境設定ペイン。 iCloud &amp;#8211; オンラインストレージ &amp;amp; オンラインデスクトップサイト。現在翻訳作業中 iLocalize &amp;#8211; Mac ソフトローカライズヘルパー。 iShowU &amp;#8211; スクリーンキャプチャソフト。 iShowU HD &amp;#8211; 高画質スクリーンキャプチャソフト。 Lyn &amp;#8211; 高機能グラフィックビューワー &amp;amp; ブラウザ。(2011/3/12 追加) Mailplane &amp;#8211; Fruid を利用した Gmail 専用クライアント。しばらくメンテされてなかったので勝手に引き継ぎ。(2011/2/14) MAMP Pro &amp;#8211; Apache + MySQL + PHP 一括運用ソフト&amp;#8230;の商用版 MindNode (Pro) &amp;#8211; マインドマップソフトウェア。 MindNode for iOS &amp;#8211; 上記ソフトの iPhone/iPod touch/iPad 版 MyBB &amp;#8211; PHPで書かれたBBSソフト。現在翻訳作業中 Notificant &amp;#8211; 予定通知ソフト。Web アプリも通知メールも日本語に。iPhone 版も予定。(2011/3/30 修正) Nukit &amp;#8211; ランチャ、辞書検索やウインドウ操作などを含む多目的ユーティリティソフトです。 Poweradmin &amp;#8211; PoewrDNS サーバー WebGUI フロントエンド。 Proxmox VE &amp;#8211; KVM &amp;amp; OpenVZ ベースのクラウドサーバ管理ソフト。 Quiet Read &amp;#8211; ブックマークソフト。 Simon &amp;#8211; リモート監視ソフト。 SnapRocket &amp;#8211; ウィンドウ操作ツール。システム環境設定ペイン。 SolusVM &amp;#8211; Xen PV, Xen HVM, OpenVZ 対応 VPS 管理コンソール。1.</description>
     </item>
     
     <item>
       <title>Thoughts</title>
-      <link>https://www.loginterests.com/posts/2009-12-28-thoughts/</link>
+      <link>https://loginterests.com/posts/2009-12-28-thoughts/</link>
       <pubDate>Sun, 27 Dec 2009 16:06:03 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-28-thoughts/</guid>
+      <guid>https://loginterests.com/posts/2009-12-28-thoughts/</guid>
       <description>本年最後の更新。かも。
 Mac でノート作成といえば、Circus Ponies の Notebook が有名ですが、新しいノートアプリケーションが来年の1月に発売されます。開発は、green &amp;amp; slimy で、Thoughts というアプリケーションです。日本語ローカライズを担当したので、一足早くレポートをば。
 起動すると、まずはウェルカムウィンドウが開きます。写真では英語ですが、正式版ではちゃんと日本語になりますのでご心配なく。^^;
@@ -113,29 +113,29 @@ Mac でノート作成といえば、Circus Ponies の Notebook が有名です�
     
     <item>
       <title>Mac.AppStorm Christmas Giveaway</title>
-      <link>https://www.loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</link>
+      <link>https://loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</link>
       <pubDate>Fri, 25 Dec 2009 08:15:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</guid>
+      <guid>https://loginterests.com/posts/2009-12-25-mac-appstorm-christmas-giveaway/</guid>
       <description>MacAppStorm が、総額 $7,000 のシェアウェアをクリスマスイヴまで毎日日替わりでプレゼント! という企画を行っています。
  1日 Tweetie for Mac (終了) 2日 Things(終了) 3日 Rader (終了) 4日 Forklift (終了) 5日 CSSEdit (終了) 6日 Espresso (終了) 7日 Billings (終了) 8日 Daylite (終了) 9日 CleanMyMac &amp;amp; MacHider (終了) 10日 LittleSnapper (終了) 11日 Wallet (終了) 12日 Times (終了) 13日 Just In Mind (終了) 14日 Pixelmator (終了) 15日 Delibar (終了) 16日 RapidWeaver (終了) 17日 Postbox (終了) 18日 Mailplane (終了) 19日 Socialite (終了) 20日 Hazel (終了) 21日 Bento (終了) 22日 1Password (終了) 23日 DEVONthink (終了) 24日 &amp;#8220;The Finale” (iPod Touch, Things, Espresso, Daylite, CSSEdit, iPod Shuffle) (終了)   日によってプレゼントされるライセンスの数は異なります。応募は、Twitter でツイートするとか、コメントを書き込むといった簡単手順がほとんどなので、皆さん、どしどし応募しましょう!</description>
     </item>
     
     <item>
       <title>MacUpdate Promo からの贈り物</title>
-      <link>https://www.loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</link>
+      <link>https://loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</link>
       <pubDate>Sat, 19 Dec 2009 00:01:25 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</guid>
+      <guid>https://loginterests.com/posts/2009-12-19-macupdate-promo-%E3%81%8B%E3%82%89%E3%81%AE%E8%B4%88%E3%82%8A%E7%89%A9/</guid>
       <description>期限は不明ですが、MacUpdate Promo で、MainMenu と Videobox が無料です。お早めに!</description>
     </item>
     
     <item>
       <title>追加しておきたい Growl スタイル</title>
-      <link>https://www.loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</link>
       <pubDate>Fri, 18 Dec 2009 15:47:40 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2009-12-19-%E8%BF%BD%E5%8A%A0%E3%81%97%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84-growl-%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB/</guid>
       <description>Mac 使いで Growl を入れてないって人はいないと思うんですが、最近試してみてこれはイイッ! っていうスタイルがあったのでご紹介。
 ひとつは、Basics というスタイル。こんな感じです。
 もうひとつは、Mono。
@@ -144,10 +144,10 @@ Mac でノート作成といえば、Circus Ponies の Notebook が有名です�
     
     <item>
       <title>MacStories Apps Tree</title>
-      <link>https://www.loginterests.com/posts/2009-12-16-macstories-apps-tree/</link>
+      <link>https://loginterests.com/posts/2009-12-16-macstories-apps-tree/</link>
       <pubDate>Wed, 16 Dec 2009 01:21:02 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-16-macstories-apps-tree/</guid>
+      <guid>https://loginterests.com/posts/2009-12-16-macstories-apps-tree/</guid>
       <description>MacStories がクリスマス企画として、総額 $10,000 のソフトウェアをプレゼント!
 詳しくはこちらの記事 &amp;#8220;MacStories Apps Tree: 300 Licenses of Mac and iPhone Apps Up for Grabs Worth $10,000!&amp;#8221; をご覧頂くとして、プレゼントされるソフトは、
  Things (2 licenses) &amp;#8230; 言わずと知れた GTDソフトのベストセラー。 Pixelmator (7 licenses) &amp;#8230; 言わずと知れたイメージエディタのベストセラー。 Espresso (5 licenses) &amp;#8230; Web 開発統合環境。Coda の対抗馬。 DropZone (15 licenses) &amp;#8230; ファイルをドロップすることで様々なアクションを起こすことができる一種のランチャ。Ruby で書かれたプラグインで機能拡張が可能です。 Daylite (2 licenses) &amp;#8230; ビジネスワークルフロー支援ツール。 TextExpander (1 license) &amp;#8230; Typinator と同種のソフト。タイピングのオートコレクトと登録した単文を数ストロークで一発展開が可能なオートコレクショニューティリティ。 Billings (2 licenses) &amp;#8230; 請求書管理。単価を設定し、作業ごとにタイマーを起動すれば、月末には綺麗な請求書ができあがっていてあら不思議。 xScope (3 licenses) &amp;#8230; ウェブデザイナー必携のスクリーンスケーラとかメジャーなど便利な機能がセットになったユーティティ。 Acorn (5 licenses) &amp;#8230; 画像編集ソフト。操作パレットが一カ所にまとめられていて非常にわかりやすい UI が特長です。 Tags (5 licenses) &amp;#8230; ファイル、画像、Safari の URL、メールにタグをつけて管理する非常に使い勝手の良いファイル管理／検索ソフトです。Version 2 で、OpenMeta 互換から、正式に OpenMeta 準拠となりました。 Palettes (5 promo codes) &amp;#8230; iPhoneアプリです。カラーパレットの作成管理が行えます。※ US ストア用のプロモーションコードです。 Picturesque (2 licenses) &amp;#8230; ま、もう説明の必要はありませんね。:) IconBuilder (3 licenses) &amp;#8230; Photoshop のアイコン作成用プラグインです。 Black Ink (5 licenses) &amp;#8230; クロスワードパズル。 MarsEdit (5 licenses) &amp;#8230; ブログエディタ。 DrawIt (3 licenses) &amp;#8230; 最近あちこちのバンドルで見かけるベクタードローイングツールです。 Silverback (2 licenses) &amp;#8230; スクリーンムービーキャプチャと iChat カメラの映像を合成してユーザビリティテストの記録を撮るソフトです。 MacSnapper (5 licenses) &amp;#8230; スクリーンショットや画像からウェブページやPDFを作成したりブログに書き出したりするソフトです。 Textmate (2 licenses) &amp;#8230; 言わずと知れたプログラマ御用達のテキストエディタです。 Money (10 licenses) &amp;#8230; 家計簿ソフトというよりパーソナル会計管理ソフトというべきでしょうね。 Fontcase (3 licenses) &amp;#8230; フォント管理ソフト。UI が綺麗でとても便利ですよ。 Manhour (3 licenses) &amp;#8230; タイムトラッキングツール。 PathFinder (10 licenses) &amp;#8230; 今更説明するまでもないファイル管理ソフト。 CSSEdit (5 licenses) &amp;#8230; 今更説明するまでもない CSS ファイルエディタ。 Slammer (5 licenses) &amp;#8230; スクリーンスケール・メジャー。画面上の物差しですね。 Tweetie (5 licenses) &amp;#8230; Twitter クライアント。 Tinygrab (5 premium subscriptions) &amp;#8230; スクリーンキャプチャソフト + イメージアップロードサーバの無制限使用権 1年分。 Notebook (1 license) &amp;#8230; Circus Ponies のノートテイカー。何でもスクラップ。 BannerZest Pro (1 license) &amp;#8230; Flash アニメ作成ツール。 Times (5 licenses) &amp;#8230; UI が凝ってる RSSリーダー。使いやすいかは人それぞれ。 Opacity (1 license) &amp;#8230; ドローイングソフト。アイコンも作れるよ。 BrushPilot (10 licenses) &amp;#8230; Photoshop のブラシ管理ツール。 MindNode Pro (3 licenses) &amp;#8230; 軽快、シンプル、必要にして十分な機能のマインドマッピングソフト。 Spotify (4 invites) &amp;#8230; 招待制の音楽ストリーミングサービス。無料でいっぱい聞ける。 Quickscale (10 licenses) &amp;#8230; 画像の大きさを縮小するツール。 Screenflow (1 license) &amp;#8230; スクリーンムービーキャプチャソフト。 Idea Organizer (5 promo codes) &amp;#8230; iPhone アプリ。いつでもどこでもアイデア収集。テキストでも映像でも写真でも記録できます。※ US ストア用のプロモーションコードです。 1Password (3 licenses) &amp;#8230; 説明不要のパスワード管理ソフト。パスワード以外も管理可。 Gity (5 licenses) .</description>
@@ -155,10 +155,10 @@ Mac でノート作成といえば、Circus Ponies の Notebook が有名です�
     
     <item>
       <title>Droplr 正式サービス開始</title>
-      <link>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Mon, 14 Dec 2009 02:33:04 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
       <description>以前ちょこっと紹介した Droplr ですが、クローズドβが終了し、正式にサービスを開始しました。
 詳しくは、ウェブサイトの動画をご覧頂ければおわかりになると思いますが、使い方がとにかく簡単。URLやファイルをそのままメニューバーのアイコンにドロップするだけ。BlueBird、Echofon、Tweetie、Twitt といった Twitter クライアントに対応 (もちろん、twitter.com にも) しており、クリックひとつでツイート画面が開いて URL をペーストしてくれます。画像やファイルは合計 1GB まで保存可能で、これひとつでもうあれこれサービスを使い分ける必要はないのじゃないでしょうか。しかも無料。:)
 Twitter アカウントがあればすぐに使い始められますので、Mac で Twitter な方には是非お奨めしたいサービスです。Socialite とか、Kiwi、QFeeder、Twitterrific といった他のクライアントにも対応してくれれば嬉しいですね。 </description>
@@ -166,10 +166,10 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>Kiwi – Twitter client for Mac</title>
-      <link>https://www.loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</link>
+      <link>https://loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</link>
       <pubDate>Fri, 11 Dec 2009 14:40:20 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</guid>
+      <guid>https://loginterests.com/posts/2009-12-11-kiwi-twitter-client-for-mac/</guid>
       <description>Stacks や、Blocks といった Rapidweaver のプラグインを開発、販売している YourHead Software が、Mac 用の Twitter クライアント、Kiwi のクローズドβテストを行っています。
 ディフォルトのメイン画面はこんな感じです。
 テーマを切り替えることで表示を変更することができます。例えば、環境設定から
@@ -182,10 +182,10 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>MacUpdate Promo Holiday Bundle</title>
-      <link>https://www.loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</link>
+      <link>https://loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</link>
       <pubDate>Wed, 09 Dec 2009 13:24:02 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</guid>
+      <guid>https://loginterests.com/posts/2009-12-09-macupdate-promo-holiday-bundle/</guid>
       <description>今年もやってきました。MacUpdate Promo Holiday Bundle 。
 価格は例によって、$49.99 です。
  PathFinder ($39.95) &amp;#8230; 有名すぎるほど有名なファイル管理ソフト。Finder の代替も可能です Socialite ($20.00) &amp;#8230; Twitter、Facebook、Flickr、Google Reader、RSS クライアント Yep ($39.00) &amp;#8230; (PDF) ドキュメント管理ソフト。OpenMeta 準拠のタグによる管理が特徴 Radio Gaga ($39.99) &amp;#8230; インターネットラジオレコーダー GarageSale ($34.99) &amp;#8230; eBay 出品管理ソフト DragThing ($29.00) &amp;#8230; これまた説明不要の有名なアプリランチャ Speed Download ($25.00) &amp;#8230; 老舗(?)のファイルダウンローダ HealthNut ($19.00) &amp;#8230; カロリー計算と体重管理 PCalc ($19.00) &amp;#8230; 科学計算用電卓ソフト Machinarium ($19.95) &amp;#8230; パズル／アドベンチャーゲーム iRip ($19.95) &amp;#8230; iPod から楽曲を Mac にコピー  以上、総額 $446.77 のソフトが、$49.99 で買えます。また、例によってアーリーバイヤーには、ボーナスソフトがついてきます。今年は以下の三つ。
@@ -194,20 +194,20 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>MacGraphoto Bundle</title>
-      <link>https://www.loginterests.com/posts/2009-11-17-macgraphoto-bundle/</link>
+      <link>https://loginterests.com/posts/2009-11-17-macgraphoto-bundle/</link>
       <pubDate>Mon, 16 Nov 2009 18:35:04 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-11-17-macgraphoto-bundle/</guid>
+      <guid>https://loginterests.com/posts/2009-11-17-macgraphoto-bundle/</guid>
       <description>グラフィック関係のシェアウェアばかりを集めたバンドルが登場しました。MacGraphoto です。
  Picturesque ($30) &amp;#8230; 毎度おなじみになりつつありますね。画像にWeb向けの特殊効果をつけるソフトです。 ImageFramer ($39) &amp;#8230; 画像に縁をつけるソフトです。額縁調とか色々選べます。 GraphicConverter ($35) &amp;#8230; 老舗の画像編集ソフトです。もちろんコンバートもできますよ。 Funtastic Photos ($35) &amp;#8230; 画像に特殊効果をつけるソフト。クリック一発の手軽さが売り。 Graphic Designer Toolbox ($43) &amp;#8230; アイコン作ったりロゴ書いたりテクスチャを自作したりと機能は豊富な画像クリエータ。 DrawIt ($39) &amp;#8230; ベクターツール。これも最近あちこちのバンドルで見かける。 HoudahGeo ($30) &amp;#8230; 画像にジオタグを埋め込むソフト。  以上総額 $251 が、締めて $39.99。お買い得です。ご購入の際は、是非、こちらのリンクから買って下さい。お願いします。リンクから三人買って下さると私が買った分はキャッシュバックされるという素敵なしかけがあるんです。皆で幸せになろうよ、ね?（後藤ちっくな声でどうぞ)。</description>
     </item>
     
     <item>
       <title>iMac 27′ Core i5</title>
-      <link>https://www.loginterests.com/posts/2009-11-16-imac-27-core-i5/</link>
+      <link>https://loginterests.com/posts/2009-11-16-imac-27-core-i5/</link>
       <pubDate>Mon, 16 Nov 2009 12:52:53 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-11-16-imac-27-core-i5/</guid>
+      <guid>https://loginterests.com/posts/2009-11-16-imac-27-core-i5/</guid>
       <description>予約してあった iMac が届いたのはよいものの、輝度を落とすと、画面の下の方が何となく黄色い&amp;#8230;
 取りあえず、Apple のサポートに問い合わせてみたところ、同様の問い合わせが結構あったらしく、
  PRAM クリアを行っても改善されないか。 一度電源を切って、再度オンにしても改善されないか。  を確認されただけで、即交換となりました。ううむ&amp;#8230; サポートの方の話によると、どうやら液晶のバックライトの照度が不足しており、それが画面下部で顕著なため、黄色っぽく見えるということらしい。輝度を最大にすると目立たなくなるということがその話を裏付けています。店頭のデモ機なんかは当然最大輝度で表示されているので、購入して自分で設定をあれこれ変更してみてはじめて気がつくって感じですね。交換対応ってことは、初期ロットのパネル以外はそれが直ってるということでしょうか&amp;#8230;?
@@ -217,30 +217,30 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>MacHeist nano Bundle</title>
-      <link>https://www.loginterests.com/posts/2009-11-06-macheist-nano-bundle/</link>
+      <link>https://loginterests.com/posts/2009-11-06-macheist-nano-bundle/</link>
       <pubDate>Fri, 06 Nov 2009 03:07:23 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-11-06-macheist-nano-bundle/</guid>
+      <guid>https://loginterests.com/posts/2009-11-06-macheist-nano-bundle/</guid>
       <description>MacHeist nano Bundle がスタートしました。以下のソフトウェアが無料です!
  ShoveBox ($24.95) ノート、ウェブページなどのスクラップソフトです。MacHeist 3 で入手できなかった方はぜひどうぞ。 WriteRoom ($24.95) フルスクリーンエディタ。 Twitterrific ($14.95) 最も古くからある Twitter クライアント。 TinyGrab ($14.00) スクリーンキャプチャソフト。日に10個までですが、アップロードサービスが無料でついてきます。(£10 の有料プランもあり) Hordes of Orcs ($24.95) タワー防衛ゲーム。 Mariner Write ($49.95) ワードプロセッサ。500,000 人がバンドルに申し込めばロックが外れます。  奮ってご参加のほどを!</description>
     </item>
     
     <item>
       <title>MacHeist が何かする!</title>
-      <link>https://www.loginterests.com/posts/2009-10-30-macheist-%E3%81%8C%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2009-10-30-macheist-%E3%81%8C%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B/</link>
       <pubDate>Fri, 30 Oct 2009 02:03:08 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-30-macheist-%E3%81%8C%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-10-30-macheist-%E3%81%8C%E4%BD%95%E3%81%8B%E3%81%99%E3%82%8B/</guid>
       <description>Twitter で意味深なメッセージ「Space: the final frontier. Check back tomorrow&amp;#8230;(宇宙、それは最後のフロンティア。明日お会いしましょう&amp;#8230;)」を残すとともに、トップページが謎の画像に差し替えられています。
 Loot にあるライセンスとか、バンドルのライセンスをまだ手元にコピーしていない場合は、早急にバックアップすることをお勧めします!</description>
     </item>
     
     <item>
       <title>CloudApp &amp; Droplr</title>
-      <link>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
+      <link>https://loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
       <pubDate>Thu, 22 Oct 2009 13:43:54 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
+      <guid>https://loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
       <description>どちらもまだクローズドβテスト中ですが、幸いにも招待を受けることができたので、ちょっと感想など。
 CloudApp 使い始めて間もないのですが、画像や動画、ファイルのアップロードと URL 短縮が同時に行えるサービスです (もちろん、URL の短縮だけを行うこともできます。MobileMe の iDisk + bit.ly or tr.im といった感じのサービスですね)。利用するには、クライアントアプリケーションをダウンロード・インストールする必要があります。Web から利用することはできません (参照するだけならブラウザがあれば事足りるのは当然なんですけどね)。しかも、アップロードしたファイルの管理はもとより、URLのクリック数を取得することもできません。始まったばかりでこれから様々な機能が実装されていく状態といったところです。一般公開はかなり先になるのではないでしょうか。ちなみにクライアントアプリは、Mac 専用なので、今のところ Windows から利用することはできません。
 Droplr 一方の Droplr も同様のサービスですが、こちらはアップロードしたファイルの管理や URL のクリック数を参照することができます (削除もできます)。URL短縮に使用するドメイン名を「droplr.com」「drp.ly」のいずれかから選択することができる他、自前のドメイン名があればそれを使用することもできるようになっています。こちらもクライアントアプリが Mac にしか対応していないため、Windows からは利用できません。
@@ -249,10 +249,10 @@ Droplr 一方の Droplr も同様のサービスですが、こちらはアッ�
     
     <item>
       <title>SlipStream</title>
-      <link>https://www.loginterests.com/posts/2009-09-23-slipstream/</link>
+      <link>https://loginterests.com/posts/2009-09-23-slipstream/</link>
       <pubDate>Wed, 23 Sep 2009 13:14:34 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-23-slipstream/</guid>
+      <guid>https://loginterests.com/posts/2009-09-23-slipstream/</guid>
       <description>MacDeveper.net で見つけました。
 Window スイッチャーなんですが、Exposé と違って、リスト表示された Window を切り替えるタイプ。こんなの↓です。
 選択した Window のプレビューが上半分に表示されるのが、ミソ。今は単に現在のデスクトップに選択した Window だけが表示されるのみですが、Windows 7 みたいに他の Window をフレームで表示したり、Spaces の配置を反映するようにすれば、かなり使えるソフトになるのではないかと思っています。
@@ -261,29 +261,29 @@ Window スイッチャーなんですが、Exposé と違って、リスト表�
     
     <item>
       <title>Forklift</title>
-      <link>https://www.loginterests.com/posts/2009-06-21-forklift/</link>
+      <link>https://loginterests.com/posts/2009-06-21-forklift/</link>
       <pubDate>Sat, 20 Jun 2009 16:14:44 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-06-21-forklift/</guid>
+      <guid>https://loginterests.com/posts/2009-06-21-forklift/</guid>
       <description>Binarynights のファイルマネージャ &amp;amp; FTP + Amazon S3 クライアント、Forklift が今だけ $9.95。(普段は、$44.95) いつまでディスカウントが続くかわかんないので、取り敢えず買っておいて損はありませんよ！</description>
     </item>
     
     <item>
       <title>FireWire 800</title>
-      <link>https://www.loginterests.com/posts/2009-06-18-firewire-800/</link>
+      <link>https://loginterests.com/posts/2009-06-18-firewire-800/</link>
       <pubDate>Thu, 18 Jun 2009 08:29:38 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-06-18-firewire-800/</guid>
+      <guid>https://loginterests.com/posts/2009-06-18-firewire-800/</guid>
       <description>Lacie の FireWire 800 PCI-X ボードがヤフオクに出てたので、落としてみた。Power Mac 用の増設ボードなんですけど、P5E WS PRO で普通に認識して、Leopard で問題なく使えたり。まあ、当たり前なんですけどね。^^;
 Windows で使えるかどうかはまだ試してないんですが、TIのチップなんで、標準ドライバでいけそう。まあダメだったりパフォーマンスが出なかったりしても、Unibrain のドライバを試せるかな、と。</description>
     </item>
     
     <item>
       <title>WWDC 2009 基調講演</title>
-      <link>https://www.loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</link>
+      <link>https://loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</link>
       <pubDate>Mon, 08 Jun 2009 23:53:57 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</guid>
+      <guid>https://loginterests.com/posts/2009-06-09-wwdc-2009-%E5%9F%BA%E8%AA%BF%E8%AC%9B%E6%BC%94/</guid>
       <description>本日午前二時に毎年恒例の WWDC が開催され、その基調講演で Apple の新製品が発表されました。
 MacBook Pro 15 inches が刷新され、Express カードスロットの廃止と SD カードスロットの追加。MacBook アルミは、MacBook Pro 13 inches へリネームされ、FireWire 800 ポートを装備。MacBook は白ポリカ１機種だけに。MacBook Air と MacBook Pro (17inches を含む) は大幅な値下げとなりました。さすがに経済情勢を考慮したようです。尤も日本の価格は、相変わらずアップルレートなんですけどね。即日販売開始です。
 Snow Leopard も正式にお披露目。充分に期待できる内容になっています。まあ、詳細はすべて今までリークされてきた通りなんで、そういう意味で目新しい点はなし。発売は９月。ということで、Windows 7 より一足早く拝めそうです。Leopard からのアップデートは、$29。同ファミリパックは $49。フルパッケージは、$129。価格面は充分インパクトがありました。MSも見習って欲しいところです。販売開始は９月。
@@ -296,10 +296,10 @@ iMac や Mac Pro は、Snow Leopard 発売と同時か先行して８月くら�
     
     <item>
       <title>MacUpdate Bundle 販売開始</title>
-      <link>https://www.loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Sun, 31 May 2009 03:23:15 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-05-31-macupdate-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
       <description>毎年恒例の MacUpdate Promo Bundle が今年も始まりました。今回は買いだと思うんですが、いかがでしょう。
  TechTool Pro 5 ($98.00) Micromat の定番総合メンテナンスソフトです。 
  Parallels Desktop ($79.99) 仮想PC環境構築ソフト。VMware Fusion と熾烈な争いを行っています。 
@@ -311,10 +311,10 @@ iMac や Mac Pro は、Snow Leopard 発売と同時か先行して８月くら�
     
     <item>
       <title>Panic – 確かに史上最大のセールだ(?)!</title>
-      <link>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
+      <link>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
       <pubDate>Wed, 27 May 2009 09:03:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
+      <guid>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
       <description>以前書いた通り、Panic がセールを開始しました。
 太平洋標準時間 (PST) の 5月29日 23:59 までです。
 Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即行で買いましたが、Unison どうするか悩み中。今更、Usenet という気もするんですが&amp;#8230;</description>
@@ -322,10 +322,10 @@ Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即�
     
     <item>
       <title>MacUpdate Promo が何かやる!</title>
-      <link>https://www.loginterests.com/posts/2009-05-24-macupdate-promo-%E3%81%8C%E4%BD%95%E3%81%8B%E3%82%84%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2009-05-24-macupdate-promo-%E3%81%8C%E4%BD%95%E3%81%8B%E3%82%84%E3%82%8B/</link>
       <pubDate>Sat, 23 May 2009 18:54:20 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-24-macupdate-promo-%E3%81%8C%E4%BD%95%E3%81%8B%E3%82%84%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-05-24-macupdate-promo-%E3%81%8C%E4%BD%95%E3%81%8B%E3%82%84%E3%82%8B/</guid>
       <description>MacUpdate Promo の 毎日来るプロモーション情報のニューズレターの一番下に何気に書かれていた。
  Something big is coming&amp;#8230; Sign up to be notified, and get a free copy of AirRadar!
  これは間違いなくバンドル販売でしょう。去年も春やってたし。どういう組み合わせが来るんでしょうね−。私としては、Panic の「史上最大のセール」というのにタイミングを併せてアナウンスされたっていうのが意味深なんですが。来週っていう時期も重なるし。
@@ -335,10 +335,10 @@ MacUpdate Promo + Panic のジョイントだったら神展開。^^;
     
     <item>
       <title>Panic 史上最大のセール! らしい</title>
-      <link>https://www.loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</link>
+      <link>https://loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</link>
       <pubDate>Fri, 22 May 2009 09:50:57 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</guid>
+      <guid>https://loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</guid>
       <description>頑なにディスカウントの類を行ってこなかったPanic ですが、突如やる気を出しました。Coda は欲しいけどちょっと高くて&amp;#8230;という方はお安く手に入れるチャンスです!
 トップページには「あと 6 日: 史上最大のセールがやってくる。」と告知が出ています(2009年5月22日 18:30 現在)。英語ページでは「In just 5 days: the biggest sale in Panic history.」とあるので、あちらでは来週の木曜日からのようですが、Coda の Google グループに立てられたトピックによると三日間続くらしいので慌てなくても大丈夫のようです。
 やっぱり、Espresso が MacHeist で大量にユーザーを獲得したのが効いたんでしょうか。^^;</description>
@@ -346,10 +346,10 @@ MacUpdate Promo + Panic のジョイントだったら神展開。^^;
     
     <item>
       <title>10.5.7 の夢を…失敗!</title>
-      <link>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</link>
+      <link>https://loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</link>
       <pubDate>Wed, 13 May 2009 17:25:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</guid>
+      <guid>https://loginterests.com/posts/2009-05-14-1057-%E3%81%AE%E5%A4%A2%E3%82%92%E5%A4%B1%E6%95%97/</guid>
       <description>10.5.7 がリリースされたので、早速入れてみる。
 10.5.6 の時と同様にコンボアップデータから行ったんですが、なんと、AppleHDAが kernel panic。後でこれは10.5.6のに戻せば直るという情報を入手したんですが、この時は「いいや、インストールやり直しちゃお」と軽い気持ちで OS インストールからやり直し。
 Boot132 でブートしてインストーラを起動。待つことしばし&amp;#8230;例の画面で移行アシスタントを使ってアカウント情報やアプリケーション諸々を移行。ここまでは問題なし。
@@ -367,10 +367,10 @@ boot1:error
     
     <item>
       <title>MindNode 日本語版公開</title>
-      <link>https://www.loginterests.com/posts/2009-05-11-mindnode-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E5%85%AC%E9%96%8B/</link>
+      <link>https://loginterests.com/posts/2009-05-11-mindnode-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E5%85%AC%E9%96%8B/</link>
       <pubDate>Sun, 10 May 2009 17:51:23 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-11-mindnode-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E5%85%AC%E9%96%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-05-11-mindnode-%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88%E5%85%AC%E9%96%8B/</guid>
       <description>マインドマップソフト、MindNode と MindNode Pro の日本語版が公開されました。いや、翻訳したのは私なんですけどね。^^;
 マインドマップソフトは他にもたくさんあるんですが、わかりやすくてかつ必要な機能が揃っているのってなかなかなくて。MindNode 以外にも、XMind とか、FreeMind などのフリーものに加え、PersonalBrain (フリー版もありますが) などの有料ソフトもいくつか試して見たのですが、どれもいまいち。いいなと思っても価格が見合わなかったり。そんな折、Macの手書き説明書さんで MindNode のことを知り、使ってみたわけです。でまあ、手になじむこと。:)
 まず起動直後の画面
@@ -384,10 +384,10 @@ Optionキーを押すとノードウェルが折りたたみアイコンに変�
     
     <item>
       <title>DevonThink Pro と Tweetie をもらおう!</title>
-      <link>https://www.loginterests.com/posts/2009-04-30-devonthink-pro-%E3%81%A8-tweetie-%E3%82%92%E3%82%82%E3%82%89%E3%81%8A%E3%81%86/</link>
+      <link>https://loginterests.com/posts/2009-04-30-devonthink-pro-%E3%81%A8-tweetie-%E3%82%92%E3%82%82%E3%82%89%E3%81%8A%E3%81%86/</link>
       <pubDate>Wed, 29 Apr 2009 17:26:21 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-30-devonthink-pro-%E3%81%A8-tweetie-%E3%82%92%E3%82%82%E3%82%89%E3%81%8A%E3%81%86/</guid>
+      <guid>https://loginterests.com/posts/2009-04-30-devonthink-pro-%E3%81%A8-tweetie-%E3%82%92%E3%82%82%E3%82%89%E3%81%8A%E3%81%86/</guid>
       <description>今、AppStorm で、DevonThink Pro とTweetie がもらえるコンペが開催中です。
 Tweetie といえば、iPhone アプリの中でも非常に有名な Twitter クライアントですが、もらえるのは、Mac 版。Growl 対応してないとか (リリース予定あり)、未読／既読がわかりづらいとか(一部対応)、期待が高かっただけに、厳しい反応も多いソフトですが、私は使っててあまり不自由を感じてません。未読／既読は直したといっても、もうちょっと何とかして欲しいところ。でもしかし、有象無象のクライアントより使い方が洗練されている。この手のガジェットは、見た目が機能と言い切ってもよい存在ですから、それだけでプラス評価です! 似たり寄ったりで機能もぱっとしないクライアントが多いですが、その中では異色ですね。作者を応援するつもりで、regist しました。
 DevonThink Pro の方はもう周知ですが、バージョンが、2.0 にあがって、ちょっとよくなったよう。まあ、定番ツールなんでみなさんご存じですよね。
@@ -398,10 +398,10 @@ DevonThink Pro の方はもう周知ですが、バージョンが、2.0 にあ�
     
     <item>
       <title>MarsEdit と SubEthaEdit の日本語化</title>
-      <link>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</link>
+      <link>https://loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</link>
       <pubDate>Fri, 17 Apr 2009 18:22:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</guid>
+      <guid>https://loginterests.com/posts/2009-04-18-marsedit-%E3%81%A8-subethaedit-%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/</guid>
       <description>日本語化のペースが落ちてます。
 いや、大物に取りかかっていたせいなんですが。^^;
 というわけで、今回は二点。
@@ -414,20 +414,20 @@ DevonThink Pro の方はもう周知ですが、バージョンが、2.0 にあ�
     
     <item>
       <title>MacHeist 3 – All bundle apps are unlocked now!</title>
-      <link>https://www.loginterests.com/posts/2009-04-07-macheist-3-all-bundle-apps-are-unlocked-now/</link>
+      <link>https://loginterests.com/posts/2009-04-07-macheist-3-all-bundle-apps-are-unlocked-now/</link>
       <pubDate>Mon, 06 Apr 2009 15:07:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-07-macheist-3-all-bundle-apps-are-unlocked-now/</guid>
+      <guid>https://loginterests.com/posts/2009-04-07-macheist-3-all-bundle-apps-are-unlocked-now/</guid>
       <description>ということで、MacHeist のバンドル販売が今し方、募金額 $50万ドルを達成し、すべてのバンドルアプリがアンロックされました。
 あ〜。これから Espresso 三昧の日々〜。ついでに、CSSEdit も入手したので、Web コーディングにどっぷりはまれる〜。</description>
     </item>
     
     <item>
       <title>MacHeist 3 Bundle 販売開始!</title>
-      <link>https://www.loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Wed, 25 Mar 2009 03:19:55 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-03-25-macheist-3-bundle-%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B/</guid>
       <description>MacHeist の バンドル販売が始まりました。期間は今日から14日間。今回も盛りだくさんです。
  iSale ($39.95) eBay 用のオークションツール。  Picturesque ($34.95) イメージフィルターツールってとこでしょうか。反射や影といったフィルターに特化したレタッチソフトっす。  SousChef ($30.00) レシピ管理ソフト。日本ではあまりなじみがないですかね。  World of Goo ($20.00) 物理アクションゲーム? Wii でも出てますね。  PhoneView ($19.95) iPhone/iPod Touch を USBストレージにしちゃいます。  LittleSnapper ($39.00) スクリーンキャプチャソフト。撮るだけじゃなく、注釈をつけたり、flickr へアップロードとかもできちゃう。  ACorn ($49.95) フォトレタッチソフト。  KineMac ($299.00) 3D アニメーション作成ソフト。ってか、私には使いこなすことなど&amp;#8230;^^;   もちろんまだありますが、ここまでは、すぐに手に入ります。
 さて、MacHeist といえば、当然チャリティなのですが、今回、売り上げの 25% を各種ボランティア団体へ寄付することになっています。いくつか対象となる団体があるのですが、どこに寄付するかを買い手が選択できるところが、ミソ。わからなくても、全団体に均等割に寄付するオプションもあるので、別段悩む必要はありません。
@@ -438,10 +438,10 @@ DevonThink Pro の方はもう周知ですが、バージョンが、2.0 にあ�
     
     <item>
       <title>大変残念な Mac Bundle Box</title>
-      <link>https://www.loginterests.com/posts/2009-03-20-%E5%A4%A7%E5%A4%89%E6%AE%8B%E5%BF%B5%E3%81%AA-macbundlebox/</link>
+      <link>https://loginterests.com/posts/2009-03-20-%E5%A4%A7%E5%A4%89%E6%AE%8B%E5%BF%B5%E3%81%AA-macbundlebox/</link>
       <pubDate>Fri, 20 Mar 2009 07:07:34 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-20-%E5%A4%A7%E5%A4%89%E6%AE%8B%E5%BF%B5%E3%81%AA-macbundlebox/</guid>
+      <guid>https://loginterests.com/posts/2009-03-20-%E5%A4%A7%E5%A4%89%E6%AE%8B%E5%BF%B5%E3%81%AA-macbundlebox/</guid>
       <description>元々、一部方面では評価の低かった Mac Bundle Box ですが、今回のバンドル販売も非常に残念な有様でした。
 今まで、食指が動くことはなかったのですが、今回、DrawIt と Code Collector Pro が欲しかったので購入したところ、あまり期待してなかった Espionage とか、Stuf とかが意外に使える。Project Calculator や、BlogAssist も地味に便利。DEVONnote は、まあ、あっても困らないかなということで、内容的にはかなり満足してたんです。
 じゃあ何かと言いますと、Mac Bundle Box 4 は、3/12 23:59:59 PST(太平洋標準時) で終了の予定だったのですが、その7時間ほど前、次のような告知がサイトとTwitterであったんですね。
@@ -466,30 +466,30 @@ Press Release
     
     <item>
       <title>Headline 日本語リソースインストーラ</title>
-      <link>https://www.loginterests.com/posts/2009-02-23-headline-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A9/</link>
+      <link>https://loginterests.com/posts/2009-02-23-headline-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A9/</link>
       <pubDate>Mon, 23 Feb 2009 13:04:27 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-02-23-headline-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A9/</guid>
+      <guid>https://loginterests.com/posts/2009-02-23-headline-%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%A9/</guid>
       <description>昨年、MacHeist が、Thanks Giving (いわゆる感謝祭) の時期に登録ユーザーに配布していた軽量RSSリーダー、Headline 1.0.2 に、日本語リソースを追加するインストーラを作成したので、配布します。ご自由にどうぞ。ただし、ご使用は自己責任で。
 Headline 1.0.2 日本語リソースインストーラ</description>
     </item>
     
     <item>
       <title>夢の続き</title>
-      <link>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
+      <link>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</link>
       <pubDate>Thu, 12 Feb 2009 16:55:42 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
+      <guid>https://loginterests.com/posts/2009-02-13-%E5%A4%A2%E3%81%AE%E7%B6%9A%E3%81%8D/</guid>
       <description>ELSA の GLADIAC 988 GTZ 512M (8800GT) を買ったので、夢を見ているPCに換装してみました。Boot.plist の書き換えを忘れずに。
 で、起動したところ、ちゃんと認識され、機嫌良く動いています。これで、Snow Leopard の OpenCL も恐くないってとこでしょうか。:-)</description>
     </item>
     
     <item>
       <title>夢の中で音が鳴りました</title>
-      <link>https://www.loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 01 Jan 2009 18:22:52 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2009-01-02-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7%E9%9F%B3%E3%81%8C%E9%B3%B4%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>探し方が、まだまだ足りなかったようです。InsanelyMac の以下のエントリから、ALC888用のkextを落として入れると、内蔵オーディオで音がなりました。
 [HOW TO] Patch AppleHDA &amp;#8211; Knowledge Base
 このエントリに記載されている Desktop ALC883 CAD0 5.1(記事のかなり下の方にリンクがあります)をダウンロードして、/System/Library/Extensions にインストールするか、EFI boot をインストールしたバーティションの /Extensions にコピーして、update.sh を実行し直すか、boot-132 の initrd.img にコピーするか、いずれかを行って、とにかくブート時に読み込まれるようにすると、内蔵音源から音がなります。
@@ -499,10 +499,10 @@ EFI boot Kit for P5E WS PRO ←全部まとめてダウンロードはこちら�
     
     <item>
       <title>夢の中で sleep しました</title>
-      <link>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 25 Dec 2008 14:30:20 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-25-%E5%A4%A2%E3%81%AE%E4%B8%AD%E3%81%A7-sleep-%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>やはり夢ですので、間抜けなことを気づかずにしていたようです。
 Kernel boot オプション に -f を指定しないと、オンボードの NIC を認識しなかったのですが、EFI Studioで、EFI string を作成する際に、Ethernet を追加し忘れていたようで、
  Device: に、Display を選択。その下のドロップダウンリストで、GeForce 8600GT 256MB を選択。Add device をクリック。 Device: Ethernet を選択。Add device をクリック。  として、Boot.plist を作成したら、普通に、オンボードの NIC を認識しました。情けない。^^;
@@ -516,10 +516,10 @@ sudo cp Info.</description>
     
     <item>
       <title>続けて夢を見ました。</title>
-      <link>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Mon, 22 Dec 2008 00:19:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-22-%E7%B6%9A%E3%81%91%E3%81%A6%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>EFI boot v6 を落として、USBデバイス経由でなく、スタンドアローンで起動するようにしてみました。この、EFI boot は、Boot-132にインスパイヤされたものだと作成者自身が記事で述べているように、GUIDパーティションに必ずついてくる EFIパーティションにブートローダやら、kextを突っ込んでしまえという方法です。元々 Apple はここを使ってないので、昨今の風潮にあわせた資源の有効活用ってやつですね。やり方はごっつ簡単。Leopard 導入済みの環境でも、DVDのインストーラから起動した環境でもインストール可能です。
 ■必要なもの
  efi_boot_v6.1.zip を InsanelyMac の [Guide] Boot from EFI partition, zero modification installs on Intel SSE2 or better&amp;#8230;, Zero-modification Leopard installs. Share disks between macs &amp;amp; ha ってエントリから落とす。 zip を展開しておく。 DSDT Pacher で、DSDT.aml を造っておく。  [1] インストール先ディスクのデバイス名を取得する
@@ -528,10 +528,10 @@ sudo cp Info.</description>
     
     <item>
       <title>夢を見ました</title>
-      <link>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
+      <link>https://loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</link>
       <pubDate>Thu, 18 Dec 2008 05:40:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
+      <guid>https://loginterests.com/posts/2008-12-18-%E5%A4%A2%E3%82%92%E8%A6%8B%E3%81%BE%E3%81%97%E3%81%9F/</guid>
       <description>Leopard を PCにインストールするという夢を見たので、忘れないうちにメモしておいたり。オンボのサウンドがどうやっても認識しないけど、USBの音源あるし、ま、いっかってことで。
 　ちなみに、10.5.6 は、スリープから戻ってこないっす。デスクトップをスリープ運用する人は、あんましいないかもしんないけど。(10.5.5だと、ちゃんとスリープから復帰します)
 　カーネルブート時にネットワークアダプタが認識されないため、ホストUUID が設定されない問題があった。そのせいで、Time Machines が正常に開始しなかったり、Xcode がエラーを吐いたり、色々問題が。^^; おまけ 4 に解決方法を追記。(2008/12/19)

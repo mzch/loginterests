@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ルーター on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC/</link>
+    <link>https://loginterests.com/tags/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC/</link>
     <description>Recent content in ルーター on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 18 Mar 2018 13:13:18 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%83%AB%E3%83%BC%E3%82%BF%E3%83%BC/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>NTT PR-S300NE ファームウェアバージョン 22.02 の問題</title>
-      <link>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</link>
+      <link>https://loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</link>
       <pubDate>Sun, 18 Mar 2018 13:13:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</guid>
+      <guid>https://loginterests.com/2018/03/18/ntt-pr-s300ne-%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3-22-02-%E3%81%AE%E5%95%8F%E9%A1%8C/</guid>
       <description>うちは、ドコモ光なのだが、元々はフレッツ光ネクスト ファミリー・スーパーハイスピードタイプ 隼だった。
 なので、ルーターに、NTT PR-S300NE が入ってる。これに嵌まった。
 というのも、長らく ASAHI-NET の固定 IP アドレスサービスを利用していたのだが、このたび、Mac mini を使って自宅サーバーを立てた。ところが、メジャーなメールサービスへメールを送ろうとすると、拒否される。原因を調べたところ、割り当てられていたアドレスが、動的 IP レンジにあるアドレスで、これが迷惑メールブロックに登録されていたのである。ちなみに、解除の方法はない。

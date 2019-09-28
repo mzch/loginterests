@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/web/</link>
+    <link>https://loginterests.com/tags/web/</link>
     <description>Recent content in Web on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 14 Dec 2009 02:33:04 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Droplr 正式サービス開始</title>
-      <link>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Mon, 14 Dec 2009 02:33:04 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
       <description>以前ちょこっと紹介した Droplr ですが、クローズドβが終了し、正式にサービスを開始しました。
 詳しくは、ウェブサイトの動画をご覧頂ければおわかりになると思いますが、使い方がとにかく簡単。URLやファイルをそのままメニューバーのアイコンにドロップするだけ。BlueBird、Echofon、Tweetie、Twitt といった Twitter クライアントに対応 (もちろん、twitter.com にも) しており、クリックひとつでツイート画面が開いて URL をペーストしてくれます。画像やファイルは合計 1GB まで保存可能で、これひとつでもうあれこれサービスを使い分ける必要はないのじゃないでしょうか。しかも無料。:)
 Twitter アカウントがあればすぐに使い始められますので、Mac で Twitter な方には是非お奨めしたいサービスです。Socialite とか、Kiwi、QFeeder、Twitterrific といった他のクライアントにも対応してくれれば嬉しいですね。 </description>
@@ -25,10 +25,10 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>Panic – 確かに史上最大のセールだ(?)!</title>
-      <link>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
+      <link>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
       <pubDate>Wed, 27 May 2009 09:03:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
+      <guid>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
       <description>以前書いた通り、Panic がセールを開始しました。
 太平洋標準時間 (PST) の 5月29日 23:59 までです。
 Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即行で買いましたが、Unison どうするか悩み中。今更、Usenet という気もするんですが&amp;#8230;</description>
@@ -36,10 +36,10 @@ Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即�
     
     <item>
       <title>Panic 史上最大のセール! らしい</title>
-      <link>https://www.loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</link>
+      <link>https://loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</link>
       <pubDate>Fri, 22 May 2009 09:50:57 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</guid>
+      <guid>https://loginterests.com/posts/2009-05-22-panic-%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB-%E3%82%89%E3%81%97%E3%81%84/</guid>
       <description>頑なにディスカウントの類を行ってこなかったPanic ですが、突如やる気を出しました。Coda は欲しいけどちょっと高くて&amp;#8230;という方はお安く手に入れるチャンスです!
 トップページには「あと 6 日: 史上最大のセールがやってくる。」と告知が出ています(2009年5月22日 18:30 現在)。英語ページでは「In just 5 days: the biggest sale in Panic history.」とあるので、あちらでは来週の木曜日からのようですが、Coda の Google グループに立てられたトピックによると三日間続くらしいので慌てなくても大丈夫のようです。
 やっぱり、Espresso が MacHeist で大量にユーザーを獲得したのが効いたんでしょうか。^^;</description>
@@ -47,10 +47,10 @@ Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即�
     
     <item>
       <title>SSLでネームベースのバーチャルホスト</title>
-      <link>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
+      <link>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
       <pubDate>Sat, 07 Mar 2009 18:13:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
+      <guid>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
       <description>某所にある Apache WebサーバのSSLモジュールを OpenSSL から、GnuTLSへ変更しました。何のためにそんなことをしたかというと、タイトル通り、SSLでNamed Virtual Hostを有効にするためです。
 そんなことできんの? SSLってIP1個につき、1ホストじゃないとできないんじゃないの? と思ったあなた、そんなことはありません。知ってるよ。ワイルドカード証明書でしょ? でもあれ高いんだよね−。と思ったあなた。違います。ワイルドカード証明書のことではありません。IPアドレス1個で、全く関係のないドメインがバーチャルホストできるんです。え? 知ってる? おまえが遅れてるだけ? すいません。最近、サーバ関係は手を抜いてるもんで。^^;
 そもそも私がこれを知るきっかけになったのは、Postfix メーリングリストにドメイン名の変更に当たり、二つのドメインを同時にSSLで受け付けられないかという質問が投げられたことにありました。で、その回答中に、複数のドメインをひとつの証明書にいれてもらう = subjectAltName を使用するというのがあったんです。

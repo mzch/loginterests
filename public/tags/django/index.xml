@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Django on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/django/</link>
+    <link>https://loginterests.com/tags/django/</link>
     <description>Recent content in Django on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 08 Jul 2019 17:12:49 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Read The Docs のインストール</title>
-      <link>https://www.loginterests.com/posts/2019-07-08-readthedocs/</link>
+      <link>https://loginterests.com/posts/2019-07-08-readthedocs/</link>
       <pubDate>Mon, 08 Jul 2019 17:12:49 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-07-08-readthedocs/</guid>
+      <guid>https://loginterests.com/posts/2019-07-08-readthedocs/</guid>
       <description>ソースコード開発管理には多種多様なバージョン管理ツールが揃っているが、ドキュメントについては、同じツールを使えばいいやということか、あまり種類がない。その中でもよく使われている、Read The Docs をインストールしてみた。
 ドキュメント管理のツールなので、さぞかしドキュメントが充実しているだろう…ということはなく、やっぱり腐っているところがある。
 まず第一に、プロダクションユースの設定が公開されているソース自体に含まれていない。つまり、自分で書かないといけない。この時点でまあ論外といえば論外なのだが、開発版の設定はついてくるので、Django のドキュメントを眺めつつ、適宜修正。うちは、以下のようにした。バックエンドに PostgreSQL を使うように指定。ドメイン名は、仮に example.jp としておく。

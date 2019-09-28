@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>プログラム開発 on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E9%96%8B%E7%99%BA/</link>
+    <link>https://loginterests.com/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E9%96%8B%E7%99%BA/</link>
     <description>Recent content in プログラム開発 on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sat, 19 Sep 2009 03:44:08 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E9%96%8B%E7%99%BA/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>続・ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
       <pubDate>Sat, 19 Sep 2009 03:44:08 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
       <description>Twitter で、ATLASSIAN のショーンが、うちのブログを紹介してくれました!
 Thank you, ショーン!
 で、英語で説明しにくかったら、ショーンに一声かければ、日本語でもいいよ! とのことです。ショーンの Twitter アカウントは、http://twitter.com/Sean_SF です!
@@ -26,10 +26,10 @@ Thank you, ショーン!
     
     <item>
       <title>ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
       <pubDate>Thu, 10 Sep 2009 07:25:05 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
       <description>ATLASSIAN が、JIRA 4 発売 (10月発売予定) を記念して、またまたキャンペーンを行っています。前回は、JIRA と Confluence のチャリティ販売でしたが、今回は、Cash for Clunkers と銘打って、JIRA の 10 ユーザライセンスが無料で配布されます。(もしくは、JIRA 4 の 20% 引きクーポン)
 申し込み方法はいたって簡単。Cash for Clunkers というページの Make the trade というボタンをクリック。すると、Select your JIRA 4 coupon というセクションと Share your story というセクションが表示されます。
 Select your JIRA 4 coupon
@@ -39,10 +39,10 @@ Select your JIRA 4 coupon
     
     <item>
       <title>JIRA と Confluence</title>
-      <link>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
+      <link>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
       <pubDate>Wed, 22 Apr 2009 18:29:53 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
+      <guid>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
       <description>Atlassian が、一年間のサポートつきで、同社の製品、JIRA と Confluence を期間限定で、$5 USDで販売している。
 JIRA は、エンタプライズユースのバグトラッカーシステム。
 Confluence は、エンタープライズグレードの Wiki システム。

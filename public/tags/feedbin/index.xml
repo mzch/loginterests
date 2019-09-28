@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Feedbin on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/feedbin/</link>
+    <link>https://loginterests.com/tags/feedbin/</link>
     <description>Recent content in Feedbin on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 31 Mar 2019 15:42:14 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/feedbin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/feedbin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Feedbin のインストール</title>
-      <link>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
       <pubDate>Sun, 31 Mar 2019 15:42:14 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
       <description>結果的に、動作しなかったが、勿体ないので、記事は残しておく。
 ニュースサイトの閲覧に、サーバー設置型であるニュースフィーダーの Fever を使っているのだが、ディスコンになってしまって、乗り換え先を探していたところ、オープンソースで公開されている Freebin がよさげだったので、Debian GNU/Linux 9 Stretch にインストールしてみた。Feedbin に月 $5 払えば、インストールなどいらないのだが、ドキュメントに書かれていない設定が多数あって、試行錯誤に丸一日費やしたので、どこかに残しておかないと勿体なかったというのもある。😁
 まず、Stripe.com のアカウントが必要なので、サインアップする。

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MTR on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/mtr/</link>
+    <link>https://loginterests.com/tags/mtr/</link>
     <description>Recent content in MTR on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Fri, 13 Jan 2012 11:55:46 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/mtr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/mtr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mac The Ripper を購入／アップグレードする手順</title>
-      <link>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</link>
+      <link>https://loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</link>
       <pubDate>Fri, 13 Jan 2012 11:55:46 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</guid>
+      <guid>https://loginterests.com/posts/2012-01-13-mac-the-ripper-%E3%82%92%E8%B3%BC%E5%85%A5%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%99%E3%82%8B%E6%89%8B%E9%A0%86/</guid>
       <description>今いちわかりにくいので、備忘録を兼ねてまとめてみました。
  まず、このページを参照して開発者のメールアドレスを取得します。(2012/1/13時点では、Gordon Miller 氏の Gmail アドレスになっています) Paypal から、上記で取得したメールアドレス宛てに送金します。  Paypal の送信先にメールアドレスを入力します 金額は、新規にライセンスを購入する場合は、$40USD、アップグレードの場合は、$10USDです。  支払い種別はサービスを選択します。 支払い額を確定すると、メッセージの入力画面になりますが、Donation とか Donate という単語を含めてはいけません。Giftとすること、と開発者からお達しがあります。税務関係で揉めるんだとか。なので、件名には、&amp;#8221;Support gift&amp;#8221; などと入力すればよろしいでしょう。 ただし、最初の購入から1年以内でアップグレードとなった場合に限り、送金は必要ありません。 MTR 4 を起動します。 ライセンス登録／購入画面が表示されるので、I Need A License!  をクリックします。 テンプレートが設定された Mail.app のメール作成画面が表示されるので、トランザクションID、金額、送金日を記入します。
 	Thank you For Registering The Application Please Complete And Send To The Developer. xxxxxxxx xxxxxxxx Has Requested A License On Friday, January XX, 20XX (XX:XX). Version No 4200. MTR4-000-X-999-X-999 PLEASE ENTER ALL YOUR DONATION PROOF(S) HERE - Transacton Number: 9999999999999999X Amount: $40.</description>

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PHP on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/php/</link>
+    <link>https://loginterests.com/tags/php/</link>
     <description>Recent content in PHP on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Fri, 05 Jul 2019 05:12:38 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Apache で php-fpm を使う</title>
-      <link>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
+      <link>https://loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
       <pubDate>Fri, 05 Jul 2019 05:12:38 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
+      <guid>https://loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
       <description>やっぱり、Apache でも http2 を有効にしたい！ということで、慣れ親しんだ、php_module からおさらばして、php-fpm で構成し直した。Debian &amp;amp; php 7.3 での例を示す。
 まず、php-fpm をインストール。まあ、php_module を削除すれば、勝手に php-fpm が入るんですが。ダウンタイムを極力避けるなら、この手順で。
 sudo apt install php-fpm 次に proxy_fcgi を有効にする。
@@ -30,10 +30,10 @@ sudo systemctl restart apache2 うむ。簡単だった。</description>
     
     <item>
       <title>Vanilla Forums</title>
-      <link>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</link>
+      <link>https://loginterests.com/posts/2019-05-04-vanilla-forums/</link>
       <pubDate>Sat, 04 May 2019 10:36:17 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
+      <guid>https://loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
       <description>Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
 まずは、nginx と php をインストール
 sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。

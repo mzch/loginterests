@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ATLASSIAN on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/atlassian/</link>
+    <link>https://loginterests.com/tags/atlassian/</link>
     <description>Recent content in ATLASSIAN on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 04 Nov 2009 06:59:45 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/atlassian/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/atlassian/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cash for Clunkers Confluence Edition!</title>
-      <link>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</link>
+      <link>https://loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</link>
       <pubDate>Wed, 04 Nov 2009 06:59:45 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</guid>
+      <guid>https://loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</guid>
       <description>ATLASSIAN の Cash for Clunkers 再び! 今度は、Wiki システムが対象です!
 MediaWiki や、DokuWiki、MindTouch など使ってみましたが、MediaWiki や DokuWiki は、Wiki 文法が面倒で使ってくれる人がいません。MindTouch はその点の問題はないものの、*nix でのインストール／運用がしち面倒くさい! だからといってそれだけのために、Windows サーバを立てるわけにもいかないし。
 その点、Confluence はインストールも運用も手間いらずです。
@@ -28,10 +28,10 @@ Cash for Clunkers のページから「Make the trade」をクリックして以
     
     <item>
       <title>ATLASSIAN Starter License</title>
-      <link>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
+      <link>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
       <pubDate>Wed, 07 Oct 2009 03:27:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
+      <guid>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
       <description>ATLASSIAN が Starter License の販売を開始しました。この Starter License による売り上げは、Room to Read に全額寄付されます。前回のキャンペーンは期間限定でしたが、この Starter License の販売に期限はありません。いつでも購入可能です。
 Starter License が適用される製品は、以下の通りです。
  JIRA (10 ユーザ) … バグトラッキングシステム Confluence (10 ユーザ) … エンタープライズ Wiki システム GreenHopper (10 ユーザ) &amp;#8230; プロジェクト管理システム Bamboo (10 ユーザ) &amp;#8230; 継続的インテグレーションサーバ FishEye (10 コミッタ、5 リポジトリ) &amp;#8230; リポジトリ管理システム Crowd (50 ユーザ) &amp;#8230; シングルサインオンシステム  価格は、それぞれ $10 (JIRA と Confluence は日本円 (1,000円) でも購入できます) で、一年間の保守契約付き（新しいバージョンが出れば、1年間無料でアップデートできます。もちろんサポートもあります）。保守契約は、年 $10 (または 1,000円) で延長することが可能です。一度に最大 3年間延長することができますし、もちろんその後も、年 $10 (または 1,000円)で延長していけます。</description>

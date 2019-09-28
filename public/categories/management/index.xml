@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/categories/management/</link>
+    <link>https://loginterests.com/categories/management/</link>
     <description>Recent content in Management on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Thu, 25 Jan 2018 17:53:12 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/categories/management/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/categories/management/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Debian Stretch – GRUB 2 のバグ?</title>
-      <link>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</link>
+      <link>https://loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</link>
       <pubDate>Thu, 25 Jan 2018 17:53:12 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</guid>
+      <guid>https://loginterests.com/posts/2018-01-26-debian-stretch-grub-2-%E3%81%AE%E3%83%90%E3%82%B0/</guid>
       <description>KVM のシリアルポート経由で、ブートメッセージをチェックするようにしているのだが、Debian Stretch をゲストにすると、なぜか GRUB 2 がシリアルコンソールにメニューを表示しない問題があった。
 実用上さして気にするほどでもなかったので放置してたのだが、他のディストリビューション (CentOS 7, Ubuntu 16) ではちゃんと表示されるので、いっちょ修正するか、と手を出してみた。
 結論。sid の GRUB 2 と入れ替えたら問題なく表示された。なぜ Stretch では直さないのかよくわからない。バックポートが難しいのだろうか。
@@ -26,10 +26,10 @@
     
     <item>
       <title>DragonFly BSD の IPv6 設定問題</title>
-      <link>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</link>
+      <link>https://loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</link>
       <pubDate>Sun, 21 Jan 2018 21:47:10 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</guid>
+      <guid>https://loginterests.com/posts/2018-01-22-dragonfly-bsd-%E3%81%AE-ipv6-%E8%A8%AD%E5%AE%9A%E5%95%8F%E9%A1%8C/</guid>
       <description>なぜか、/etc/rc.conf に以下の設定をしても反映されない。
 ipv6_enable=&amp;#34;YES&amp;#34; ipv6_network_interfaces=&amp;#34;vtnet0&amp;#34; ipv6_ifconfig_vtnet0=&amp;#34;inet6 2001:470:d:461::7:1 prefixlen 64&amp;#34; ipv6_defaultrouter=&amp;#34;2001:470:d:461::1&amp;#34; 仕方ないので、/etc/rc.local にコマンドを直書きしてごまかした。
 #! /bin/sh ifconfig vtnet0 inet6 2001:470:d:461::7:1 prefixlen 64 alias&amp;amp;lt;br /&amp;gt; route add -inet6 default 2001:470:d:461::1&amp;amp;lt;br /&amp;gt; 解決法をご存じの方がいらしたら、ぜひコメントをお願いしたい。
@@ -40,10 +40,10 @@ ipv6_enable=&amp;#34;YES&amp;#34; ipv6_network_interfaces=&amp;#34;vtnet0&amp;#3
     
     <item>
       <title>シリアルコンソール出力あれこれ</title>
-      <link>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</link>
+      <link>https://loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</link>
       <pubDate>Sun, 21 Jan 2018 18:25:52 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</guid>
+      <guid>https://loginterests.com/posts/2018-01-22-%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%B3%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%AB%E5%87%BA%E5%8A%9B%E3%81%82%E3%82%8C%E3%81%93%E3%82%8C/</guid>
       <description>KVM で VM を起動するときにシリアルコンソールに起動情報が流れてくれたら起動の様子がわかって大変便利なので、その設定を追加。
 1. Debian GNU/Linux /etc/defaults/grub を以下のように修正。
 # If you change this file, run &amp;#39;update-grub&amp;#39; afterwards to update # /boot/grub/grub.cfg. # For full documentation of the options in this file, see: # info -f grub -n &amp;#39;Simple configuration&amp;#39; GRUB_DEFAULT=0 GRUB_TIMEOUT=5 GRUB_DISTRIBUTOR=`lsb_release -i -s 2&amp;gt; /dev/null || echo Debian` GRUB_CMDLINE_LINUX_DEFAULT=&amp;#34;quiet&amp;#34; GRUB_CMDLINE_LINUX=&amp;#39;console=tty0 console=ttyS0,115200n8&amp;#39; # Uncomment to enable BadRAM filtering, modify to suit your needs # This works with Linux (no patch required) and with any kernel that obtains # the memory map information from GRUB (GNU Mach, kernel of FreeBSD .</description>
@@ -51,10 +51,10 @@ ipv6_enable=&amp;#34;YES&amp;#34; ipv6_network_interfaces=&amp;#34;vtnet0&amp;#3
     
     <item>
       <title>ちょっとした KVM サポートツール</title>
-      <link>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</link>
       <pubDate>Wed, 07 Jan 2015 19:50:06 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2015-01-08-%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8%E3%81%97%E3%81%9F-kvm-%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%84%E3%83%BC%E3%83%AB/</guid>
       <description>そろそろよかろうと思って、サーバーを jessie に上げたら、Xen が起動しない。ホスティングサーバーの変更もあったので、思い切って仮想化基盤を KVM に変更……というか、回帰しました。
 ところが、xen-tools のようなお手軽ツールがありません。いや、あることはあるのですが、古いバージョンにしか対応してなくて、しかも最近全くメンテされてない状態。
 一応、昔気に入ってて、日本語翻訳までした Proxmox VE も見てみたのですが、えらく進化してしまって、機能てんこ盛りで、こんなんイラネ。VNC もセキュリティに気を遣うのはわかるんですが、ごく一部のクライアントしか対応してないプロトコルしか外に出さない＝使いにくい Java クライアントとか、HTML 5 版のやっぱり使いにくいクライアントしか想定にないみたいで、愛想が尽きた。
@@ -64,10 +64,10 @@ ipv6_enable=&amp;#34;YES&amp;#34; ipv6_network_interfaces=&amp;#34;vtnet0&amp;#3
     
     <item>
       <title>ATLASSIAN Starter License</title>
-      <link>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
+      <link>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
       <pubDate>Wed, 07 Oct 2009 03:27:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
+      <guid>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
       <description>ATLASSIAN が Starter License の販売を開始しました。この Starter License による売り上げは、Room to Read に全額寄付されます。前回のキャンペーンは期間限定でしたが、この Starter License の販売に期限はありません。いつでも購入可能です。
 Starter License が適用される製品は、以下の通りです。
  JIRA (10 ユーザ) … バグトラッキングシステム Confluence (10 ユーザ) … エンタープライズ Wiki システム GreenHopper (10 ユーザ) &amp;#8230; プロジェクト管理システム Bamboo (10 ユーザ) &amp;#8230; 継続的インテグレーションサーバ FishEye (10 コミッタ、5 リポジトリ) &amp;#8230; リポジトリ管理システム Crowd (50 ユーザ) &amp;#8230; シングルサインオンシステム  価格は、それぞれ $10 (JIRA と Confluence は日本円 (1,000円) でも購入できます) で、一年間の保守契約付き（新しいバージョンが出れば、1年間無料でアップデートできます。もちろんサポートもあります）。保守契約は、年 $10 (または 1,000円) で延長することが可能です。一度に最大 3年間延長することができますし、もちろんその後も、年 $10 (または 1,000円)で延長していけます。</description>
@@ -75,10 +75,10 @@ Starter License が適用される製品は、以下の通りです。
     
     <item>
       <title>続・ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
       <pubDate>Sat, 19 Sep 2009 03:44:08 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
       <description>Twitter で、ATLASSIAN のショーンが、うちのブログを紹介してくれました!
 Thank you, ショーン!
 で、英語で説明しにくかったら、ショーンに一声かければ、日本語でもいいよ! とのことです。ショーンの Twitter アカウントは、http://twitter.com/Sean_SF です!
@@ -87,10 +87,10 @@ Thank you, ショーン!
     
     <item>
       <title>ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
       <pubDate>Thu, 10 Sep 2009 07:25:05 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
       <description>ATLASSIAN が、JIRA 4 発売 (10月発売予定) を記念して、またまたキャンペーンを行っています。前回は、JIRA と Confluence のチャリティ販売でしたが、今回は、Cash for Clunkers と銘打って、JIRA の 10 ユーザライセンスが無料で配布されます。(もしくは、JIRA 4 の 20% 引きクーポン)
 申し込み方法はいたって簡単。Cash for Clunkers というページの Make the trade というボタンをクリック。すると、Select your JIRA 4 coupon というセクションと Share your story というセクションが表示されます。
 Select your JIRA 4 coupon
@@ -100,10 +100,10 @@ Select your JIRA 4 coupon
     
     <item>
       <title>JIRA と Confluence</title>
-      <link>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
+      <link>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
       <pubDate>Wed, 22 Apr 2009 18:29:53 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
+      <guid>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
       <description>Atlassian が、一年間のサポートつきで、同社の製品、JIRA と Confluence を期間限定で、$5 USDで販売している。
 JIRA は、エンタプライズユースのバグトラッカーシステム。
 Confluence は、エンタープライズグレードの Wiki システム。

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Note on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/note/</link>
+    <link>https://loginterests.com/tags/note/</link>
     <description>Recent content in Note on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sun, 27 Dec 2009 16:06:03 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/note/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/note/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Thoughts</title>
-      <link>https://www.loginterests.com/posts/2009-12-28-thoughts/</link>
+      <link>https://loginterests.com/posts/2009-12-28-thoughts/</link>
       <pubDate>Sun, 27 Dec 2009 16:06:03 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-28-thoughts/</guid>
+      <guid>https://loginterests.com/posts/2009-12-28-thoughts/</guid>
       <description>本年最後の更新。かも。
 Mac でノート作成といえば、Circus Ponies の Notebook が有名ですが、新しいノートアプリケーションが来年の1月に発売されます。開発は、green &amp;amp; slimy で、Thoughts というアプリケーションです。日本語ローカライズを担当したので、一足早くレポートをば。
 起動すると、まずはウェルカムウィンドウが開きます。写真では英語ですが、正式版ではちゃんと日本語になりますのでご心配なく。^^;

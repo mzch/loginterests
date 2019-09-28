@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Postfix on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/postfix/</link>
+    <link>https://loginterests.com/tags/postfix/</link>
     <description>Recent content in Postfix on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 24 Jun 2019 12:50:31 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/postfix/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/postfix/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Postfix, Dovecot and MySQL</title>
-      <link>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</link>
+      <link>https://loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</link>
       <pubDate>Mon, 24 Jun 2019 12:50:31 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</guid>
+      <guid>https://loginterests.com/posts/2019-06-24-postfixadmin-postfix-dovecot-mysql/</guid>
       <description>Postfix と Dovecot を使って、メールサーバーを運用しているのだが、うちは構成が少し変則的で、メール送信サーバー (SMTP) とメール受信サーバー (IMAP/POP3) が分離している。最終的なメールの配送は Dovecot の LMTP デーモンに頼っているのだが、エイリアスにメールが配送されないという問題が発覚した。
 別にバグでも何でもなく、ただの構成ミスである。Dovecot の仮想メールボックス機能を使ってメールアドレスを管理しているのだが、当初、Postfix の送信サーバーと Dovecot の受信サーバーは同居していたので、ローカルの配送は、Postfix の Virtual Transport に任せていた。この時点では、エイリアスの処理も問題なかった。
 最近、サーバーの移転を行ったのにあわせて、送信サーバーと受信サーバーの分離を行ったのだが、これは、ローカル配送に Dovecot の LMTP デーモンが使えることがわかったからである。で、何も考えずに移行して嵌まった、と。
@@ -28,10 +28,10 @@ sql user_query = SELECT concat(&#39;/var/mail/&#39;, maildir) as mail, concat(&#
     
     <item>
       <title>メールサーバー間の SMTP 通信を暗号化する</title>
-      <link>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</link>
       <pubDate>Mon, 19 Mar 2018 18:55:28 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2018-03-20-%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E9%96%93%E3%81%AE-smtp-%E9%80%9A%E4%BF%A1%E3%82%92%E6%9A%97%E5%8F%B7%E5%8C%96%E3%81%99%E3%82%8B/</guid>
       <description>メールサーバー間の通信で、TLSを使った暗号化が可能なのは知っていたが、面倒なので放置していた。
 が、Gmail などで暗号化通信で送られてきたメールにはその旨記載があったり、世の中も動いてきてるので、今回、対応することにした。
 Debian の場合 apt install ca-certificates で、CA証明書を導入しておくことを忘れない。

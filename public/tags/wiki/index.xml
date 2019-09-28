@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wiki on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/wiki/</link>
+    <link>https://loginterests.com/tags/wiki/</link>
     <description>Recent content in Wiki on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 22 Apr 2009 18:29:53 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/wiki/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JIRA と Confluence</title>
-      <link>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
+      <link>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
       <pubDate>Wed, 22 Apr 2009 18:29:53 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
+      <guid>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
       <description>Atlassian が、一年間のサポートつきで、同社の製品、JIRA と Confluence を期間限定で、$5 USDで販売している。
 JIRA は、エンタプライズユースのバグトラッカーシステム。
 Confluence は、エンタープライズグレードの Wiki システム。

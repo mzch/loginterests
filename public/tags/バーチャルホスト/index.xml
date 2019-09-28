@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>バーチャルホスト on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
+    <link>https://loginterests.com/tags/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
     <description>Recent content in バーチャルホスト on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Sat, 07 Mar 2009 18:13:31 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SSLでネームベースのバーチャルホスト</title>
-      <link>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
+      <link>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
       <pubDate>Sat, 07 Mar 2009 18:13:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
+      <guid>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
       <description>某所にある Apache WebサーバのSSLモジュールを OpenSSL から、GnuTLSへ変更しました。何のためにそんなことをしたかというと、タイトル通り、SSLでNamed Virtual Hostを有効にするためです。
 そんなことできんの? SSLってIP1個につき、1ホストじゃないとできないんじゃないの? と思ったあなた、そんなことはありません。知ってるよ。ワイルドカード証明書でしょ? でもあれ高いんだよね−。と思ったあなた。違います。ワイルドカード証明書のことではありません。IPアドレス1個で、全く関係のないドメインがバーチャルホストできるんです。え? 知ってる? おまえが遅れてるだけ? すいません。最近、サーバ関係は手を抜いてるもんで。^^;
 そもそも私がこれを知るきっかけになったのは、Postfix メーリングリストにドメイン名の変更に当たり、二つのドメインを同時にSSLで受け付けられないかという質問が投げられたことにありました。で、その回答中に、複数のドメインをひとつの証明書にいれてもらう = subjectAltName を使用するというのがあったんです。

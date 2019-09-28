@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mail Form on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/mail-form/</link>
+    <link>https://loginterests.com/tags/mail-form/</link>
     <description>Recent content in Mail Form on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 12 Aug 2019 13:29:10 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/mail-form/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/mail-form/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formspree</title>
-      <link>https://www.loginterests.com/posts/2019-08-12-formspree/</link>
+      <link>https://loginterests.com/posts/2019-08-12-formspree/</link>
       <pubDate>Mon, 12 Aug 2019 13:29:10 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-08-12-formspree/</guid>
+      <guid>https://loginterests.com/posts/2019-08-12-formspree/</guid>
       <description>例によって例のごとく、ドキュメントが未整備なオープンソースアプリをインストールしたので、そのメモ。
 Formspree は、静的サイトなどにメールフォームを設置するためのサーバーアプリケーションである。設置が面倒な方は、ホスティングサービスもあるので、そちらを利用された方がよいかと。
  まず、Python をインストールする。Python は、個人的に pyenv を使うので、そのように。

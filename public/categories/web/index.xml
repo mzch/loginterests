@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/categories/web/</link>
+    <link>https://loginterests.com/categories/web/</link>
     <description>Recent content in Web on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Mon, 12 Aug 2019 13:29:10 +0900</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Formspree</title>
-      <link>https://www.loginterests.com/posts/2019-08-12-formspree/</link>
+      <link>https://loginterests.com/posts/2019-08-12-formspree/</link>
       <pubDate>Mon, 12 Aug 2019 13:29:10 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-08-12-formspree/</guid>
+      <guid>https://loginterests.com/posts/2019-08-12-formspree/</guid>
       <description>例によって例のごとく、ドキュメントが未整備なオープンソースアプリをインストールしたので、そのメモ。
 Formspree は、静的サイトなどにメールフォームを設置するためのサーバーアプリケーションである。設置が面倒な方は、ホスティングサービスもあるので、そちらを利用された方がよいかと。
  まず、Python をインストールする。Python は、個人的に pyenv を使うので、そのように。
@@ -29,10 +29,10 @@ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - sudo apt install
     
     <item>
       <title>Apache で php-fpm を使う</title>
-      <link>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
+      <link>https://loginterests.com/posts/2019-07-05-apache_and_php-fpm/</link>
       <pubDate>Fri, 05 Jul 2019 05:12:38 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
+      <guid>https://loginterests.com/posts/2019-07-05-apache_and_php-fpm/</guid>
       <description>やっぱり、Apache でも http2 を有効にしたい！ということで、慣れ親しんだ、php_module からおさらばして、php-fpm で構成し直した。Debian &amp;amp; php 7.3 での例を示す。
 まず、php-fpm をインストール。まあ、php_module を削除すれば、勝手に php-fpm が入るんですが。ダウンタイムを極力避けるなら、この手順で。
 sudo apt install php-fpm 次に proxy_fcgi を有効にする。
@@ -45,10 +45,10 @@ sudo systemctl restart apache2 うむ。簡単だった。</description>
     
     <item>
       <title>ドメイン名を変更しました</title>
-      <link>https://www.loginterests.com/posts/2019-06-02-change-domain/</link>
+      <link>https://loginterests.com/posts/2019-06-02-change-domain/</link>
       <pubDate>Sun, 02 Jun 2019 07:56:58 +0900</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-06-02-change-domain/</guid>
+      <guid>https://loginterests.com/posts/2019-06-02-change-domain/</guid>
       <description>旧来の daybook.biz から、新たに loginterests.com にドメイン名を変更しました。気分転換というか、既に（というか、最初から）日誌になってなかったので、興味のあることをつらつら記録していく、という現状に近い意味を持たせようか、と。
 あと、サーバーを Debian Buster にアップグレードしたんですが、なぜか daybook.biz だけ不調になりまして、ここも心機一転。Wordpress から、Hugo へプラットホームを変えました。サイトジェネレータ型のいいところは、素の HTML/CSS/Javascript を置くだけなので、システムの変更に強い点。今回、図らずも Wordpress はその弱点を晒してしまったということで。Worddpress 本体は、PHP のバージョンが上がってもきちんと対応してるので、まあ、使ってるプラグインとかテーマが悪いのでしょう。
 細々続いているこのサイトですが、今後ともよろしくお願いします。はい。
@@ -57,10 +57,10 @@ sudo systemctl restart apache2 うむ。簡単だった。</description>
     
     <item>
       <title>Vanilla Forums</title>
-      <link>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</link>
+      <link>https://loginterests.com/posts/2019-05-04-vanilla-forums/</link>
       <pubDate>Sat, 04 May 2019 10:36:17 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
+      <guid>https://loginterests.com/posts/2019-05-04-vanilla-forums/</guid>
       <description>Debian GNU/Linux 10 Buster をインストールした VPS に、nginx を入れて、Vanilla Forums を立ち上げたので、そのメモ。Web サーバーに Apache を使う場合は、.htaccess のひな形が予め仕込まれてるので、注意点はない。
 まずは、nginx と php をインストール
 sudo apt install nginx sudo apt install php php-apcu php-bz2 php-cli php-curl php-fpm php-gettext php-imagick php-imap php-mbstring php-mdb2-driver-mysql php-mdb2-driver-pgsql php-mysql php-pgsql php-readline php-tokenizer php-xml php-xmlrpc php-zip Github からリリース版を取得。適切な位置 (仮に、/srv/vanilla とする) へ展開。
@@ -70,10 +70,10 @@ root /srv/vanilla; # Add index.php to the list if you are using PHP index index.
     
     <item>
       <title>Newspipe のインストール</title>
-      <link>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
       <pubDate>Fri, 05 Apr 2019 10:16:03 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2019-04-05-newspipe-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
       <description>Feedbin の設置には成功したものの、どうやってもフィードを更新してくれなくて、使用を断念したが、他によさげなアグリゲーターがないか、😎 Awesome lists about all kinds of interesting topics で探したところ、Newspipe が使いやすそうだったので、これをインストールしてみた。
 結果から言うと、丸二日かかって稼働に成功。やったね！😁
 まず、Python 3.7 以上が必要だが、Debian 9 (Stretch) に入っているのは、3.5。ということで、ソースからインストールする。現時点での最新版は、3.7.3。
@@ -85,10 +85,10 @@ Python がインストールできたら、PostgreSQL も必要なので、イ�
     
     <item>
       <title>Feedbin のインストール</title>
-      <link>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <link>https://loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
       <pubDate>Sun, 31 Mar 2019 15:42:14 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <guid>https://loginterests.com/posts/2019-04-01-feedbin-%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
       <description>結果的に、動作しなかったが、勿体ないので、記事は残しておく。
 ニュースサイトの閲覧に、サーバー設置型であるニュースフィーダーの Fever を使っているのだが、ディスコンになってしまって、乗り換え先を探していたところ、オープンソースで公開されている Freebin がよさげだったので、Debian GNU/Linux 9 Stretch にインストールしてみた。Feedbin に月 $5 払えば、インストールなどいらないのだが、ドキュメントに書かれていない設定が多数あって、試行錯誤に丸一日費やしたので、どこかに残しておかないと勿体なかったというのもある。😁
 まず、Stripe.com のアカウントが必要なので、サインアップする。
@@ -101,10 +101,10 @@ sudo apt install dirmngr sudo apt install apt-transport-https sudo apt install c
     
     <item>
       <title>Pydio Cells の隠し仕様</title>
-      <link>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
+      <link>https://loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</link>
       <pubDate>Tue, 15 Jan 2019 09:11:02 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
+      <guid>https://loginterests.com/posts/2019-01-15-pydio-cells-%E3%81%AE%E9%9A%A0%E3%81%97%E4%BB%95%E6%A7%98/</guid>
       <description>ファイル共有サーバーソフト、Pydio が、内容を一新、Go でスクラッチから書き直されて、Pydio Cells となった。
 最近になって、更新のための時間が取れたので、インストールしてみた。ところ、このブログも乗っかってる専鯖上の VM には問題なくインストール完了。ところが、ストレージ目的で借りている VPS で、所謂ヌルポインタエラーが出た。フォーラムで質問しても解決しなかったが、うまくいったケースとそうでないケースを見比べて違いを埋めていった結果、Pydio Cells は、プライベート IP アドレスがないとセグメンテーションフォールトを起こす仕様になっていることがわかった。
 ドキュメントのどこにも書いてないが、ソースではしっかりチェックされてて、確かにプライベートアドレスがないとエラーになる箇所があった。ところがそのエラーをチェックせずに実行を継続しているので所謂ぬるぽになっている。明らかなバグ。フォーラムで報告しておいた。
@@ -113,10 +113,10 @@ sudo apt install dirmngr sudo apt install apt-transport-https sudo apt install c
     
     <item>
       <title>Declicious から Pinboard へ</title>
-      <link>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</link>
+      <link>https://loginterests.com/2010/12/18/from-declicious-to-pinboard/</link>
       <pubDate>Fri, 17 Dec 2010 17:41:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</guid>
+      <guid>https://loginterests.com/2010/12/18/from-declicious-to-pinboard/</guid>
       <description>既にご存じの方も多いと思われますが、TechCrunch Japanでも報道されている通り、[Yahoo!(http://www.yahoo.com/) は、Delicious を廃止すると決定しました売却する予定だと発表しました。（12/22 更新)
 まあ Yahoo! ですし、買収した事業でまともに継続できてるものがあるのか? といった会社ですから、仕方ないのですが、ユーザーは大混乱。そりゃまあそうですよね。で、そんな人に朗報。Yahoo! の元社員が作ったシンプルながら必要な機能は揃っているという、Pinboard があります。
 昨年始まったサービスなのですが、当初は副業だったはずが、順調にユーザー数を伸ばし、今やフルタイムで取りかかっているとか。ただし無料じゃありません。登録費用が、今現在で $7.85 かかります。これ、後になればなるほど値段が上がっていくという (サービス開始時のβ版の時は、$2.84) ユニークな値付けポリシーなので、早めに登録した方がよろしいかと。:)
@@ -131,10 +131,10 @@ Delicious クライアントではありませんが、Quiet Read も Pinboard �
     
     <item>
       <title>Droplr 正式サービス開始</title>
-      <link>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
+      <link>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</link>
       <pubDate>Mon, 14 Dec 2009 02:33:04 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-12-14-droplr-%E6%AD%A3%E5%BC%8F%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E9%96%8B%E5%A7%8B/</guid>
       <description>以前ちょこっと紹介した Droplr ですが、クローズドβが終了し、正式にサービスを開始しました。
 詳しくは、ウェブサイトの動画をご覧頂ければおわかりになると思いますが、使い方がとにかく簡単。URLやファイルをそのままメニューバーのアイコンにドロップするだけ。BlueBird、Echofon、Tweetie、Twitt といった Twitter クライアントに対応 (もちろん、twitter.com にも) しており、クリックひとつでツイート画面が開いて URL をペーストしてくれます。画像やファイルは合計 1GB まで保存可能で、これひとつでもうあれこれサービスを使い分ける必要はないのじゃないでしょうか。しかも無料。:)
 Twitter アカウントがあればすぐに使い始められますので、Mac で Twitter な方には是非お奨めしたいサービスです。Socialite とか、Kiwi、QFeeder、Twitterrific といった他のクライアントにも対応してくれれば嬉しいですね。 </description>
@@ -142,10 +142,10 @@ Twitter アカウントがあればすぐに使い始められますので、Mac
     
     <item>
       <title>Cash for Clunkers Confluence Edition!</title>
-      <link>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</link>
+      <link>https://loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</link>
       <pubDate>Wed, 04 Nov 2009 06:59:45 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</guid>
+      <guid>https://loginterests.com/posts/2009-11-04-cash-for-clunkers-confluence-edition/</guid>
       <description>ATLASSIAN の Cash for Clunkers 再び! 今度は、Wiki システムが対象です!
 MediaWiki や、DokuWiki、MindTouch など使ってみましたが、MediaWiki や DokuWiki は、Wiki 文法が面倒で使ってくれる人がいません。MindTouch はその点の問題はないものの、*nix でのインストール／運用がしち面倒くさい! だからといってそれだけのために、Windows サーバを立てるわけにもいかないし。
 その点、Confluence はインストールも運用も手間いらずです。
@@ -156,10 +156,10 @@ Cash for Clunkers のページから「Make the trade」をクリックして以
     
     <item>
       <title>CloudApp &amp; Droplr</title>
-      <link>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
+      <link>https://loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</link>
       <pubDate>Thu, 22 Oct 2009 13:43:54 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
+      <guid>https://loginterests.com/posts/2009-10-22-cloudapp-and-droplr/</guid>
       <description>どちらもまだクローズドβテスト中ですが、幸いにも招待を受けることができたので、ちょっと感想など。
 CloudApp 使い始めて間もないのですが、画像や動画、ファイルのアップロードと URL 短縮が同時に行えるサービスです (もちろん、URL の短縮だけを行うこともできます。MobileMe の iDisk + bit.ly or tr.im といった感じのサービスですね)。利用するには、クライアントアプリケーションをダウンロード・インストールする必要があります。Web から利用することはできません (参照するだけならブラウザがあれば事足りるのは当然なんですけどね)。しかも、アップロードしたファイルの管理はもとより、URLのクリック数を取得することもできません。始まったばかりでこれから様々な機能が実装されていく状態といったところです。一般公開はかなり先になるのではないでしょうか。ちなみにクライアントアプリは、Mac 専用なので、今のところ Windows から利用することはできません。
 Droplr 一方の Droplr も同様のサービスですが、こちらはアップロードしたファイルの管理や URL のクリック数を参照することができます (削除もできます)。URL短縮に使用するドメイン名を「droplr.com」「drp.ly」のいずれかから選択することができる他、自前のドメイン名があればそれを使用することもできるようになっています。こちらもクライアントアプリが Mac にしか対応していないため、Windows からは利用できません。
@@ -168,10 +168,10 @@ Droplr 一方の Droplr も同様のサービスですが、こちらはアッ�
     
     <item>
       <title>ATLASSIAN Starter License</title>
-      <link>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
+      <link>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</link>
       <pubDate>Wed, 07 Oct 2009 03:27:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
+      <guid>https://loginterests.com/posts/2009-10-07-atlassian-starter-license/</guid>
       <description>ATLASSIAN が Starter License の販売を開始しました。この Starter License による売り上げは、Room to Read に全額寄付されます。前回のキャンペーンは期間限定でしたが、この Starter License の販売に期限はありません。いつでも購入可能です。
 Starter License が適用される製品は、以下の通りです。
  JIRA (10 ユーザ) … バグトラッキングシステム Confluence (10 ユーザ) … エンタープライズ Wiki システム GreenHopper (10 ユーザ) &amp;#8230; プロジェクト管理システム Bamboo (10 ユーザ) &amp;#8230; 継続的インテグレーションサーバ FishEye (10 コミッタ、5 リポジトリ) &amp;#8230; リポジトリ管理システム Crowd (50 ユーザ) &amp;#8230; シングルサインオンシステム  価格は、それぞれ $10 (JIRA と Confluence は日本円 (1,000円) でも購入できます) で、一年間の保守契約付き（新しいバージョンが出れば、1年間無料でアップデートできます。もちろんサポートもあります）。保守契約は、年 $10 (または 1,000円) で延長することが可能です。一度に最大 3年間延長することができますし、もちろんその後も、年 $10 (または 1,000円)で延長していけます。</description>
@@ -179,10 +179,10 @@ Starter License が適用される製品は、以下の通りです。
     
     <item>
       <title>それは誰?</title>
-      <link>https://www.loginterests.com/posts/2009-10-04-%E3%81%9D%E3%82%8C%E3%81%AF%E8%AA%B0/</link>
+      <link>https://loginterests.com/posts/2009-10-04-%E3%81%9D%E3%82%8C%E3%81%AF%E8%AA%B0/</link>
       <pubDate>Sun, 04 Oct 2009 13:42:42 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-10-04-%E3%81%9D%E3%82%8C%E3%81%AF%E8%AA%B0/</guid>
+      <guid>https://loginterests.com/posts/2009-10-04-%E3%81%9D%E3%82%8C%E3%81%AF%E8%AA%B0/</guid>
       <description>白い壁 52.26 kgと蜂蜜 14.74 kgに色という名の調味料と興奮という名のスパイスを加えます。 材料に飾り包丁を入れ、丁寧に混ぜます。 次に48分間180℃の油で揚げます。 最後に隠し味として結婚を少々振りかけて、適当に盛り付ければでき上がり!!  備考
 　手に入る所：ファミリーレストラン(秋限定)
 　お値段 (一人前)：6695万円
@@ -191,10 +191,10 @@ Starter License が適用される製品は、以下の通りです。
     
     <item>
       <title>続・ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</link>
       <pubDate>Sat, 19 Sep 2009 03:44:08 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-19-%E7%B6%9Aatlassian-cash-for-clunkers/</guid>
       <description>Twitter で、ATLASSIAN のショーンが、うちのブログを紹介してくれました!
 Thank you, ショーン!
 で、英語で説明しにくかったら、ショーンに一声かければ、日本語でもいいよ! とのことです。ショーンの Twitter アカウントは、http://twitter.com/Sean_SF です!
@@ -203,10 +203,10 @@ Thank you, ショーン!
     
     <item>
       <title>ATLASSIAN – Cash for Clunkers</title>
-      <link>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
+      <link>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</link>
       <pubDate>Thu, 10 Sep 2009 07:25:05 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
+      <guid>https://loginterests.com/posts/2009-09-10-atlassian-cash-for-clunkers/</guid>
       <description>ATLASSIAN が、JIRA 4 発売 (10月発売予定) を記念して、またまたキャンペーンを行っています。前回は、JIRA と Confluence のチャリティ販売でしたが、今回は、Cash for Clunkers と銘打って、JIRA の 10 ユーザライセンスが無料で配布されます。(もしくは、JIRA 4 の 20% 引きクーポン)
 申し込み方法はいたって簡単。Cash for Clunkers というページの Make the trade というボタンをクリック。すると、Select your JIRA 4 coupon というセクションと Share your story というセクションが表示されます。
 Select your JIRA 4 coupon
@@ -216,10 +216,10 @@ Select your JIRA 4 coupon
     
     <item>
       <title>Panic – 確かに史上最大のセールだ(?)!</title>
-      <link>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
+      <link>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</link>
       <pubDate>Wed, 27 May 2009 09:03:11 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
+      <guid>https://loginterests.com/posts/2009-05-27-panic-%E7%A2%BA%E3%81%8B%E3%81%AB%E5%8F%B2%E4%B8%8A%E6%9C%80%E5%A4%A7%E3%81%AE%E3%82%BB%E3%83%BC%E3%83%AB%E3%81%A0/</guid>
       <description>以前書いた通り、Panic がセールを開始しました。
 太平洋標準時間 (PST) の 5月29日 23:59 までです。
 Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即行で買いましたが、Unison どうするか悩み中。今更、Usenet という気もするんですが&amp;#8230;</description>
@@ -227,10 +227,10 @@ Coda、Transmit、CandyBar 3、Unison が全品 50% オフです。Coda は即�
     
     <item>
       <title>JIRA と Confluence</title>
-      <link>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
+      <link>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</link>
       <pubDate>Wed, 22 Apr 2009 18:29:53 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
+      <guid>https://loginterests.com/posts/2009-04-23-jira-%E3%81%A8-confluence/</guid>
       <description>Atlassian が、一年間のサポートつきで、同社の製品、JIRA と Confluence を期間限定で、$5 USDで販売している。
 JIRA は、エンタプライズユースのバグトラッカーシステム。
 Confluence は、エンタープライズグレードの Wiki システム。
@@ -244,10 +244,10 @@ Confluence は、エンタープライズグレードの Wiki システム。
     
     <item>
       <title>SSLでネームベースのバーチャルホスト</title>
-      <link>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
+      <link>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</link>
       <pubDate>Sat, 07 Mar 2009 18:13:31 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
+      <guid>https://loginterests.com/posts/2009-03-08-ssl%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%90%E3%83%BC%E3%83%81%E3%83%A3%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88/</guid>
       <description>某所にある Apache WebサーバのSSLモジュールを OpenSSL から、GnuTLSへ変更しました。何のためにそんなことをしたかというと、タイトル通り、SSLでNamed Virtual Hostを有効にするためです。
 そんなことできんの? SSLってIP1個につき、1ホストじゃないとできないんじゃないの? と思ったあなた、そんなことはありません。知ってるよ。ワイルドカード証明書でしょ? でもあれ高いんだよね−。と思ったあなた。違います。ワイルドカード証明書のことではありません。IPアドレス1個で、全く関係のないドメインがバーチャルホストできるんです。え? 知ってる? おまえが遅れてるだけ? すいません。最近、サーバ関係は手を抜いてるもんで。^^;
 そもそも私がこれを知るきっかけになったのは、Postfix メーリングリストにドメイン名の変更に当たり、二つのドメインを同時にSSLで受け付けられないかという質問が投げられたことにありました。で、その回答中に、複数のドメインをひとつの証明書にいれてもらう = subjectAltName を使用するというのがあったんです。
@@ -262,10 +262,10 @@ Safai対応してるって書いてるサイト、あんまりなかったけど
     
     <item>
       <title>Google を Cool に見せる</title>
-      <link>https://www.loginterests.com/posts/2009-02-28-google-%E3%82%92-cool-%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B/</link>
+      <link>https://loginterests.com/posts/2009-02-28-google-%E3%82%92-cool-%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B/</link>
       <pubDate>Fri, 27 Feb 2009 16:18:01 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2009-02-28-google-%E3%82%92-cool-%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B/</guid>
+      <guid>https://loginterests.com/posts/2009-02-28-google-%E3%82%92-cool-%E3%81%AB%E8%A6%8B%E3%81%9B%E3%82%8B/</guid>
       <description>2chのスレで見つけました。Safari にインストールすると、Google がぐっとスマートになっちゃいます。こんな感じ↓
 作成された方のサイトはこちら。zumuya zumuya » ZMGoogleCSS
 いや、ホント、こういうの作れてしまうセンスが羨ましいです。尊敬しちゃいますねー。うん。</description>

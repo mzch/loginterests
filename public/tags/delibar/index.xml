@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Delibar on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/delibar/</link>
+    <link>https://loginterests.com/tags/delibar/</link>
     <description>Recent content in Delibar on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Fri, 17 Dec 2010 17:41:18 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/delibar/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/delibar/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Declicious から Pinboard へ</title>
-      <link>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</link>
+      <link>https://loginterests.com/2010/12/18/from-declicious-to-pinboard/</link>
       <pubDate>Fri, 17 Dec 2010 17:41:18 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/2010/12/18/from-declicious-to-pinboard/</guid>
+      <guid>https://loginterests.com/2010/12/18/from-declicious-to-pinboard/</guid>
       <description>既にご存じの方も多いと思われますが、TechCrunch Japanでも報道されている通り、[Yahoo!(http://www.yahoo.com/) は、Delicious を廃止すると決定しました売却する予定だと発表しました。（12/22 更新)
 まあ Yahoo! ですし、買収した事業でまともに継続できてるものがあるのか? といった会社ですから、仕方ないのですが、ユーザーは大混乱。そりゃまあそうですよね。で、そんな人に朗報。Yahoo! の元社員が作ったシンプルながら必要な機能は揃っているという、Pinboard があります。
 昨年始まったサービスなのですが、当初は副業だったはずが、順調にユーザー数を伸ばし、今やフルタイムで取りかかっているとか。ただし無料じゃありません。登録費用が、今現在で $7.85 かかります。これ、後になればなるほど値段が上がっていくという (サービス開始時のβ版の時は、$2.84) ユニークな値付けポリシーなので、早めに登録した方がよろしいかと。:)

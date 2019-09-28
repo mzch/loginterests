@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>デスクトップ拡張 on 電脳業務日誌</title>
-    <link>https://www.loginterests.com/tags/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8B%A1%E5%BC%B5/</link>
+    <link>https://loginterests.com/tags/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8B%A1%E5%BC%B5/</link>
     <description>Recent content in デスクトップ拡張 on 電脳業務日誌</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>&amp;copy; 2008-2019 mzch</copyright>
     <lastBuildDate>Wed, 03 Sep 2008 20:35:32 +0000</lastBuildDate>
     
-	<atom:link href="https://www.loginterests.com/tags/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8B%A1%E5%BC%B5/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://loginterests.com/tags/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E6%8B%A1%E5%BC%B5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DeskSpace</title>
-      <link>https://www.loginterests.com/posts/2008-09-04-deskspace/</link>
+      <link>https://loginterests.com/posts/2008-09-04-deskspace/</link>
       <pubDate>Wed, 03 Sep 2008 20:35:32 +0000</pubDate>
       
-      <guid>https://www.loginterests.com/posts/2008-09-04-deskspace/</guid>
+      <guid>https://loginterests.com/posts/2008-09-04-deskspace/</guid>
       <description>Mac ばかりなのも何なので、Windows の小物もひとつ。今更ではありますけど。
 Mac だと、Spaces で行っているような複数の仮想デスクトップを管理ソフトなんですが、まあ、PC-Unix の compiz とか、Beryl なんかがやってることが、Windowsでもできてしまう商品。Otaku Software の Deskspace というシェアウェアです。
 が、使い始めると案外面白い。他のデスクトップが透けて見えるので、どこに何を配置したか結構見てわかるのが意外でした。以前は、特定のデスクトップでアプリケーションを起動することができなかったんですが、最新版(1.5.5.2)では、ちゃんとその機能も追加されており、使用するソフトのカテゴリごとにデスクトップを切り替えたり、あるいは、仕事用、息抜き用なんてデスクトップを整理できたりするようになってます。使えるソフトに育ってきたってことでしょうか。
