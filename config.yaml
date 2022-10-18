@@ -15,7 +15,7 @@ params:
   paginate: 10
 
   homeInfoParams:
-      Title: 電脳なるもののあれこれをつらつらと語ってみたいと思ふ。🈺
+      Title: 電脳なるものをつらつらと語ってみる。🈺
       Content: PC や Mac といったコンピュータはもとより、そのソフトウェアやサーバー管理、レンタルサーバー業者のあれこれを漫然と書き連ねているブログです。⚙️
 
   socialIcons:
