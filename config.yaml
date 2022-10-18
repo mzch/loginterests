@@ -12,6 +12,15 @@ pygmentsCodefences: true
 
 params:
 
+  env: production
+  defaultTheme: auto
+  showShareButtons: ture
+  showReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+
   paginate: 10
 
   homeInfoParams:
