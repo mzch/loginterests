@@ -33,12 +33,14 @@ params:
         url: "https://gitlab.com/letlive"
       - name: "vimeo"
         url: "https://vimeo.com/letlive"
+
+  comments: true
   # Disqus shortname
   #disqusL: "daybook-biz"
   # Commento url
-  commento: "https://rfc1855.com"
+  commento: "rfc1855.com"
   # Coral (Talk v5) url
-  #coral: "https://commentre.com"
+  #coral: "commentre.com"
   # Google Analytics API key.
   ga_api_key: "UA-12204411-1"
   # Logo image. This is displayed ogp image.
