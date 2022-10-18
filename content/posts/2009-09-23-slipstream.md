@@ -15,7 +15,7 @@ draft: false
 
 Window スイッチャーなんですが、Exposé と違って、リスト表示された Window を切り替えるタイプ。こんなの↓です。
 
-{{% zoom-img alt="SlipStream Screen Capture" src="/wp-content/uploads/2009/09/slipstream.png" %}}
+![SlipStream Screen Capture](/wp-content/uploads/2009/09/slipstream.png)
 
 選択した Window のプレビューが上半分に表示されるのが、ミソ。今は単に現在のデスクトップに選択した Window だけが表示されるのみですが、Windows 7 みたいに他の Window をフレームで表示したり、Spaces の配置を反映するようにすれば、かなり使えるソフトになるのではないかと思っています。
 

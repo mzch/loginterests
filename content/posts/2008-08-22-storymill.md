@@ -13,6 +13,6 @@ tags:
 
 で、さらに小説専用とかでググったら出てきました。そのものずばりが目的のソフトで、[StoryMill](http://www.marinersoftware.com/sitepage.php?page=127)。アメリカではプロフェッショナルな方も使ってるとか。開発と販売元は、[MARINER Software](http://www.marinersoftware.com/)。
 
-{{% zoom-img src="/wp-content/uploads/2008/08/storymill.jpg" %}}
+![StoryNill](/wp-content/uploads/2008/08/storymill.jpg)
 
 や、とにかく書きたいとこを先に書いて、体裁は後から整えるという、趣味の小説書き（SS書きの方が一般的?）にはとても重宝します。 submissionといって、どこの出版社やエージェントに原稿を送ったかまで管理できるところが、や、アメリカ的です。ｗ

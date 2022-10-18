@@ -4,4 +4,4 @@ date: "2019-05-31"
 draft: false
 ---
 
-詳しくは、[こちら](https://koichi.matsumoto.me/)をどうぞ。
+詳しくは、[こちら](https://mcuce.com/@mzch)をどうぞ。

@@ -15,20 +15,20 @@ draft: false
 
 ディフォルトのメイン画面はこんな感じです。
 
-{{% zoom-img src="/wp-content/uploads/2009/12/kiwi.png" alt="Kiwi" %}}
+![Kiwi](/wp-content/uploads/2009/12/kiwi.png)
 
 テーマを切り替えることで表示を変更することができます。例えば、環境設定から
 
-{{% zoom-img src="/wp-content/uploads/2009/12/kiwi-pref.png" alt="kiwi preferences" %}}
+![Kiwi 環境設定](/wp-content/uploads/2009/12/kiwi-pref.png)
 
 と、Slate を選択すると、以下のように表示が変わります。
 
-{{% zoom-img src="/wp-content/uploads/2009/12/kiwi-slate.png" alt="kiwi-slate" %}}
+![Kiwi Slate](/wp-content/uploads/2009/12/kiwi-slate.png)
 
 
 このように、見た目重視なところもあるクライアントですが、機能面でも [Tweetie](http://www.atebits.com/tweetie-mac/) や、[Socialite](http://socialite.emberapp.com/) といった他のクライアントに比べてひけをとりません。マルチアカウント対応で、使い勝手は、[Tweetie](http://www.atebits.com/tweetie-mac/) に似ているところがありますが、もちろん、他のクライアントにはない特長もあります。例えば、特定の語句を含むツイートを非表示にしたり、色をつけたり、指定のスタイルを設定したりするといったことができます。環境設定の &#8220;Rules&#8221; に以下のような設定を行うと、&#8221;RT:&#8221;という語句を含むツイートを表示しないようにすることができます。
 
-{{% zoom-img src="/wp-content/uploads/2009/12/kiwi-rules.png" alt="kiwi-rules" %}}
+![Kiwi Rules](/wp-content/uploads/2009/12/kiwi-rules.png)
 
 いかがでしょう? 結構期待できるクライアントだと思うのですが。
 

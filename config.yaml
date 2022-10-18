@@ -1,0 +1,100 @@
+baseurl: "https://loginterests.com"
+languageCode: "ja"
+Title: "電脳業務日誌"
+# theme: "potato-dark"
+theme: "hugo-PaperMod"
+
+# Copyright notice. This is displayer in the footer.
+copyright: "&copy; 2008-2022 mzch"
+
+pygmentsUseClasses: true
+pygmentsCodefences: true
+
+params:
+
+  paginate: 10
+
+  homeInfoParams:
+      Title: 電脳なるもののあれこれをつらつらと語ってみたいと思ふ。🈺
+      Content: PC や Mac といったコンピュータはもとより、そのソフトウェアやサーバー管理、レンタルサーバー業者のあれこれを漫然と書き連ねているブログです。⚙️
+
+  socialIcons:
+      - name: "twitter"
+        url: "https://twitter.com/_mzch"
+      - name: "facebook"
+        url: "https://facebook.com/kch.matsumoto"
+      - name: "instagram"
+        url: "https://instagram.com/mzch"
+      - name: "linkdin"
+        url: "https://linkdin.com/letlive"
+      - name: "github"
+        url: "https://github.com/mzch"
+      - name: "gitlab"
+        url: "https://gitlab.com/letlive"
+      - name: "vimeo"
+        url: "https://vimeo.com/letlive"
+  # Disqus shortname
+  #disqusL: "daybook-biz"
+  # Commento url
+  commento: "https://rfc1855.com"
+  # Coral (Talk v5) url
+  #coral: "https://commentre.com"
+  # Google Analytics API key.
+  ga_api_key: "UA-12204411-1"
+  # Logo image. This is displayed ogp image.
+  #logo: "/img/logo.png"
+  #favicon: "/img/favicon.ico"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - name: "Posts"
+      url: "/posts"
+      weight: 1
+    - name: "Categories"
+      url: "/categories"
+      weight: 2
+    - name: "Tags"
+      url: "/tags"
+      weight: 3
+    - name: "Privacy Policy"
+      url: "/privacy"
+      weight: 4
+    - name: "Terms & Conditions"
+      url: "/terms"
+      weight: 5
+    - name: "About"
+      url: "/about"
+      weight: 6
+
+related:
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold: 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer: false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower: false
+
+  indices:
+    - name: "keywords"
+      weight: 150
+    - name: "author"
+      toLower: true
+      weight: 30
+    - name: "tags"
+      weight: 100
+    - name: "date"
+      weight: 10
+      pattern: "2017"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

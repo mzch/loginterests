@@ -1,1 +1,4 @@
-public/*
+public/
+theme/
+resources/
+.hugo_build.lock

@@ -11,7 +11,7 @@ tags:
 ---
 2chのスレで見つけました。Safari にインストールすると、Google がぐっとスマートになっちゃいます。こんな感じ↓
 
-{{% zoom-img alt="ZMGoogleCSS" src="/wp-content/uploads/2009/02/zmgooglecss.png" %}}
+![ZMGoogleCSS](/wp-content/uploads/2009/02/zmgooglecss.png)
 
 作成された方のサイトはこちら。[zumuya zumuya » ZMGoogleCSS](http://homepage.mac.com/dy4/zumuya/ZMGoogleCSS/index.html)
 

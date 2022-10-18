@@ -45,7 +45,7 @@ Mac Bundle Box: お知らせ<br />
 
 直訳調なのはご勘弁下さい。^^; 今のところ、[原文のページ](http://www.macbundlebox.com/jackpot/)もまだ残ってますが、念のためページの画像も以下に掲載。
  
-{{% zoom-img alt="無料アプリ進呈告知ページの画像" src="/wp-content/uploads/2009/03/macbundlebox.png" %}}
+![無料アプリ進呈告知ページの画像](/wp-content/uploads/2009/03/macbundlebox.png)
 
 
 ま、それはともかく、この目標はめでたく達成され、秘密のアプリって何だろうってｗｋｔｋしてたんですが、あに図らんや、あれから一週間たったというのに音沙汰がありません。

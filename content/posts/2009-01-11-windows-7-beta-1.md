@@ -9,7 +9,7 @@ tags:
 ---
 入れてみました。
 
-{{% zoom-img alt="Windows 7 Build 7000" src="/wp-content/uploads/2009/01/win7build.png" %}}
+!["Windows 7 Build 7000](/wp-content/uploads/2009/01/win7build.png)
 
 まだ Office とか、ユーティリティをいくつかインストールしただけなんですが、正直なところ、かなり期待できます。( [Deskscape](/2008/09/04/deskspace/">Deskscape) で「デスクトップごとに異なる壁紙を使用する」としているとテーマが無効になっちゃうとか、VMware Workstation のゲストから LAN に接続できないとか、問題はいくつかありますが。^^;)
 
@@ -17,5 +17,5 @@ tags:
 
 尤も、見た目はほとんど Vista です。これから手が入るのか、あるいはこのままなのかは不明ですが、UI の基本要素は、Windows 95 から変わってませんので、劇的な変化は、まああり得ないということで。
 
-{{% zoom-img src="/wp-content/uploads/2009/01/win7desktop.png" alt="Windows 7 beta 1 Desktop" %}}
+![Windows 7 Build 7000 Desktop](/wp-content/uploads/2009/01/win7desktop.png)
 
