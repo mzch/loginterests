@@ -19,20 +19,28 @@ params:
       Content: PC や Mac といったコンピュータはもとより、そのソフトウェアやサーバー管理、レンタルサーバー業者のあれこれを漫然と書き連ねているブログです。⚙️
 
   socialIcons:
+      - name: "github"
+        url: "https://github.com/mzch"
+      - name: "gitlab"
+        url: "https://gitlab.com/letlive"
+      - name: "discord"
+        url: "https://discord.com/channels/602665180953968663/602665181633314847"
       - name: "twitter"
         url: "https://twitter.com/_mzch"
       - name: "facebook"
         url: "https://facebook.com/kch.matsumoto"
       - name: "instagram"
         url: "https://instagram.com/mzch"
-      - name: "linkdin"
-        url: "https://linkdin.com/letlive"
-      - name: "github"
-        url: "https://github.com/mzch"
-      - name: "gitlab"
-        url: "https://gitlab.com/letlive"
+      - name: "linkedin"
+        url: "https://www.linkedin.com/in/letlive/"
+      - name: "mastodon"
+        url: "https://murmurit.com/@mzch"
       - name: "vimeo"
         url: "https://vimeo.com/letlive"
+      - name: "steam"
+        url: "https://steamcommunity.com/id/kei_em/"
+      - name: "rss"
+        url: "index.xml"
 
   comments: true
   # Disqus shortname
