@@ -31,4 +31,4 @@ draft: false
 
 Mac Pro? プロ用機材には、[Quadro](https://www.nvidia.com/ja-jp/design-visualization/quadro/) とか [Radeon Pro](https://www.amd.com/ja/graphics/workstations) とかのディスクリート GPU が必須なんですが、いくら私の使い方では満足とはいえ、SoC 内蔵の GPU の限界を今回見たと思ってますので、Mac Studio と同じ路線で出せるはずもなく、噂すら消えてしまったなき Lifuka のようなディスクリート GPU を積まないと出せないんじゃないかなと思ってます。そんな簡単に SoC 仕様から切り出して作れるなら、nVidea も AMD も苦労しないわけで、いっそのこと、PCIe 5.0 を実装してそっちの製品が使えるようにする方が速いんじゃないかと思います。
 
-Mac Pro がまともな仕様で出せるかどうか出今後の Apple の技術の進化が占えるなと思ってます。今更ゴミ箱Pro は出せないだろうし。案外進退窮まっているのかな?
+Mac Pro がまともな仕様で出せるかどうかで今後の Apple の技術の進化が占えるなと思ってます。今更ゴミ箱Pro は出せないだろうし。案外進退窮まっているのかな?
