@@ -29,12 +29,12 @@ to enable the functionality of this area and ease of use for those people visiti
 affiliate / advertising partners may also use cookies.License
 Unless otherwise stated, 電脳業務日誌 and/or it's licensors own the intellectual property rights for
 all material on 電脳業務日誌. All intellectual property rights are reserved. You may view and/or print
-pages from https://www.loginterests.com/ for your own personal use subject to restrictions set in these terms and conditions.
+pages from https://loginterests.com/ for your own personal use subject to restrictions set in these terms and conditions.
 You must not:
 
-Republish material from https://www.loginterests.com
-Sell, rent or sub-license material from https://www.loginterests.com
-Reproduce, duplicate or copy material from hhttps://www.loginterests.com
+Republish material from https://loginterests.com
+Sell, rent or sub-license material from https://loginterests.com
+Reproduce, duplicate or copy material from hhttps://loginterests.com
 
 Redistribute content from 電脳業務日誌 (unless content is specifically made for redistribution).
 
@@ -45,7 +45,7 @@ Certain parts of this website offer the opportunity for users to post and exchan
 material and data ('Comments') in areas of the website. 電脳業務日誌 does not screen, edit, publish
 or review Comments prior to their appearance on the website and Comments do not reflect the views or
 opinions of電脳業務日誌, its agents or affiliates. Comments reflect the view and opinion of the
-person who posts such view or opinion. To the extent permitted by applicable laws 電脳業務日誌shall
+person who posts such view or opinion. To the extent permitted by applicable laws 電脳業務日誌 shall
 not be responsible or liable for the Comments or for any loss cost, liability, damages or expenses caused
 and or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this
 website.
