@@ -7,6 +7,8 @@ theme: "hugo-PaperMod"
 # Copyright notice. This is displayer in the footer.
 copyright: "&copy; 2008-2022 mzch"
 
+hasCJKLanguage: true
+
 pygmentsUseClasses: true
 pygmentsCodefences: true
 
