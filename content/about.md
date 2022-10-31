@@ -5,3 +5,25 @@ draft: false
 ---
 
 詳しくは、[こちら](https://mcuce.com/@mzch)をどうぞ。
+
+何か言伝があるのでしたら、以下のフォームをお使いください。
+
+<br />
+<form action="https://submit-form.com/6XTvdIOM" method="POST">
+  <p>
+  <label for="name">お名前</label>
+  <input type="text" id="name" name="name" placeholder="" required="" style="background-color:#f0f0f0; width:100%" /></p>
+  <p>
+  <label for="email">メール</label>
+  <input type="email" id="email" name="email" placeholder="example@example.jp" required="" style="background-color:#f0f0f0; width:100%;" /></p>
+  <p>
+  <label for="message">メッセージ</label><br />
+  <textarea
+    id="message"
+    name="message"
+    placeholder="何でもお書き下さい。"
+    required="true"
+    style="background-color:#f0f0f0; width:100%; height:8em;"
+  ></textarea></p>
+  <button type="submit" style="padding:5px 20px 5px 20px; color:white; background-color:gray;">送信</button>
+</form>
