@@ -9,7 +9,7 @@ draft: false
 何か言伝があるのでしたら、以下のフォームをお使いください。
 
 <br />
-<form action="https://submit-form.com/6XTvdIOM" method="POST">
+<form action="https://submit-form.com/6XTvdIOM" method="POST"  target="_blank">
   <p>
   <label for="name">お名前</label>
   <input type="text" id="name" name="name" placeholder="" required="" style="background-color:#f0f0f0; width:100%" /></p>
