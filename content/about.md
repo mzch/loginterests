@@ -9,6 +9,7 @@ draft: false
 何か言伝があるのでしたら、以下のフォームをお使いください。
 
 <br />
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <form action="https://submit-form.com/6XTvdIOM" method="POST"  target="_blank">
   <p>
   <label for="name">お名前</label>
@@ -25,11 +26,11 @@ draft: false
     required="true"
     style="background-color:#f0f0f0; width:100%; height:8em;"
   ></textarea></p>
-  <div
+  <p><div
     class="g-recaptcha"
     data-sitekey="6Lcqne0UAAAAAIDQsmv0mX7PlXGJpImoBuIYPm64"
     data-callback="callback"
-  ></div>
+  ></div></p>
   <button type="submit" id="submit-button" style="padding:5px 20px 5px 20px; color:white; background-color:gray;">送信</button>
 </form>
 
