@@ -25,5 +25,17 @@ draft: false
     required="true"
     style="background-color:#f0f0f0; width:100%; height:8em;"
   ></textarea></p>
-  <button type="submit" style="padding:5px 20px 5px 20px; color:white; background-color:gray;">送信</button>
+  <div
+    class="g-recaptcha"
+    data-sitekey="6Lcqne0UAAAAAIDQsmv0mX7PlXGJpImoBuIYPm64"
+    data-callback="callback"
+  ></div>
+  <button type="submit" id="submit-button" style="padding:5px 20px 5px 20px; color:white; background-color:gray;">送信</button>
 </form>
+
+<script type="text/javascript">
+      function callback() {
+        const submitButton = document.getElementById("submit-button");
+        submitButton.removeAttribute("disabled");
+      }
+</script>
