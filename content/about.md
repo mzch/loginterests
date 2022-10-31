@@ -31,7 +31,7 @@ draft: false
     data-sitekey="6Lcqne0UAAAAAIDQsmv0mX7PlXGJpImoBuIYPm64"
     data-callback="callback"
   ></div></p>
-  <button type="submit" id="submit-button" style="padding:5px 20px 5px 20px; color:white; background-color:gray;">送信</button>
+  <button type="submit" id="submit-button" style="padding:5px 20px 5px 20px; color:white; background-color:gray;" disabled>送信</button>
 </form>
 
 <script type="text/javascript">
