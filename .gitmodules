@@ -3,4 +3,4 @@
 	url = https://github.com/surajmandalcell/potato-dark.git
 [submodule "themes/hugo-PaperMod"]
 	path = themes/hugo-PaperMod
-	url = https://github.com/mzch/hugo-PaperMod.git
+	url = https://github.com/mzch/hugo-PaperMod
