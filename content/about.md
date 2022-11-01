@@ -1,6 +1,7 @@
 ---
 title: "私ですか?"
 date: "2019-05-31"
+comments: false
 draft: false
 ---
 

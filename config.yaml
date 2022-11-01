@@ -22,6 +22,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
+  comments: true
 
   paginate: 10
 
