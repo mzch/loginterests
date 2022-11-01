@@ -10,7 +10,7 @@ draft: false
 何か言伝があるのでしたら、以下のフォームをお使いください。
 
 <br />
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js?hl=ja" async defer></script>
 <form action="https://submit-form.com/6XTvdIOM" method="POST"  target="_blank">
   <p>
   <label for="name">お名前</label>
