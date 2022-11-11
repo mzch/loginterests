@@ -1,9 +1,6 @@
 [submodule "themes/potato-dark"]
 	path = themes/potato-dark
 	url = https://github.com/surajmandalcell/potato-dark.git
-[submodule "themes/hugo-PaperMod"]
-	path = themes/hugo-PaperMod
-	url = https://github.com/mzch/hugo-PaperMod
 [submodule "themes/enigmo"]
 	path = themes/enigmo
 	url = https://github.com/achary/engimo.git
@@ -16,3 +13,6 @@
 [submodule "themes/beautifulhugo"]
 	path = themes/beautifulhugo
 	url = https://github.com/halogenica/beautifulhugo.git
+[submodule "themes/hugo-PaperMod"]
+	path = themes/hugo-PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
