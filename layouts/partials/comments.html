@@ -14,7 +14,7 @@
     {{ with .Site.Params.coral }}
     <div id="coral_thread"></div>
     <script type="text/javascript">
-      var coral_host = {{ .Site.Params.coral }}
+      var coral_host = {{ . }}
       (function() {
           var d = document, s = d.createElement('script');
           s.src = 'https://' + coral_host + '/assets/js/embed.js';
