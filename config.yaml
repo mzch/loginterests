@@ -58,9 +58,9 @@ params:
   # Disqus shortname
   #disqusL: "daybook-biz"
   # Commento url
-  commento: "rfc1855.com"
+  #commento: "rfc1855.com"
   # Coral (Talk v5) url
-  #coral: "commentre.com"
+  coral: "commentre.com"
   # Remark42
   #remark42: "remark.mzchs.com"
   #remark42site: "remark"
