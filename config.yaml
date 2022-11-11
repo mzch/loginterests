@@ -59,14 +59,14 @@ params:
   #disqusL: "daybook-biz"
   # Commento url
   commento: false
-  #commentoHost: "rfc1855.com"
+  #commentoURL: "https://rfc1855.com/js/commento.js"
   # Coral (Talk v5) url
   coral     : true
   coralHost : "https://commentre.com"
   coralURL  : "https://commentre.com/assets/js/embed.js"
   # Remark42
   remark42: false
-  #remark42Host: "remark.mzchs.com"
+  #remark42URL: "https://remark.mzchs.com"
   #remark42ID: "remark"
   # Google Analytics API key.
   ga_api_key: "UA-12204411-1"
