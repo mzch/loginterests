@@ -58,10 +58,10 @@ params:
   # Disqus shortname
   #disqusL: "daybook-biz"
   # Commento url
-  commento: true
+  commento: false
   commentoURL: "https://rfc1855.com/js/commento.js"
   # Coral (Talk v5) url
-  coral     : false
+  coral     : true
   coralHost : "https://commentre.com"
   coralURL  : "https://commentre.com/assets/js/embed.js"
   # Remark42
