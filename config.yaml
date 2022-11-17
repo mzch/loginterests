@@ -59,15 +59,15 @@ params:
   #disqusL: "daybook-biz"
   # Commento url
   commento: false
-  #commentoURL: "https://rfc1855.com/js/commento.js"
+  commentoURL: "https://rfc1855.com/js/commento.js"
   # Coral (Talk v5) url
   coral     : true
   coralHost : "https://commentre.com"
   coralURL  : "https://commentre.com/assets/js/embed.js"
   # Remark42
   remark42: false
-  #remark42URL: "https://remark.mzchs.com"
-  #remark42ID: "remark"
+  remark42URL: "https://uixis.org"
+  remark42ID: "uixcmmntsvc"
   # Google Analytics API key.
   ga_api_key: "UA-12204411-1"
   # Logo image. This is displayed ogp image.
