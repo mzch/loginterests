@@ -9,7 +9,7 @@ draft: false
 ---
 三月下旬に注文した [Mac Studio](https://www.apple.com/jp/mac-studio/) が六月上旬に届き、それから四ヶ月ばかり使用している。注文したのは以下の通り。
 
-- M1 Ultra (24Core GPU)
+- M1 Ultra (48 Core GPU)
 - 128GB メモリ
 - 2TB SSD
 
