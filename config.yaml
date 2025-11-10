@@ -54,7 +54,6 @@ params:
       - name: "rss"
         url: "index.xml"
 
-  comments: true
   # Disqus shortname
   disqusL: "dian-noy-ye-wu-ri-zhi"
   ## Commento url
