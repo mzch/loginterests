@@ -76,7 +76,7 @@ params:
 disqus:
   enable: true
   # Disqus shortname
-  shortname: "Sdian-noy-ye-wu-ri-zhi"
+  shortname: "dian-noy-ye-wu-ri-zhi"
   count: true
 
 outputs:
