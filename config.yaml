@@ -55,7 +55,7 @@ params:
         url: "index.xml"
 
   # Disqus shortname
-  disqusShortname: "dian-noy-ye-wu-ri-zhi"
+  disqus: "dian-noy-ye-wu-ri-zhi"
   # Commento url
   commento: false
   commentoURL: "https://rfc1855.com/js/commento.js"
