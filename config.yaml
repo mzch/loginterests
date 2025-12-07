@@ -5,7 +5,7 @@ Title: "電脳業務日誌"
 theme: "hugo-PaperMod"
 
 # Copyright notice. This is displayer in the footer.
-copyright: "&copy; 2008-2022 mzch"
+copyright: "&copy; 2008-2025 mzch"
 
 hasCJKLanguage: true
 
@@ -54,7 +54,6 @@ params:
       - name: "rss"
         url: "index.xml"
 
-  comments: true
   # Disqus shortname
   disqusL: "dian-noy-ye-wu-ri-zhi"
   # Commento url
