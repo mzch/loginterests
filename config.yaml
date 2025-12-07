@@ -30,6 +30,8 @@ params:
       Title: 電脳なるものをつらつらと語ってみる。🈺
       Content: PC や Mac といったコンピュータはもとより、そのソフトウェアやサーバー管理、レンタルサーバー業者のあれこれを漫然と書き連ねているブログです。⚙️
 
+  social:
+      facebook_admin: true
   socialIcons:
       - name: "github"
         url: "https://github.com/mzch"
@@ -38,7 +40,7 @@ params:
       - name: "discord"
         url: "https://discord.com/channels/602665180953968663/602665181633314847"
       - name: "twitter"
-        url: "https://twitter.com/_mzch"
+        url: "https://x.com/_mzch"
       - name: "facebook"
         url: "https://facebook.com/kch.matsumoto"
       - name: "instagram"
@@ -46,7 +48,7 @@ params:
       - name: "linkedin"
         url: "https://www.linkedin.com/in/letlive/"
       - name: "mastodon"
-        url: "https://murmurit.com/@mzch"
+        url: "https://mastodon-japan.net/@mzch"
       - name: "vimeo"
         url: "https://vimeo.com/letlive"
       - name: "steam"
@@ -54,8 +56,6 @@ params:
       - name: "rss"
         url: "index.xml"
 
-  # Disqus shortname
-  disqus: "dian-noy-ye-wu-ri-zhi"
   # # Commento url
   # commento: false
   # commentoURL: "https://rfc1855.com/js/commento.js"
@@ -72,6 +72,12 @@ params:
   # Logo image. This is displayed ogp image.
   #logo: "/img/logo.png"
   #favicon: "/img/favicon.ico"
+
+disqus:
+  enable: true
+  # Disqus shortname
+  shortname: "Sdian-noy-ye-wu-ri-zhi"
+  count: true
 
 outputs:
   home:
