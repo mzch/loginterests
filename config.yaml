@@ -56,9 +56,9 @@ params:
 
   comments: true
   # Disqus shortname
-  #disqusL: "daybook-biz"
+  disqusL: "dian-noy-ye-wu-ri-zhi"
   # Commento url
-  commento: true
+  commento: false
   commentoURL: "https://rfc1855.com/js/commento.js"
   # Coral (Talk v5) url
   coral     : false
