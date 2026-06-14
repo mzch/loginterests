@@ -1,5 +1,5 @@
 baseurl: "https://loginterests.com"
-languageCode: "ja"
+language: "ja"
 Title: "電脳業務日誌"
 # theme: "potato-dark"
 theme: "hugo-PaperMod"
@@ -134,3 +134,11 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+caches:
+  images:
+    dir: ':cacheDir/images'
+
+security:
+  allowContent: ['! ^text/toml$']
+  enableInlineShortcodes: false
